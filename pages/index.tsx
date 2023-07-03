@@ -9,7 +9,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Welcome to my Next.js App</h1>
+        <div className={"min-h-full bg-red-500"}>
+          <h1 className={"red-500"}>Welcome to my nextjs site</h1>
+        </div>
       </main>
     </div>
   );
