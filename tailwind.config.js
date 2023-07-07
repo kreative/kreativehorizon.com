@@ -11,6 +11,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-craftworksans)"],
+        guthen: ["var(--font-guthenbloots)"],
+        chedros: ["var(--font-chedros)"],
+      },
       colors: {
         "horizon-orange": "#FF900E",
         "horizon-pink": "#FF0E9F",
