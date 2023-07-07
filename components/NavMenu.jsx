@@ -8,7 +8,7 @@ function MenuItem({ link, name, negativeSkew }) {
   return (
     <NavigationMenu.Item
       className={`transform transition duration-300 ease-in-out ${
-        negativeSkew ? "hover:-skew-y-6" : "hover:skew-y-6"
+        negativeSkew ? "hover:-skew-y-3" : "hover:skew-y-3"
       }`}
     >
       <NavigationMenu.Link asChild>
@@ -35,7 +35,7 @@ export default function NavMenu() {
             className="group select-none -mr-1"
           >
             <span className="flex items-center">
-              <p className="mr-1 transform hover:-skew-y-6 transition duration-300 ease-in-out text-horizon-grey-700">
+              <p className="mr-1 transform hover:-skew-y-3 transition duration-300 ease-in-out text-horizon-grey-700">
                 Help Center
               </p>
               <CaretDown
