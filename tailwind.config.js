@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'clouds-horizon': "url('/clouds-horizon.png')",
+        'floating-cta-w-logo': "url('/floating-cta-bg-w-logo.png')", 
       },
       fontFamily: {
         sans: ["var(--font-craftworksans)"],
