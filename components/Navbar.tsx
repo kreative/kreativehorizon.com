@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Container from "./Container";
 import NavMenu from "./NavMenu";
 import PopupMenu from "./PopupMenu";
 import { motion } from "framer-motion";
@@ -7,7 +8,7 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   return (
     <nav className={"z-10 sticky top-0 pt-1"}>
-      <div className="max-w-6xl mx-auto px-4 md:px-0">
+      <Container>
         <div className="flex justify-center items-center">
           <div className="bg-white bg-opacity-90 backdrop-blur-sm drop-shadow-sm py-1.5 px-2 my-3 rounded-[10px] flex items-center justify-between md:justify-center space-x-6 w-full md:w-auto">
             <Link href="/">
@@ -44,7 +45,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </nav>
   );
 }
