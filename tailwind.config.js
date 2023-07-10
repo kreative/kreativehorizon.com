@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'clouds-horizon': "url('/clouds-horizon.png')",
+      },
       fontFamily: {
         sans: ["var(--font-craftworksans)"],
         guthen: ["var(--font-guthenbloots)"],
