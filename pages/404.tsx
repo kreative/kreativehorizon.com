@@ -16,14 +16,21 @@ export default function Custom404() {
       <Navbar />
       <main>
         <Container>
-          <div className="flex flex-col items-center justify-center space-y-4 min-h-[80vh] py-12">
+          <div className="flex flex-col items-center justify-center space-y-4 min-h-[90vh] pt-6 pb-24">
+            <Image
+              src="/404-cat.gif"
+              alt="404 Cat GIF"
+              width={300}
+              height={350}
+              className="h-[30vh] w-auto rounded-full mb-3"
+            />
             <h3 className="text-2xl font-guthen tracking-wider">
               Whoops... Looks like you&apos;re lost!
             </h3>
             <h1 className="text-6xl xs:text-7xl font-chedros text-center">
               We couldn&apos;t find this page
             </h1>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-x-3 pb-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-x-3">
               <motion.div
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.95 }}
@@ -47,13 +54,6 @@ export default function Custom404() {
                 </Link>
               </motion.div>
             </div>
-            <Image
-              src="/404-cat.gif"
-              alt="404 Cat GIF"
-              width={300}
-              height={350}
-              className="h-[40vh] w-auto"
-            />
           </div>
         </Container>
       </main>
