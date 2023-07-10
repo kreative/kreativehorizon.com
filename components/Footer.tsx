@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Container from "./Container";
 import FloatingCTA from "./FloatingCTA";
 import { motion } from "framer-motion";
@@ -56,18 +55,28 @@ export default function Footer() {
                 could be - and then build it.
               </p>
               <div className="flex items-center justify-center space-x-3">
-                <Link
-                  className="rounded-md py-2 px-5 font-bold bg-white text-black border border-white"
-                  href="/get-involved"
+                <motion.div
+                  whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  Get involved
-                </Link>
-                <Link
-                  className="rounded-md py-2 px-5 bg-opacity-0 bg-white text-white border border-white"
-                  href="/sponsor"
+                  <Link
+                    className="rounded-md py-2.5 px-5 font-bold bg-white text-black border border-white"
+                    href="/get-involved"
+                  >
+                    Get involved
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  Sponsor now
-                </Link>
+                  <Link
+                    className="rounded-md py-2.5 px-5 bg-opacity-0 bg-white text-white border border-white"
+                    href="/sponsor"
+                  >
+                    Sponsor now
+                  </Link>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -78,8 +87,8 @@ export default function Footer() {
           <FloatingCTA />
         </div>
         <Container>
-          <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-4">
+          <div className="grid grid-cols-12 gap-y-6 sm:gap-y-12 gap-x-4 lg:gap-4">
+            <div className="col-span-12 sm:col-span-8 lg:col-span-4">
               <h3 className="text-4xl text-white font-chedros">
                 JOIN THE JOURNEY
               </h3>
@@ -193,10 +202,10 @@ export default function Footer() {
                 </motion.div>
               </div>
             </div>
-            <div className="col-span-2"></div>
-            <div className="col-span-2">
+            <div className="col-span-12 sm:col-span-4 lg:col-span-2" />
+            <div className="col-span-6 xs:col-span-4 lg:col-span-2">
               <FooterLinkGroupLabel title="Company" />
-              <div className="flex flex-col items-start space-y-2">
+              <div className="flex flex-col items-start space-y-3 md:space-y-2">
                 <FooterLink href="/about-us" title="About Horizon" />
                 <FooterLink href="/contact-us" title="Contact us" />
                 <FooterLink href="/reviews" title="Student reviews" />
@@ -208,17 +217,27 @@ export default function Footer() {
                 <FooterLink href="/sponsor" title="Sponsor us" />
                 <FooterLink href="/get-involved" title="Get involved" />
               </div>
+              <div className="block xs:hidden mt-6 xs:mt-0">
+                <FooterLinkGroupLabel title="Support" />
+                <div className="flex flex-col items-start space-y-3 md:space-y-2">
+                  <FooterLink href="/support" title="Get support" />
+                  <FooterLink
+                    href="/support/submit-incident"
+                    title="Report a violation"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col-span-2">
+            <div className="col-span-6 xs:col-span-4 lg:col-span-2">
               <div className="mb-4">
                 <FooterLinkGroupLabel title="2023 Events" />
-                <div className="flex flex-col items-start space-y-2">
+                <div className="flex flex-col items-start space-y-3 md:space-y-2">
                   <FooterLink href="/events/hackisu-v2" title="HackISU v2" />
                   <FooterLink href="/events/dataisu-v1" title="DataISU v1" />
                 </div>
               </div>
               <FooterLinkGroupLabel title="2024 Events" />
-              <div className="flex flex-col items-start space-y-2">
+              <div className="flex flex-col items-start space-y-3 md:space-y-2">
                 <FooterLink href="/events/hackisu-v3" title="HackISU v3" />
                 <FooterLink href="/events/builddsm-v1" title="BuildDSM v1" />
                 <FooterLink
@@ -227,11 +246,36 @@ export default function Footer() {
                 />
                 <FooterLink href="/events/pitchames-v1" title="PitchAmes v1" />
               </div>
+              <div className="block xs:hidden mt-6 xs:mt-0">
+                <FooterLinkGroupLabel title="Policies" />
+                <div className="flex flex-col items-start space-y-3 md:space-y-2">
+                  <FooterLink
+                    href="/policies/code-of-conduct"
+                    title="Code of conduct"
+                  />
+                  <FooterLink
+                    href="/policies/privacy-policy"
+                    title="Privacy policy"
+                  />
+                  <FooterLink
+                    href="/policies/cookies-policy"
+                    title="Cookies policy"
+                  />
+                  <FooterLink
+                    href="/policies/transparency"
+                    title="Transparency"
+                  />
+                  <FooterLink
+                    href="/policies/terms-of-service"
+                    title="Terms of service"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col-span-2">
+            <div className="hidden xs:block xs:col-span-4 lg:col-span-2">
               <div className="mb-4">
                 <FooterLinkGroupLabel title="Policies" />
-                <div className="flex flex-col items-start space-y-2">
+                <div className="flex flex-col items-start space-y-3 md:space-y-2">
                   <FooterLink
                     href="/policies/code-of-conduct"
                     title="Code of conduct"
@@ -255,7 +299,7 @@ export default function Footer() {
                 </div>
               </div>
               <FooterLinkGroupLabel title="Support" />
-              <div className="flex flex-col items-start space-y-2">
+              <div className="flex flex-col items-start space-y-3 md:space-y-2">
                 <FooterLink href="/support" title="Get support" />
                 <FooterLink
                   href="/support/submit-incident"
@@ -265,7 +309,7 @@ export default function Footer() {
             </div>
           </div>
           <svg
-            className="w-full h-auto mt-6 mb-12"
+            className="w-full h-auto mt-12 lg:mt-6 mb-12"
             viewBox="0 0 1104 145"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -294,7 +338,7 @@ export default function Footer() {
                 filterUnits="userSpaceOnUse"
                 color-interpolation-filters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -333,8 +377,8 @@ export default function Footer() {
                 y2="183.95"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#FF0E9F" />
-                <stop offset="1" stop-color="#FF900E" />
+                <stop stopColor="#FF0E9F" />
+                <stop offset="1" stopColor="#FF900E" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_97_1123"
@@ -344,15 +388,15 @@ export default function Footer() {
                 y2="183.95"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#FF0E9F" />
-                <stop offset="1" stop-color="#FF900E" />
+                <stop stopColor="#FF0E9F" />
+                <stop offset="1" stopColor="#FF900E" />
               </linearGradient>
             </defs>
           </svg>
           <div>
             <hr className="line text-horizon-grey-400" />
-            <div className="grid grid-cols-2 gap-0 mt-4 mb-1">
-              <div className="col-span-1 flex justify-start items-center space-x-3">
+            <div className="grid grid-cols-2 gap-4 md:gap-0 mt-6 md:mt-4 mb-1">
+              <div className="col-span-2 md:col-span-1 flex justify-center md:justify-start items-center space-x-3">
                 <p className="text-horizon-grey-400 text-sm">
                   © 2023 Kreative, LLC. All rights reserved.
                 </p>
@@ -363,9 +407,12 @@ export default function Footer() {
                   Sitemap
                 </Link>
               </div>
-              <div className="col-span-1 flex justify-end items-center">
-                <a href="https://kreativedreamflow.com" className="text-horizon-grey-400 hover:text-horizon-purple hover:underline text-sm">
-                  Website made with ♥ by Kreative Dreamflow in Ames, IA.
+              <div className="col-span-2 md:col-span-1 flex justify-center md:justify-end items-center">
+                <a
+                  href="https://kreativedreamflow.com"
+                  className="text-horizon-grey-400 hover:text-horizon-purple hover:underline text-sm"
+                >
+                  Website made with ♥ by Kreative Dreamflow.
                 </a>
               </div>
             </div>

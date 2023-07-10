@@ -1,4 +1,5 @@
 const plugin = require("tailwindcss/plugin");
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,10 +11,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      xs: "475px",
+      ...defaultTheme.screens,
+    },
     extend: {
       backgroundImage: {
-        'clouds-horizon': "url('/clouds-horizon.png')",
-        'floating-cta-w-logo': "url('/floating-cta-bg-w-logo.png')", 
+        "clouds-horizon": "url('/clouds-horizon.png')",
+        "floating-cta-w-logo": "url('/floating-cta-bg-w-logo.png')",
       },
       fontFamily: {
         sans: ["var(--font-craftworksans)"],
