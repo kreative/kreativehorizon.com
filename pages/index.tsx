@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className={"min-h-screen bg-red-500 pt-24"}>
+      <div className={"bg-red-500 py-6"}>
         <h1 className="font-chedros text-xl text-center">My Site</h1>
       </div>
       <Footer />
