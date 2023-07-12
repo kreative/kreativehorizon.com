@@ -16,7 +16,7 @@ export default function Custom404() {
       <Navbar />
       <main>
         <Container>
-          <div className="flex flex-col items-center justify-center space-y-4 min-h-[90vh] pt-6 pb-24">
+          <div className="flex flex-col items-center justify-center space-y-4 min-h-[80vh] pb-24">
             <Image
               src="/404-cat.gif"
               alt="404 Cat GIF"
@@ -30,7 +30,7 @@ export default function Custom404() {
             <h1 className="text-6xl xs:text-7xl font-chedros text-center">
               We couldn&apos;t find this page
             </h1>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-x-3">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-y-0 sm:space-x-3">
               <motion.div
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.95 }}
