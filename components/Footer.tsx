@@ -50,7 +50,7 @@ export default function Footer() {
                 OUR MOVEMENT IS ONLY GROWING, WE WANT YOU TO BE A PART OF IT.
               </h2>
               <p className="text-center text-white text-base pb-2">
-                We’re starting in Iowa with our sights set on the nation. Every
+                We&apos;re starting in Iowa with our sights set on the nation. Every
                 student deserves the opportunity to see the future for what it
                 could be - and then build it.
               </p>

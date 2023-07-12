@@ -25,8 +25,8 @@ const policies = [
     icon: <Pen size={54} className="text-horizon-purple" />,
   },
   {
-    title: "Cookie Policy",
-    link: "/policies/cookie-policy",
+    title: "Cookies Policy",
+    link: "/policies/cookies-policy",
     icon: <Cookie size={54} className="text-horizon-purple" />,
   },
   {
@@ -44,7 +44,10 @@ const policies = [
 export default function Policies() {
   return (
     <div>
-      <NextSeo title="Policies" />
+      <NextSeo
+        title="Policies"
+        description="Review Kreative Horizon's event code of conduct and other digital policies"
+      />
       <Navbar />
       <main>
         <SplashContainer>

@@ -44,6 +44,7 @@ module.exports = {
         "horizon-pink": "#FF0E9F",
         "horizon-purple": "#950EFF",
         "horizon-purple-300": "#C479FF",
+        "horizon-tan": "#FFEEDB",
       },
       keyframes: {
         enterFromRight: {
