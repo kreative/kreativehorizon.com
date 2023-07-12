@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
+import { NextSeo } from "next-seo";
 
 // custom craftwork sans font loading locally
 const craftworkSans = localFont({
@@ -86,6 +87,32 @@ export default function App({ Component, pageProps }: AppProps) {
     <div
       className={`${craftworkSans.variable} ${guthenBloots.variable} ${chedros.variable}`}
     >
+      <NextSeo
+        title="Kreative Horizon"
+        titleTemplate="Kreative Horizon"
+        defaultTitle="Kreative Horizon"
+        description="We're on a mission of providing students the tools and resources to build the future of tomorrow, today so we can see the world for what it could be. Hackathons, workshops, and more."
+        canonical="https://kreativehorizon.com/"
+        openGraph={{
+          url: "https://kreativehorizon.com/",
+          title: "Kreative Horizon",
+          description:
+            "We're on a mission of providing students the tools and resources to build the future of tomorrow, today so we can see the world for what it could be. Hackathons, workshops, and more.",
+          images: [
+            {
+              url: "/horizon-retro-logo.png",
+              width: 700,
+              height: 700,
+              alt: "Kreative Horizon Retro Logo",
+            },
+          ],
+        }}
+        twitter={{
+          handle: "@kreativehorizon",
+          site: "@kreativehorizon",
+          cardType: "summary_large_image",
+        }}
+      />
       <Component {...pageProps} />
     </div>
   );
