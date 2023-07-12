@@ -60,7 +60,7 @@ export default function Footer() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    className="rounded-md py-2.5 px-5 font-bold bg-white text-black border border-white"
+                    className="rounded-md py-2.5 px-5 font-bold bg-white text-horizon-grey-800 border border-white"
                     href="/get-involved"
                   >
                     Get involved

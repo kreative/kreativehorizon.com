@@ -44,7 +44,7 @@ export default function Custom404() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 bg-opacity-0 bg-transparent text-black"
+                  className="rounded-md py-2.5 px-5 bg-opacity-0 bg-transparent text-horizon-grey-800"
                   href="/support"
                 >
                   Contact support <span aria-hidden="true">&rarr;</span>
