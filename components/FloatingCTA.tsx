@@ -34,15 +34,7 @@ export default function FloatingCTA() {
             </motion.div>
           </div>
         </div>
-        <div className="xl:col-span-4">
-          {/* <Image
-            alt="Kreative Horizon Retro Logo in White and Color"
-            src="/BIG_LOGO.png"
-            className="-mb-12"
-            height={500}
-            width={500}
-          /> */}
-        </div>
+        <div className="xl:col-span-4" />
       </div>
     </Container>
   );

@@ -17,8 +17,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "clouds-horizon": "url('/clouds-horizon.png')",
-        "floating-cta-w-logo": "url('/floating-cta-bg-w-logo.png')",
+        "clouds-horizon": "url('/images/clouds-horizon.png')",
+        "floating-cta-w-logo": "url('/images/floating-cta-bg-w-logo.png')",
       },
       fontFamily: {
         sans: ["var(--font-craftworksans)"],

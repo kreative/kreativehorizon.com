@@ -14,7 +14,7 @@ export default function Navbar() {
             <Link href="/">
               <Image
                 className="h-10 w-auto drop-shadow-lg"
-                src="/horizon-retro-logo.png"
+                src="/images/horizon-retro-logo.png"
                 alt="Kreative Horizon Retro Iconologo"
                 width={50}
                 height={50}

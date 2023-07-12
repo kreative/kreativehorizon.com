@@ -336,7 +336,7 @@ export default function Footer() {
                 width="1103.85"
                 height="145"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
                 <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
