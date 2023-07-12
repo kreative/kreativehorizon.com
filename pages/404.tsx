@@ -15,7 +15,7 @@ export default function Custom404() {
         <Container>
           <div className="flex flex-col items-center justify-center space-y-4 min-h-[80vh] pb-24">
             <Image
-              src="/404-cat.gif"
+              src="/images/404-cat.gif"
               alt="404 Cat GIF"
               width={300}
               height={350}
