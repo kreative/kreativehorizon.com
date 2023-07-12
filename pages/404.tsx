@@ -1,18 +1,15 @@
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
+import { NextSeo } from "next-seo";
 
 export default function Custom404() {
   return (
     <div>
-      <Head>
-        <title>404 - Page Not Found | Kreative Horizon</title>
-        <meta name="description" content="404 - Page Not Found" />
-      </Head>
+      <NextSeo title="404 Not Found" />
       <Navbar />
       <main>
         <Container>
@@ -24,9 +21,9 @@ export default function Custom404() {
               height={350}
               className="h-[30vh] w-auto rounded-full mb-3"
             />
-            <h3 className="text-2xl font-guthen tracking-wider">
+            <p className="text-2xl font-guthen tracking-wider">
               Whoops... Looks like you&apos;re lost!
-            </h3>
+            </p>
             <h1 className="text-6xl xs:text-7xl font-chedros text-center">
               We couldn&apos;t find this page
             </h1>
