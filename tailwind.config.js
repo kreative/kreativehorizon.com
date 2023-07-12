@@ -29,6 +29,7 @@ module.exports = {
         "horizon-orange": "#FF900E",
         "horizon-pink": "#FF0E9F",
         "horizon-purple": "#950EFF",
+        "horizon-purple-300": "C479FF",
         "horizon-grey-100": "#FAFAFA",
         "horizon-grey-200": "#F6F6F4",
         "horizon-grey-300": "#E3E3E3",
@@ -42,6 +43,7 @@ module.exports = {
         "horizon-orange": "#FF900E",
         "horizon-pink": "#FF0E9F",
         "horizon-purple": "#950EFF",
+        "horizon-purple-300": "#C479FF",
       },
       keyframes: {
         enterFromRight: {
