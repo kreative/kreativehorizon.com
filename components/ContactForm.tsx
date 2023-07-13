@@ -9,7 +9,7 @@ export default function ContactForm() {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         className="grid grid-cols-1 gap-6"
-        action="/contact-us?form_completed=true"
+        action="contact-us/?form_completed=true"
       >
         <input type="hidden" name="khz_contact" value="contact" />
         <p className="hidden">

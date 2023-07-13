@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
@@ -12,14 +11,7 @@ import { Envelope, Phone } from "@phosphor-icons/react";
 
 export default function ContactUs() {
   const router = useRouter();
-  const { form_completed } = router.query;
-  const [success, setSuccess] = useState(false);
-
-  useEffect(() => {
-    if (window.location.search.includes("form_completed=true")) {
-      setSuccess(true);
-    }
-  }, []);
+  const success = router.query?.form_completed && router.query.form_completed === "true";
 
   return (
     <div>
