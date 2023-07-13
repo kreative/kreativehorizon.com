@@ -93,6 +93,7 @@ module.exports = {
     },
   },
   plugins: [
+    require("@tailwindcss/forms"),
     plugin(({ matchUtilities }) => {
       matchUtilities({
         perspective: (value) => ({
