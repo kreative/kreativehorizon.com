@@ -4,7 +4,7 @@ import { List, X } from "@phosphor-icons/react";
 import { Dialog } from "@headlessui/react";
 
 
-function MenuItem({ link, name }) {
+function MenuItem({ link, name }: { link: string; name: string }) {
   return (
     <Link href={link} className="text-2xl py-2 px-1 text-horizon-grey-700">{name}</Link>
   )
