@@ -53,7 +53,7 @@ export default function Policies() {
         <SplashContainer>
           <div className="bg-gradient-to-b from-horizon-purple-300 to-transparent">
             <Container>
-              <div className="pt-32 md:py-16 min-h-[25rem] lg:min-h-[30rem] flex flex-col justify-end items-center space-y-4">
+              <div className="pt-32 md:py-16 min-h-[20rem] lg:min-h-[25rem] flex flex-col justify-end items-center space-y-4">
                 <p className="text-2xl tracking-wide font-guthen">
                   Legal Policies
                 </p>
