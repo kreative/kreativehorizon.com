@@ -50,9 +50,9 @@ export default function Footer() {
                 OUR MOVEMENT IS ONLY GROWING, WE WANT YOU TO BE A PART OF IT.
               </h2>
               <p className="text-center text-white text-base pb-2">
-                We&apos;re starting in Iowa with our sights set on the nation. Every
-                student deserves the opportunity to see the future for what it
-                could be - and then build it.
+                We&apos;re starting in Iowa with our sights set on the nation.
+                Every student deserves the opportunity to see the future for
+                what it could be - and then build it.
               </p>
               <div className="flex items-center justify-center space-x-3">
                 <motion.div
@@ -98,7 +98,10 @@ export default function Footer() {
               </p>
               <div className="flex justify-start space-x-2 items-center mb-1">
                 <Phone className="text-white" size={20} />
-                <Link href="tel:+15106735179" className="text-white text-base">
+                <Link
+                  href="tel:+15106735179"
+                  className="text-white text-base hover:underline transition duration-300 ease-in-out"
+                >
                   +1 (510) 673-5179
                 </Link>
               </div>
@@ -106,7 +109,7 @@ export default function Footer() {
                 <Envelope className="text-white" size={20} />
                 <Link
                   href="mailto:horizon@kreativeusa.com"
-                  className="text-white text-base"
+                  className="text-white text-base hover:underline transition duration-300 ease-in-out"
                 >
                   horizon@kreativeusa.com
                 </Link>
