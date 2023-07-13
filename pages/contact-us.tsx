@@ -47,8 +47,7 @@ export default function ContactUs() {
                     EMAIL
                   </h2>
                   <p className="text-horizon-grey-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in ero.
+                    Send us a message anytime and one of our team members will get back to you as soon as possible.
                   </p>
                   <a
                     href="mailto:horizon@kreativeusa.com"
@@ -63,8 +62,7 @@ export default function ContactUs() {
                     PHONE
                   </h2>
                   <p className="text-horizon-grey-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in ero.
+                    Our folks are always ready to help you with any questions or concerns you may have during business hours.
                   </p>
                   <a
                     href="tel:+15106735179"
