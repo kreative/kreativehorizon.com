@@ -7,9 +7,17 @@ export default function ContactForm() {
         name="khz_contact"
         method="POST"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
         className="grid grid-cols-1 gap-6"
+        action="/contact-us?form_completed=true"
       >
         <input type="hidden" name="khz_contact" value="contact" />
+        <p className="hidden">
+          <label id="contact-form-bot-label">
+            Dont fill this out if youre human:{" "}
+            <input name="bot-field" aria-labelledby="contact-form-bot-label" />
+          </label>
+        </p>
         <div>
           <label
             htmlFor="name"
