@@ -1,14 +1,18 @@
+import { useRouter } from "next/router";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import LogoCloud5 from "@/components/LogoCloud5";
 import FloatingCTA2 from "@/components/FloatingCTA2";
 import ContactForm from "@/components/ContactForm";
-import { motion } from "framer-motion";
+import SuccessAlert from "@/components/SuccessAlert";
 import { NextSeo } from "next-seo";
 import { Envelope, Phone } from "@phosphor-icons/react";
 
 export default function ContactUs() {
+  const router = useRouter();
+  const { form_completed } = router.query;
+
   return (
     <div>
       <NextSeo
@@ -29,6 +33,7 @@ export default function ContactUs() {
               <p className="text-lg text-horizon-grey-500">
                 Mon - Fri 9:00 AM- 6:00 PM CST
               </p>
+              {form_completed === "true" && <SuccessAlert />}
               <div className="py-12">
                 <ContactForm />
               </div>
