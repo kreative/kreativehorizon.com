@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
@@ -12,6 +13,13 @@ import { Envelope, Phone } from "@phosphor-icons/react";
 export default function ContactUs() {
   const router = useRouter();
   const { form_completed } = router.query;
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    if (window.location.search.includes("form_completed=true")) {
+      setSuccess(true);
+    }
+  }, []);
 
   return (
     <div>
@@ -33,7 +41,7 @@ export default function ContactUs() {
               <p className="text-lg text-horizon-grey-500">
                 Mon - Fri 9:00 AM- 6:00 PM CST
               </p>
-              {form_completed === "true" && <SuccessAlert />}
+              {success && <SuccessAlert />}
               <div className="py-12">
                 <ContactForm />
               </div>

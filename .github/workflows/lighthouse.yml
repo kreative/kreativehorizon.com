@@ -17,12 +17,12 @@ jobs:
         with:
           urls: |
             ${{ steps.netlify.outputs.url }}
-            ${{ steps.netlify.outputs.url }}/404
             ${{ steps.netlify.outputs.url }}/policies
             ${{ steps.netlify.outputs.url }}/policies/code-of-conduct
             ${{ steps.netlify.outputs.url }}/policies/privacy-policy
             ${{ steps.netlify.outputs.url }}/policies/cookies-policy
             ${{ steps.netlify.outputs.url }}/policies/terms-of-service
             ${{ steps.netlify.outputs.url }}/policies/transparency
+            ${{ steps.netlify.outputs.url }}/contact-us
           budgetPath: .github/workflows/budget.json
           uploadArtifacts: true
