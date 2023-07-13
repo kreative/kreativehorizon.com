@@ -4,14 +4,14 @@ export default function ContactForm() {
   return (
     <div>
       <form
-        name="khz_contact"
+        name="contact-form"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         className="grid grid-cols-1 gap-6"
-        action="contact-us/?form_completed=true"
+        action="/contact-us?form_completed=true"
       >
-        <input type="hidden" name="khz_contact" value="contact" />
+        <input type="hidden" name="form-name" value="contact-form" />
         <p className="hidden">
           <label id="contact-form-bot-label">
             Dont fill this out if youre human:{" "}
