@@ -18,7 +18,7 @@ export default function SuccessAlert() {
             </div>
             <div className="ml-3 flex justify-start items-center">
               <p className="text-sm font-medium text-green-800">
-                Successfully uploaded
+                Form submitted successfully!
               </p>
             </div>
             <div className="ml-auto pl-3 flex justify-start items-center">
