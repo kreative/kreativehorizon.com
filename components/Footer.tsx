@@ -216,7 +216,7 @@ export default function Footer() {
                 <FooterLink href="/travel-grants" title="Travel grants" />
                 <FooterLink href="/community" title="Community" />
                 <FooterLink href="/press" title="Press" />
-                <FooterLink href="/newsroom" title="Newsroom" />
+                <FooterLink href="https://kreativeusa.com/newsroom" title="Kreative Newsroom" />
                 <FooterLink href="/sponsor" title="Sponsor us" />
                 <FooterLink href="/get-involved" title="Get involved" />
               </div>
