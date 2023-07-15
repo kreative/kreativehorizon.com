@@ -57,9 +57,10 @@ export default function Press({ articles }: { articles: any[] }) {
               </h1>
               <p className="text-lg text-horizon-grey-500 pb-8">
                 Our press team loves working with dedicated journalists in the
-                community to share mission-driven and unique stories. If you&apos;re
-                a member of the media and would like to talk, our team is here
-                to speak with you and answer any questions you may have.
+                community to share mission-driven and unique stories. If
+                you&apos;re a member of the media and would like to talk, our
+                team is here to speak with you and answer any questions you may
+                have.
               </p>
               <p className="text-xl text-horizon-purple">
                 <span>For press inquires:</span>
@@ -96,13 +97,13 @@ export default function Press({ articles }: { articles: any[] }) {
                   </p>
                   <div className="flex flex-col space-y-1 justify-start items-start">
                     <a
-                      href="#"
+                      href="https://www.icloud.com/sharedalbum/#B0U5oqs3qRrfaI0"
                       className="underline text-lg transform transition duration-300 ease-in-out hover:skew-y-2 hover:text-horizon-orange"
                     >
                       HackIowaState v1 photos
                     </a>
                     <a
-                      href="mailto:horizon@kreativeusa.com"
+                      href="https://www.icloud.com/sharedalbum/#B0UJtdOXmKQZ4iL"
                       className="underline text-lg transform transition duration-300 ease-in-out hover:skew-y-2 hover:text-horizon-orange"
                     >
                       BuildChicago 2019 photos
