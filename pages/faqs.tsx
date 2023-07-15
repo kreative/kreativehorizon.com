@@ -4,6 +4,7 @@ import SplashContainer from "@/components/SplashContainer";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Accordian from "@/components/Accordian";
+import NeedHelpCTA from "@/components/NeedHelpCTA";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 
@@ -280,7 +281,9 @@ export default function Faqs() {
                 Events
               </h2>
               <p className="text-lg text-horizon-grey-600 pb-4">
-                General questions about our events across the whole year. Includes hackathons, data-thons, design jams, and pitch competitions.
+                General questions about our events across the whole year.
+                Includes hackathons, data-thons, design jams, and pitch
+                competitions.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
@@ -306,7 +309,8 @@ export default function Faqs() {
                 Kreative Horizon Labs
               </h2>
               <p className="text-lg text-horizon-grey-600 pb-4">
-                Information about our Horizon Labs, including what they are, who can use them, and how to contribute.
+                Information about our Horizon Labs, including what they are, who
+                can use them, and how to contribute.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
@@ -332,7 +336,8 @@ export default function Faqs() {
                 Kreative Travel Grants
               </h2>
               <p className="text-lg text-horizon-grey-600 pb-4">
-                Answers to common questions about our new Kreative Travel Grants program for our hackathons.
+                Answers to common questions about our new Kreative Travel Grants
+                program for our hackathons.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
@@ -352,13 +357,14 @@ export default function Faqs() {
           </div>
         </Container>
         <Container>
-          <div className="pt-16 pb-24 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
+          <div className="py-16 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
             <div className="col-span-1 md:col-span-4 flex flex-col justify-start items-start space-y-4 pr-8">
               <h2 className="text-5xl font-chedros text-horizon-orange">
                 Hackathons
               </h2>
               <p className="text-lg text-horizon-grey-600 pb-4">
-                General information about hackathons like what they are, who can participate, and what to expect.
+                General information about hackathons like what they are, who can
+                participate, and what to expect.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
@@ -377,6 +383,7 @@ export default function Faqs() {
             </div>
           </div>
         </Container>
+        <NeedHelpCTA />
       </main>
       <Footer />
     </div>
