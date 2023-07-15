@@ -30,5 +30,6 @@ jobs:
             ${{ steps.netlify.outputs.url }}/press
             ${{ steps.netlify.outputs.url }}/press/press-releases/new-hackathon-at-iowa-state
             ${{ steps.netlify.outputs.url }}/community
+            ${{ steps.netlify.outputs.url }}/support/submit-incident
           budgetPath: .github/workflows/budget.json
           uploadArtifacts: true

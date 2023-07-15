@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Container from "@/components/Container";
 import SplashContainer from "@/components/SplashContainer";
 import Navbar from "@/components/Navbar";
@@ -19,17 +20,20 @@ export default function SubmitIncident() {
         <SplashContainer>
           <div className="bg-gradient-to-b from-horizon-orange to-transparent pt-44 pb-32">
             <Container>
-              <div className="max-w-3xl flex flex-col space-y-4 justify-end items-center mx-auto">
+              <div className="max-w-2xl flex flex-col space-y-4 justify-end items-center mx-auto">
                 <Image
                   src="/images/kim-center-logo.png"
                   alt="Kreative Incidents Manager logo in Black and White"
-                  className="w-[25%] h-auto"
+                  className="w-[50%] sm:w-[30%] h-auto"
                   width={300}
                   height={200}
                 />
-                <h1 className="text-6xl sm:text-7xl font-chedros">
+                <h1 className="text-6xl sm:text-7xl font-chedros text-center">
                   REPORT A VIOLATION
                 </h1>
+                <p className="text-lg text-horizon-grey-800 text-center">
+                  Please use this form to report a violation of the <Link href="/policies/code-of-conduct" className="underline">Kreative Events Code of Conduct</Link>. You have the right to remain anonymouse. We will not share your information with anyone, and we will not take any action without your consent.
+                </p>
               </div>
             </Container>
           </div>
@@ -42,9 +46,8 @@ export default function SubmitIncident() {
               </div>
             </div>
           </Container>
-          
-            <NeedHelpCTA />
-          
+
+          <NeedHelpCTA />
         </div>
       </main>
       <Footer />

@@ -4,14 +4,14 @@ export default function ReportViolationForm() {
   return (
     <div>
       <form
-        name="contact-form"
+        name="violation-form"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         className="grid grid-cols-1 gap-6"
         action="/contact-us?form_completed=true"
       >
-        <input type="hidden" name="form-name" value="contact-form" />
+        <input type="hidden" name="form-name" value="violation-form" />
         <p className="hidden">
           <label id="contact-form-bot-label">
             Dont fill this out if youre human:{" "}
@@ -20,10 +20,58 @@ export default function ReportViolationForm() {
         </p>
         <div>
           <label
+            htmlFor="event-name"
+            className="block text-base font-medium leading-6 text-horizon-grey-800"
+          >
+            Where did this violation take place?
+            <span className="text-horizon-pink"> *</span>
+          </label>
+          <div className="mt-2">
+            <select
+              id="event-name"
+              name="event-name"
+              autoComplete="event-name"
+              required
+              className="block w-full rounded-md border-0 py-1.5 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
+            >
+              <option>HackIowaState v2</option>
+              <option>DataISU v1</option>
+              <option>HackIowaState v3</option>
+              <option>BuildDSM v1</option>
+              <option>DesignJamISU v1</option>
+              <option>PitchAmes v1</option>
+              <option>Horizon Builders Club</option>
+              <option>Horizon Labs</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label
+            htmlFor="message"
+            className="block text-base leading-6 text-horizon-grey-800"
+          >
+            Describe the violation. Please add as much info as possible.
+            <span className="text-horizon-pink"> *</span>
+          </label>
+          <div className="mt-2.5">
+            <textarea
+              name="message"
+              id="message"
+              rows={4}
+              placeholder="The violation was ..."
+              className="block w-full rounded-md border-0 px-3.5 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
+              defaultValue={""}
+              required
+              aria-required="true"
+            />
+          </div>
+        </div>
+        <div>
+          <label
             htmlFor="name"
             className="block text-base font-medium leading-6 text-horizon-grey-800"
           >
-            Full name<span className="text-horizon-pink"> *</span>
+            Full name
           </label>
           <div className="mt-2">
             <input
@@ -32,7 +80,6 @@ export default function ReportViolationForm() {
               id="name"
               className="block w-full rounded-md border-0 py-1.5 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
               placeholder="Richard Branson"
-              required
               aria-required="true"
             />
           </div>
@@ -43,7 +90,7 @@ export default function ReportViolationForm() {
               htmlFor="email"
               className="block text-base font-medium leading-6 text-horizon-grey-800"
             >
-              Email<span className="text-horizon-pink"> *</span>
+              Email
             </label>
             <div className="mt-2">
               <input
@@ -52,7 +99,6 @@ export default function ReportViolationForm() {
                 id="email"
                 className="block w-full rounded-md border-0 py-1.5 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
                 placeholder="you@example.com"
-                required
                 aria-required="true"
               />
             </div>
@@ -98,27 +144,7 @@ export default function ReportViolationForm() {
             </div>
           </div>
         </div>
-        <div>
-          <label
-            htmlFor="message"
-            className="block text-base leading-6 text-horizon-grey-800"
-          >
-            Message<span className="text-horizon-pink"> *</span>
-          </label>
-          <div className="mt-2.5">
-            <textarea
-              name="message"
-              id="message"
-              rows={4}
-              placeholder="I would like to reach out about..."
-              className="block w-full rounded-md border-0 px-3.5 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
-              defaultValue={""}
-              required
-              aria-required="true"
-            />
-          </div>
-        </div>
-        <div className="flex justify-start items-center">
+        <div className="flex justify-end items-center">
           <motion.div
             whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
             whileTap={{ scale: 0.97 }}
