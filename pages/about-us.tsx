@@ -13,7 +13,7 @@ export default function AboutUs() {
     <div>
       <NextSeo
         title="About Us"
-        description="Learn more about Kreative Horizon and our mission to help students build tomorrow, today."
+        description="Discover the story behind Kreative Horizon and our mission to help students build tomorrow, today."
       />
       <Head>
         <style>{`
