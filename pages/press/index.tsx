@@ -66,9 +66,9 @@ export default function Press({ articles }: { articles: any[] }) {
                 <br />
                 <a
                   className="underline hover:text-horizon-pink"
-                  href="mailto:press@kreativehorizon.com"
+                  href="mailto:press@kreativeusa.com"
                 >
-                  press@kreativehorizon.com
+                  press@kreativeusa.com
                 </a>
               </p>
               <div className="pt-12">
