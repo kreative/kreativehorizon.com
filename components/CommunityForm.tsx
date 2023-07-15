@@ -163,7 +163,7 @@ export default function CommunityForm() {
             />
           </div>
         </div>
-        <div className="flex justify-start items-center">
+        <div className="flex justify-end items-center">
           <motion.div
             whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
             whileTap={{ scale: 0.97 }}
