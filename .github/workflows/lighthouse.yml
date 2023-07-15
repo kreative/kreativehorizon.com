@@ -26,5 +26,6 @@ jobs:
             ${{ steps.netlify.outputs.url }}/contact-us
             ${{ steps.netlify.outputs.url }}/about-us
             ${{ steps.netlify.outputs.url }}/faqs
+            ${{ steps.netlify.outputs.url }}/travel-grants
           budgetPath: .github/workflows/budget.json
           uploadArtifacts: true
