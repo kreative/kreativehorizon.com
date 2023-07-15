@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
@@ -62,6 +63,30 @@ export function PressReleaseLayout({
                 </header>
                 <div className="mt-8 prose-lg">{children}</div>
               </article>
+              <div className="mt-12">
+                <hr className="border-horizon-grey-400 mb-12" />
+                <p className="text-lg text-horizon-grey-700">
+                  <span className="font-bold">About Kreative Horizon:</span>{" "}
+                  <Link href="/">Kreative Horizon</Link> is a subsidiary of
+                  Kreative, LLC. that is working to provide tools and resources
+                  for students to build the solutions of tomorrow, today.
+                  Through hackathons and local workshops, Kreative Horizon has
+                  been connecting students to new ideas and skills. Kreative
+                  Horizon started in 2019 with the event
+                  &apos;BuildChicago&apos; and was poised to run four new events
+                  in 2020 including the largest all-female hackathon in San
+                  Francisco. However, when the COVID-19 pandemic came,
+                  operations had to shut down. Now, Kreative Horizon is back to
+                  empower students on campuses everywhere!
+                </p>
+                <p className="text-lg mt-6 text-horizon-grey-700">
+                  For media inquiries, see our{" "}
+                  <Link href="/press" className="text-horizon-purple underline">
+                    Press page
+                  </Link>{" "}
+                  contact information and resources.
+                </p>
+              </div>
             </div>
           </div>
         </Container>
