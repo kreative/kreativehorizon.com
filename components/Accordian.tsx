@@ -3,7 +3,7 @@ import { Minus, Plus } from "@phosphor-icons/react";
 
 type FAQ = {
   question: string;
-  answer: string;
+  answer: React.ReactNode;
 };
 
 export default function Accordian({ faqs }: { faqs: FAQ[] }) {
@@ -30,7 +30,7 @@ export default function Accordian({ faqs }: { faqs: FAQ[] }) {
                 </dt>
                 <Disclosure.Panel as="dd" className="mt-2 pr-12">
                   <p className="text-lg leading-7 text-horizon-grey-600">
-                    {faq.answer}
+                    <span>{faq.answer}</span>
                   </p>
                 </Disclosure.Panel>
               </>
