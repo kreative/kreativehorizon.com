@@ -9,7 +9,7 @@ export default function LogoCloud1() {
         alt={alt}
         width={7000}
         height={100}
-        className="mr-4 sm:mr-0 w-1/4 sm:w-1/6 h-auto p-0 md:p-2"
+        className="mr-0 w-1/4 sm:w-1/6 h-auto p-0 md:p-2"
       />
     );
   };
@@ -20,9 +20,12 @@ export default function LogoCloud1() {
         Trusted by sponsors big and small
       </p>
       <div className="flex flex-wrap space-x-4 sm:space-x-6 space-y-4 md:space-y-0 justify-center items-center">
-        <LogoImage
+        <Image
           src="/images/sponsors/1PASSWORD.png"
           alt="1Password Logo in Color"
+          width={7000}
+          height={100}
+          className="-mb-4 sm:mr-0 w-1/4 sm:w-1/6 h-auto p-0 md:p-2"
         />
         <LogoImage
           src="/images/sponsors/WOLFRAM_LANGUAGE.png"
