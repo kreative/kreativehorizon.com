@@ -16,12 +16,12 @@ export default function Community() {
       <Navbar />
       <main>
         <Container>
-          <div className="grid grid-cols-2 gap-8 my-24">
-            <div className="col-span-1 flex flex-col justify-start items-start space-y-2">
+          <div className="grid grid-cols-2 gap-8 my-12 md:my-24">
+            <div className="col-span-2 md:col-span-1 flex flex-col justify-start items-start space-y-2">
               <p className="text-2xl tracking-wide font-guthen">
                 Our community
               </p>
-              <h1 className="text-7xl font-chedros">
+              <h1 className="text-6xl md:text-7xl font-chedros">
                 JOIN OTHER BUILDERS ON THE{" "}
                 <span>
                   <Image
@@ -37,7 +37,7 @@ export default function Community() {
                   <Image
                     src="/images/discord-logo.png"
                     alt="Discord Message logo"
-                    className="w-20 h-auto inline"
+                    className="w-14 h-auto inline"
                     width={100}
                     height={100}
                   />
@@ -45,22 +45,20 @@ export default function Community() {
                 DISCORD
               </h1>
               <p className="text-lg text-horizon-grey-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                We host our University Chapters, our hackathons and events, and
+                Horizon Labs right on our Discord. By joining, you&apos;ll be
+                able to stay up to date and informed on everything Kreative
+                Horizon and our builders are doing. What are you waiting for? We&apos;ll see you on the other side!
               </p>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-2 md:col-span-1">
               <div className="p-8 bg-horizon-grey-100 rounded-2xl border border-horizon-grey-300">
                 <CommunityForm />
               </div>
             </div>
           </div>
         </Container>
-        <div className="my-12">
+        <div className="mt-12 mb-24">
           <LogoCloud6 />
         </div>
       </main>
