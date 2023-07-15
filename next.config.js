@@ -13,6 +13,15 @@ const withMDX = require("@next/mdx")({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/press/press-releases",
+        destination: "/press",
+        permanent: true,
+      },
+    ];
+  },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   reactStrictMode: true,
 };
