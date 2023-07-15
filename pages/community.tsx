@@ -2,7 +2,7 @@ import Image from "next/image";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import CommunityForm from "@/components/CommunityForm";
+import CommunityForm from "@/components/forms/CommunityForm";
 import LogoCloud6 from "@/components/LogoCloud6";
 import { NextSeo } from "next-seo";
 

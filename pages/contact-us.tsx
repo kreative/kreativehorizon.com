@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import LogoCloud5 from "@/components/LogoCloud5";
 import FloatingCTA2 from "@/components/FloatingCTA2";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/forms/ContactForm";
 import SuccessAlert from "@/components/SuccessAlert";
 import { NextSeo } from "next-seo";
 import { Envelope, Phone } from "@phosphor-icons/react";

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Navbar() {
   return (
-    <nav className={"z-100 sticky top-0 pt-1"}>
+    <nav className={"sticky top-0 pt-1 z-50"}>
       <Container>
         <div className="flex justify-center items-center">
           <div className="bg-white bg-opacity-90 backdrop-blur-sm border border-horizon-grey-200 drop-shadow-md py-1.5 px-2 my-3 rounded-[10px] flex items-center justify-between md:justify-center space-x-6 w-full md:w-auto">
