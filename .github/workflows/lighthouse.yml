@@ -25,5 +25,6 @@ jobs:
             ${{ steps.netlify.outputs.url }}/policies/transparency
             ${{ steps.netlify.outputs.url }}/contact-us
             ${{ steps.netlify.outputs.url }}/about-us
+            ${{ steps.netlify.outputs.url }}/faqs
           budgetPath: .github/workflows/budget.json
           uploadArtifacts: true

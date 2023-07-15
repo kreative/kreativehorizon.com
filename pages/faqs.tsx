@@ -254,8 +254,8 @@ export default function Faqs() {
   return (
     <div>
       <NextSeo
-        title="FAQs"
-        description="Answers to your most frequently asked questions about Kreative Horizon and our services."
+        title="Frequently Asked Questions"
+        description="Answers to your most frequently asked questions about Kreative Horizon events, workshops, travel grants, and more."
       />
       <Navbar />
       <main>
