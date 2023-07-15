@@ -20,6 +20,11 @@ const nextConfig = {
         destination: "/press",
         permanent: true,
       },
+      {
+        source: "/support",
+        destination: "https://support.kreativeusa.com/horizon",
+        permanent: true,
+      }
     ];
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
