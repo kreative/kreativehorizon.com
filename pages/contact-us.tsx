@@ -85,6 +85,7 @@ export default function ContactUs() {
             description="If you need to report an Code of Conduct violation or have an urgent need that you would like support with, our team is here for you."
             btnLabel="Get Support"
             btnLink="/support"
+            btnTarget="_blank"
             imageSrc="/images/kreative_support_big_logo.png"
             imageAlt="Kreative Support Logo with Hands in Color"
           />

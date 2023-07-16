@@ -4,9 +4,9 @@ import { List, X } from "@phosphor-icons/react";
 import { Dialog } from "@headlessui/react";
 
 
-function MenuItem({ link, name }: { link: string; name: string }) {
+function MenuItem({ link, name, target }: { link: string; name: string, target?: string }) {
   return (
-    <Link href={link} className="text-2xl py-2 px-1 text-horizon-grey-700">{name}</Link>
+    <Link href={link} target={target} className="text-2xl py-2 px-1 text-horizon-grey-700">{name}</Link>
   )
 }
 
@@ -41,7 +41,7 @@ export default function PopupMenu() {
               <MenuItem link={"/Events"} name={"Events"} />
               <MenuItem link={"/about-us"} name={"About us"} />
               <MenuItem link={"/contact-us"} name={"Contact"} />
-              <MenuItem link={"/support"} name={"Get support"} />
+              <MenuItem link={"/support"} name={"Get support"} target="_blank" />
               <MenuItem link={"/faqs"} name={"FAQs"} />
               <MenuItem link={"/sponsor"} name={"Sponsor"} />
               <MenuItem link={"/reviews"} name={"Reviews"} />

@@ -33,6 +33,7 @@ export default function NeedHelpCTA() {
                 <Link
                   className="rounded-md py-2.5 px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
                   href="/support"
+                  target="_blank"
                 >
                   Get support
                 </Link>

@@ -60,7 +60,7 @@ export default function NavMenu() {
               }}
             >
               <div className="py-2 px-3.5 rounded-lg hover:bg-white hover:bg-opacity-60">
-                <Link href="/support">
+                <Link href="/support" target="_blank">
                   <p className="text-md">Get support</p>
                 </Link>
               </div>

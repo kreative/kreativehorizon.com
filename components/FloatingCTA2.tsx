@@ -9,6 +9,7 @@ export default function FloatingCTA2({
   description,
   btnLabel,
   btnLink,
+  btnTarget,
   imageSrc,
   imageAlt,
 }: {
@@ -17,6 +18,7 @@ export default function FloatingCTA2({
   description: string;
   btnLabel: string;
   btnLink: string;
+  btnTarget?: string;
   imageSrc: string;
   imageAlt: string;
 }) {
@@ -40,6 +42,7 @@ export default function FloatingCTA2({
                 <Link
                   href={btnLink}
                   className="rounded-md py-2.5 px-5 font-bold bg-horizon-pink text-white shadow-md"
+                  target={btnTarget}
                 >
                   {btnLabel}
                 </Link>
