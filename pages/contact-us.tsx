@@ -65,10 +65,10 @@ export default function ContactUs() {
                     Our folks are always ready to help you with any questions or concerns you may have during business hours.
                   </p>
                   <a
-                    href="tel:+15106735179"
+                    href="tel:+15152126468"
                     className="underline text-lg transform transition duration-300 ease-in-out hover:-skew-y-2 hover:text-horizon-orange"
                   >
-                    +1 (510) 673-5179
+                    +1 (515) 212-6468
                   </a>
                 </div>
               </div>
