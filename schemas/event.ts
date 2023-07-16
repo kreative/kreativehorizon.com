@@ -40,6 +40,5 @@ export default defineType({
       title: 'Cover Image',
       type: 'image',
     }),
-
   ],
 })
