@@ -93,6 +93,46 @@ export default function App({ Component, pageProps }: AppProps) {
         defaultTitle="Kreative Horizon"
         description="We're on a mission of providing students the tools and resources to build the future of tomorrow, today so we can see the world for what it could be. Hackathons, workshops, and more."
         canonical="https://kreativehorizon.com/"
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/favicon.ico",
+          },
+          {
+            rel: "apple-touch-icon",
+            href: "/apple-touch-icon.png",
+            sizes: "180x180",
+          },
+          {
+            rel: "icon",
+            href: "/favicon-32x32.png",
+            sizes: "32x32",
+          },
+          {
+            rel: "icon",
+            href: "/favicon-16x16.png",
+            sizes: "16x16",
+          },
+          {
+            rel: "manifest",
+            href: "/site.webmanifest",
+          },
+          {
+            rel: "mask-icon",
+            href: "/safari-pinned-tab.svg",
+            color: "#ff5156",
+          },
+        ]}
+        additionalMetaTags={[
+          {
+            name: "ms-application-TileColor",
+            content: "#ff5156",
+          },
+          {
+            name: "theme-color",
+            content: "#ffffff",
+          },
+        ]}
         openGraph={{
           url: "https://kreativehorizon.com/",
           title: "Kreative Horizon",
