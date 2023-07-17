@@ -22,7 +22,7 @@ export default function FloatingCTA() {
             <input
               type="text"
               placeholder="Email Address"
-              className="bg-transparent px-2 xs:px-0 xs:mr-2 py-2 placeholder-[#E33232] placeholder-opacity-75 text-[#E33232] text-opacity-85 w-full"
+              className="bg-transparent px-2 xs:px-0 xs:mr-2 py-2 placeholder-[#E33232] placeholder-opacity-75 text-[#E33232] text-opacity-85 w-full border-transparent focus:border-transparent focus:ring-0"
             />
             <motion.div
               whileHover={{ scale: 0.97, transition: { duration: 0.2 } }}
