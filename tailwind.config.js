@@ -16,6 +16,9 @@ module.exports = {
       ...defaultTheme.screens,
     },
     extend: {
+      screens: {
+        "md": "800px",
+      },
       backgroundImage: {
         "clouds-horizon": "url('/images/clouds-horizon.png')",
         "floating-cta-w-logo": "url('/images/floating-cta-bg-w-logo.png')",
