@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Head from "next/head";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
@@ -139,8 +138,8 @@ export default function AboutUs() {
             </div>
             <div className="col-span-2 md:col-span-1 flex justify-center items-center">
               <CldImage
-                width="1031"
-                height="974"
+                width="560"
+                height="529"
                 src="kreativehorizon.com/about-us/our-story-1-photo-group_r1fimt"
                 alt="BuildChicago pictures and logo photo group"
                 className="w-full sm:w-[75%] md:w-full h-auto"
