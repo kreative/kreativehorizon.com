@@ -270,30 +270,30 @@ export default function AboutUs() {
               <div className="col-span-3">
                 <div className="grid grid-cols-3 gap-4">
                   <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
-                    <Image
-                      src="/images/about-us/hackisu_v2_sticker.png"
+                    <CldImage
+                      width="317"
+                      height="73"
+                      src="kreativehorizon.com/about-us/hackisu-v2-sticker_gwc3xr"
                       alt="HackISU v2 Sticker Logo"
                       className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                      width={400}
-                      height={150}
                     />
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
-                    <Image
-                      src="/images/about-us/dataisu_v1_sticker.png"
-                      alt="HackISU v2 Sticker Logo"
+                    <CldImage
+                      width="317"
+                      height="119"
+                      src="kreativehorizon.com/about-us/dataisu-sticker_tclcuj"
+                      alt="DataISU v1 Sticker Logo"
                       className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                      width={400}
-                      height={150}
                     />
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
-                    <Image
-                      src="/images/about-us/designjamisu_v1_sticker.png"
-                      alt="HackISU v2 Sticker Logo"
+                    <CldImage
+                      width="317"
+                      height="84"
+                      src="kreativehorizon.com/about-us/designjamisu-sticker_fhjnmv"
+                      alt="DesignJamISU v1 Sticker Logo"
                       className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                      width={400}
-                      height={150}
                     />
                   </div>
                 </div>
@@ -346,27 +346,27 @@ export default function AboutUs() {
               <div className="col-span-3">
                 <div className="grid grid-cols-3 gap-4">
                   <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
-                    <Image
-                      src="/images/about-us/pitchames_v1_sticker.png"
-                      alt="HackISU v2 Sticker Logo"
+                    <CldImage
+                      width="317"
+                      height="97"
+                      src="kreativehorizon.com/about-us/pitchames-sticker_qjxm7u"
+                      alt="PitchAmes v1 Sticker Logo"
                       className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                      width={400}
-                      height={150}
                     />
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
-                    <Image
-                      src="/images/about-us/hackisu_v3_sticker.png"
-                      alt="HackISU v2 Sticker Logo"
+                    <CldImage
+                      width="317"
+                      height="80"
+                      src="kreativehorizon.com/about-us/hackisu-v3-sticker_o9hr8n"
+                      alt="HackISU v3 Sticker Logo"
                       className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                      width={400}
-                      height={150}
                     />
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                     <CldImage
-                      width="3418"
-                      height="1716"
+                      width="317"
+                      height="104"
                       src="kreativehorizon.com/about-us/builddsm-sticker_it79ii"
                       alt="BuildDSM v1 Sticker Logo"
                       className="w-[60%] xs:w-full sm:w-[85%] h-auto"
