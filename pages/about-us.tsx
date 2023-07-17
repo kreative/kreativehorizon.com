@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import LogoCloud1 from "../components/LogoCloud1";
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
+import { CldImage } from "next-cloudinary";
 
 export default function AboutUs() {
   return (
@@ -137,12 +138,12 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="col-span-2 md:col-span-1 flex justify-center items-center">
-              <Image
-                src="/images/about-us/our-story-1-photo-group.png"
+              <CldImage
+                width="1031"
+                height="974"
+                src="kreativehorizon.com/about-us/our-story-1-photo-group_r1fimt"
                 alt="BuildChicago pictures and logo photo group"
                 className="w-full sm:w-[75%] md:w-full h-auto"
-                width={500}
-                height={900}
               />
             </div>
           </div>
@@ -150,12 +151,12 @@ export default function AboutUs() {
         <Container>
           <div className="grid grid-cols-2 gap-8 py-12 md:py-24">
             <div className="col-span-2 md:col-span-1 order-2 md:order-none flex justify-center items-center">
-              <Image
-                src="/images/about-us/2020-event-logos-photo-group.png"
+              <CldImage
+                width="1077"
+                height="814"
+                src="kreativehorizon.com/about-us/2020-event-logos-photo-group_1_jjdwid"
                 alt="Kreative Horizon 2020 event logos photo group"
                 className="w-full xs:w-[80%] sm:w-[60%] md:w-full h-auto"
-                width={500}
-                height={900}
               />
             </div>
             <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-start space-y-3 pl-6">
@@ -198,19 +199,19 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="col-span-2 md:col-span-1 flex justify-center items-center">
-              <Image
-                src="/images/about-us/covid19-photo-group.png"
+              <CldImage
+                width="977"
+                height="1067"
+                src="kreativehorizon.com/about-us/covid19-photo-group_j63qr1"
                 alt="COVID19 photo group"
                 className="w-full h-auto block xs:hidden md:block"
-                width={500}
-                height={900}
               />
-              <Image
-                src="/images/about-us/covid19-photo-group-tablet.png"
-                alt="COVID19 photo group"
+              <CldImage
+                width="1316"
+                height="863"
+                src="kreativehorizon.com/about-us/covid19-photo-group-tablet_tuag4v"
+                alt="COVID19 photo group for mobile"
                 className="w-full h-auto hidden xs:block md:hidden"
-                width={500}
-                height={900}
               />
             </div>
           </div>
@@ -249,19 +250,19 @@ export default function AboutUs() {
         </div>
         <div className="bg-gradient-to-b from-horizon-orange-100 to-transparent ">
           <Container>
-            <Image
-              src="/images/about-us/hackiowastate-photo-group.png"
+            <CldImage
+              width="3418"
+              height="1716"
+              src="kreativehorizon.com/about-us/hackiowastate-photo-group-min_cesmhq"
               alt="HackIowaState v1 Photo Group"
               className="w-full h-auto hidden sm:block"
-              width={1040}
-              height={500}
             />
-            <Image
-              src="/images/about-us/hackiowastate-photo-group-sm.png"
+            <CldImage
+              width="1247"
+              height="1628"
+              src="kreativehorizon.com/about-us/hackiowastate-photo-group-sm-min_btbw4x"
               alt="HackIowaState v1 Photo Group"
               className="w-full h-auto block sm:hidden"
-              width={1040}
-              height={500}
             />
           </Container>
           <Container>
@@ -363,12 +364,12 @@ export default function AboutUs() {
                     />
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
-                    <Image
-                      src="/images/about-us/builddsm_v1_sticker.png"
-                      alt="HackISU v2 Sticker Logo"
+                    <CldImage
+                      width="3418"
+                      height="1716"
+                      src="kreativehorizon.com/about-us/builddsm-sticker_it79ii"
+                      alt="BuildDSM v1 Sticker Logo"
                       className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                      width={400}
-                      height={150}
                     />
                   </div>
                 </div>
