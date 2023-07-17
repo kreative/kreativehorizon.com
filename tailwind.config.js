@@ -23,7 +23,7 @@ module.exports = {
         "clouds-horizon":
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1689571484/kreativehorizon.com/clouds-horizon_e3xdx9.webp')",
         "floating-cta-w-logo":
-          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1689571429/kreativehorizon.com/floating-cta-bg-w-logo_rcexaj.webp')",
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1689572375/kreativehorizon.com/newsletter_signup_ipktg5.webp')",
       },
       fontFamily: {
         sans: ["var(--font-craftworksans)"],
