@@ -86,8 +86,6 @@ export default function ContactUs() {
             btnLabel="Get Support"
             btnLink="/support"
             btnTarget="_blank"
-            imageSrc="/images/kreative_support_big_logo.png"
-            imageAlt="Kreative Support Logo with Hands in Color"
           />
         </div>
       </main>
