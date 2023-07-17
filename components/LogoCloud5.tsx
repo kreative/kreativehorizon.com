@@ -1,5 +1,6 @@
-import Image from "next/image";
+
 import Container from "./Container";
+import { CldImage } from "next-cloudinary";
 
 export default function LogoCloud5() {
   return (
@@ -11,39 +12,39 @@ export default function LogoCloud5() {
           </p>
         </div>
         <div className="col-span-12 xl:col-span-8 flex flex-wrap sm:space-x-6 space-y-3 sm:space-y-0 justify-center xl:justify-end items-baseline sm:items-center">
-          <Image
-            src="/images/sponsors/PUSHER.png"
+          <CldImage
+            src="kreativehorizon.com/sponsors/PUSHER_bvjime"
             alt="Pusher Logo in Color"
-            width={500}
-            height={100}
+            width="200"
+            height="100"
             className="mr-4 sm:mr-0 w-1/4 sm:w-1/6 h-auto"
           />
-          <Image
-            src="/images/sponsors/MORNINGSTAR.png"
+          <CldImage
+            src="kreativehorizon.com/sponsors/MORNINGSTAR_mrz9n3"
             alt="Morningstar Logo in Color"
-            width={500}
-            height={100}
+            width="200"
+            height="100"
             className="mr-4 sm:mr-0 w-1/4 sm:w-1/6 h-auto"
           />
-          <Image
-            src="/images/sponsors/BALSAMIQ.png"
+          <CldImage
+            src="kreativehorizon.com/sponsors/BALSAMIQ_fhtvid"
             alt="Balsamiq Logo in Color"
-            width={500}
-            height={100}
+            width="200"
+            height="100"
             className="w-1/4 sm:w-1/6 h-auto"
           />
-          <Image
-            src="/images/sponsors/MICROSOFT.png"
+          <CldImage
+            src="kreativehorizon.com/sponsors/MICROSOFT_snwyb4"
             alt="Microsoft Logo in Color"
-            width={500}
-            height={100}
+            width="200"
+            height="100"
             className="mr-4 sm:mr-0 w-1/4 sm:w-1/6 h-auto"
           />
-          <Image
-            src="/images/sponsors/IVY_COLLEGE.png"
+          <CldImage
+            src="kreativehorizon.com/sponsors/IVY_COLLEGE_jurgig"
             alt="Ivy College of Business Start Something Logo in Color"
-            width={500}
-            height={100}
+            width="200"
+            height="100"
             className="w-1/4 sm:w-1/6 h-auto"
           />
         </div>

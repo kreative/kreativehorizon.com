@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { CldImage } from "next-cloudinary";
 import Container from "./Container";
 
 export default function LogoCloud6() {
@@ -11,32 +11,32 @@ export default function LogoCloud6() {
           </p>
         </div>
         <div className="col-span-12 xl:col-span-8 flex flex-col space-y-10 sm:space-y-0 sm:flex-row sm:flex-wrap sm:space-x-6 justify-center xl:justify-end items-center">
-          <Image
-            src="/images/universities/uillinois.png"
+          <CldImage
+            src="kreativehorizon.com/universities/uillinois_j5lxm9"
             alt="University of Illinois Logo in Color"
-            width={400}
-            height={100}
+            width="200"
+            height="100"
             className="w-[65%] sm:w-1/5 h-auto"
           />
-          <Image
-            src="/images/universities/uic.png"
+          <CldImage
+            src="kreativehorizon.com/universities/uic_whymrx"
             alt="University of Illinois at Chicago Logo in Color"
-            width={400}
-            height={100}
+            width="200"
+            height="100"
             className="w-[65%] sm:w-1/5 h-auto"
           />
-          <Image
-            src="/images/universities/iowastate.png"
+          <CldImage
+            src="kreativehorizon.com/universities/iowastate_ansvbr"
             alt="Iowa State University Logo in Color"
-            width={400}
-            height={100}
+            width="200"
+            height="100"
             className="w-[65%] sm:w-1/6 h-auto"
           />
-          <Image
-            src="/images/universities/northwestern.png"
+          <CldImage
+            src="kreativehorizon.com/universities/northwestern_g5769c"
             alt="Northwestern University Logo in Color"
-            width={400}
-            height={100}
+            width="200"
+            height="100"
             className="w-[65%] sm:w-1/5 h-auto"
           />
         </div>
