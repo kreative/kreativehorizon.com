@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getStudentReviews } from "@/lib/getStudentReviews";
 import StudentReview from "@/types/StudentReview";
 import TestimonialCard from "@/components/testimonials/TestimonialCard";
+import LogoCloud6 from "../components/LogoCloud6";
 import { NextSeo } from "next-seo";
 import { CldImage } from "next-cloudinary";
 
@@ -35,14 +35,6 @@ export default function StudentReviews({
                 Hear what our students and builders say about kreative horizon
               </h1>
             </div>
-            {/* <Image
-              src="/images/reviews/student-reviews-photo-group.png"
-              alt="Kreative Horizon 3D logo in Color"
-              className="h-auto w-[95%] -mb-16 sm:-mb-24 md:-mb-44 hidden sm:block"
-              width={2165}
-              height={700}
-            />
-             */}
             <CldImage
               width="2165"
               height="736"
@@ -84,6 +76,9 @@ export default function StudentReviews({
             </div>
           </div>
         </Container>
+        <div className="pt-12 pb-24">
+          <LogoCloud6 />
+        </div>
       </main>
       <Footer />
     </div>
