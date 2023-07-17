@@ -45,17 +45,17 @@ export default function StudentReviews({
              */}
             <CldImage
               width="2165"
-              height="700"
+              height="736"
               className="h-auto w-[95%] -mb-16 sm:-mb-24 md:-mb-44 hidden sm:block"
-              src="kreativehorizon.com/reviews-photo_i0lkak"
+              src="kreativehorizon.com/reviews/reviews-photo_i0lkak"
               alt="Kreative Horizon 3D logo in Color"
             />
-            <Image
-              src="/images/reviews/student-reviews-photo-group-mobile.png"
+            <CldImage
+              width="1330"
+              height="639"
+              src="kreativehorizon.com/reviews/student-reviews-photo-group-mobile_rbiemt"
               alt="Kreative Horizon 3D logo in Color for Mobile"
               className="h-auto w-full -mb-16 sm:-mb-24 md:-mb-44 block sm:hidden"
-              width={2165}
-              height={700}
             />
           </div>
         </Container>

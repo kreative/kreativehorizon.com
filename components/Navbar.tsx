@@ -50,7 +50,7 @@ export default function Navbar() {
                     width="64.4407"
                     height="64.6382"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
                     <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
@@ -85,7 +85,7 @@ export default function Navbar() {
                     width="27.7833"
                     height="48.0304"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
                     <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
