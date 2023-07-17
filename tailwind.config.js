@@ -17,11 +17,13 @@ module.exports = {
     },
     extend: {
       screens: {
-        "md": "800px",
+        md: "800px",
       },
       backgroundImage: {
-        "clouds-horizon": "url('/images/clouds-horizon.png')",
-        "floating-cta-w-logo": "url('/images/floating-cta-bg-w-logo.png')",
+        "clouds-horizon":
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1689571484/kreativehorizon.com/clouds-horizon_e3xdx9.webp')",
+        "floating-cta-w-logo":
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1689571429/kreativehorizon.com/floating-cta-bg-w-logo_rcexaj.webp')",
       },
       fontFamily: {
         sans: ["var(--font-craftworksans)"],

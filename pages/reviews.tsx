@@ -47,7 +47,7 @@ export default function StudentReviews({
               width="2165"
               height="700"
               className="h-auto w-[95%] -mb-16 sm:-mb-24 md:-mb-44 hidden sm:block"
-              src="kreativehorizon.com/reviews-photo_q8t8xu"
+              src="kreativehorizon.com/reviews-photo_i0lkak"
               alt="Kreative Horizon 3D logo in Color"
             />
             <Image
