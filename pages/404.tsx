@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { CldImage } from "next-cloudinary";
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
 
@@ -14,11 +14,11 @@ export default function Custom404() {
       <main>
         <Container>
           <div className="flex flex-col items-center justify-center space-y-4 min-h-[80vh] pb-24">
-            <Image
-              src="/images/404-cat.gif"
+            <CldImage
+              src="kreativehorizon.com/404-cat_e6qp0c"
               alt="404 Cat GIF"
-              width={300}
-              height={350}
+              width="300"
+              height="350"
               className="h-[30vh] w-auto rounded-full mb-3"
             />
             <p className="text-2xl font-guthen tracking-wider">
