@@ -110,7 +110,7 @@ export default function Press({ articles }: { articles: any[] }) {
                     </a>
                   </div>
                 </div>
-                <div className="bg-horizon-grey-100 rounded-2xl p-10 flex flex-col space-y-6 col-span-2 sm:col-span-1">
+                {/* <div className="bg-horizon-grey-100 rounded-2xl p-10 flex flex-col space-y-6 col-span-2 sm:col-span-1">
                   <Eyedropper size={50} className="text-horizon-purple" />
                   <h2 className="text-4xl font-chedros text-horizon-grey-700">
                     Brand Guidelines
@@ -125,7 +125,7 @@ export default function Press({ articles }: { articles: any[] }) {
                   >
                     See brand guidelines
                   </Link>
-                </div>
+                </div> */}
                 <div className="bg-horizon-grey-100 rounded-2xl p-10 flex flex-col space-y-6 col-span-2 md:col-span-1">
                   <BookOpen size={50} className="text-horizon-purple" />
                   <h2 className="text-4xl font-chedros text-horizon-grey-700">

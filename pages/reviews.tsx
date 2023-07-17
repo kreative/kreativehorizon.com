@@ -6,6 +6,7 @@ import { getStudentReviews } from "@/lib/getStudentReviews";
 import StudentReview from "@/types/StudentReview";
 import TestimonialCard from "@/components/testimonials/TestimonialCard";
 import { NextSeo } from "next-seo";
+import { CldImage } from "next-cloudinary";
 
 export default function StudentReviews({
   reviews1,
@@ -34,18 +35,26 @@ export default function StudentReviews({
                 Hear what our students and builders say about kreative horizon
               </h1>
             </div>
-            <Image
+            {/* <Image
               src="/images/reviews/student-reviews-photo-group.png"
               alt="Kreative Horizon 3D logo in Color"
               className="h-auto w-[95%] -mb-16 sm:-mb-24 md:-mb-44 hidden sm:block"
-              width={300}
+              width={2165}
               height={700}
+            />
+             */}
+            <CldImage
+              width="2165"
+              height="700"
+              className="h-auto w-[95%] -mb-16 sm:-mb-24 md:-mb-44 hidden sm:block"
+              src="kreativehorizon.com/reviews-photo_q8t8xu"
+              alt="Kreative Horizon 3D logo in Color"
             />
             <Image
               src="/images/reviews/student-reviews-photo-group-mobile.png"
               alt="Kreative Horizon 3D logo in Color for Mobile"
               className="h-auto w-full -mb-16 sm:-mb-24 md:-mb-44 block sm:hidden"
-              width={300}
+              width={2165}
               height={700}
             />
           </div>

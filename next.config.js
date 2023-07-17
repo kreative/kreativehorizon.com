@@ -13,6 +13,22 @@ const withMDX = require("@next/mdx")({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.kreativeusa.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
   async redirects() {
     return [
       {
@@ -24,7 +40,7 @@ const nextConfig = {
         source: "/support",
         destination: "https://support.kreativeusa.com/horizon",
         permanent: true,
-      }
+      },
     ];
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
