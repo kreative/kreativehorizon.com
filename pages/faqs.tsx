@@ -233,9 +233,9 @@ const hackathonFaqs = [
     question: "How do I come up with an idea for a hackathon?",
     answer: (
       <p>
-        Brainstorm solutions to problems you&apos;re passionate about! You can also
-        look for inspiration from current events, industry trends, and your own
-        workflows!
+        Brainstorm solutions to problems you&apos;re passionate about! You can
+        also look for inspiration from current events, industry trends, and your
+        own workflows!
       </p>
     ),
   },

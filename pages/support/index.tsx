@@ -1,7 +1,3 @@
 export default function SupportIndex() {
-  return (
-    <div>Support Index
-      
-    </div>
-  )
+  return <div>Support Index</div>;
 }

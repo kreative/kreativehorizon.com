@@ -172,7 +172,8 @@ export default function TravelGrantRequestForm() {
             htmlFor="event-name"
             className="block text-base font-medium leading-6 text-horizon-grey-800"
           >
-            Event you&apos;re applying for<span className="text-horizon-pink"> *</span>
+            Event you&apos;re applying for
+            <span className="text-horizon-pink"> *</span>
           </label>
           <div className="mt-2">
             <select

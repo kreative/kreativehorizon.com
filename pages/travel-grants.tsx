@@ -40,8 +40,8 @@ export default function TravelGrants() {
                   event they are applying for.
                 </li>
                 <li>
-                  You can receive up to <span className="font-bold">$150</span> per event to cover your travel
-                  expenses!
+                  You can receive up to <span className="font-bold">$150</span>{" "}
+                  per event to cover your travel expenses!
                 </li>
                 <li>
                   Please note that filling out this application does{" "}
@@ -54,7 +54,13 @@ export default function TravelGrants() {
                 </li>
                 <li>
                   If you have any questions, please do not hesitate to{" "}
-                  <Link className="underline font-bold text-horizon-orange" href="/contact-us">reach out to us</Link>.
+                  <Link
+                    className="underline font-bold text-horizon-orange"
+                    href="/contact-us"
+                  >
+                    reach out to us
+                  </Link>
+                  .
                 </li>
               </ul>
             </div>

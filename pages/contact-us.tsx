@@ -11,7 +11,8 @@ import { Envelope, Phone } from "@phosphor-icons/react";
 
 export default function ContactUs() {
   const router = useRouter();
-  const success = router.query?.form_completed && router.query.form_completed === "true";
+  const success =
+    router.query?.form_completed && router.query.form_completed === "true";
 
   return (
     <div>
@@ -47,7 +48,8 @@ export default function ContactUs() {
                     EMAIL
                   </h2>
                   <p className="text-horizon-grey-600">
-                    Send us a message anytime and one of our team members will get back to you as soon as possible.
+                    Send us a message anytime and one of our team members will
+                    get back to you as soon as possible.
                   </p>
                   <a
                     href="mailto:horizon@kreativeusa.com"
@@ -62,7 +64,8 @@ export default function ContactUs() {
                     PHONE
                   </h2>
                   <p className="text-horizon-grey-600">
-                    Our folks are always ready to help you with any questions or concerns you may have during business hours.
+                    Our folks are always ready to help you with any questions or
+                    concerns you may have during business hours.
                   </p>
                   <a
                     href="tel:+15152126468"
