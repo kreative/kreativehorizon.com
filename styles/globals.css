@@ -21,5 +21,6 @@
 
   html {
     font-family: CraftworkSans, system-ui, sans-serif;
+    @apply text-horizon-grey-800;
   }
 }

@@ -5,7 +5,7 @@ export default function SplashContainer({
 }) {
   return (
     <div className="-mt-[10.3rem]">
-      <div className="min-h-[5.2rem] bg-black" />
+      <div className="min-h-[5.2rem] bg-horizon-grey-800" />
       <div>{children}</div>
     </div>
   );

@@ -20,7 +20,7 @@ export default function NeedHelpCTA() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 font-bold bg-horizon-grey-800 text-white border border-black"
+                  className="rounded-md py-2.5 px-5 font-bold bg-horizon-grey-800 text-white border border-horizon-grey-800"
                   href="/contact-us"
                 >
                   Contact us
