@@ -24,6 +24,8 @@ module.exports = {
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1689571484/kreativehorizon.com/clouds-horizon_e3xdx9.webp')",
         "floating-cta-w-logo":
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1689572375/kreativehorizon.com/newsletter_signup_ipktg5.webp')",
+        "sponsor-image-gallery":
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1690379142/kreativehorizon.com/sponsors-page/darker-image-gallery_q5mhir.webp')",
       },
       fontFamily: {
         sans: ["var(--font-craftworksans)"],
