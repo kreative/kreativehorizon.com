@@ -32,5 +32,7 @@ jobs:
             ${{ steps.netlify.outputs.url }}/community
             ${{ steps.netlify.outputs.url }}/support/submit-incident
             ${{ steps.netlify.outputs.url }}/reviews
+            ${{ steps.netlify.outputs.url }}/sponsors
+            ${{ steps.netlify.outputs.url }}/sponsors/interest-form
           budgetPath: .github/workflows/budget.json
           uploadArtifacts: true
