@@ -120,7 +120,6 @@ export default function SubmitIncident() {
               </div>
             </div>
           </Container>
-
           <NeedHelpCTA />
         </div>
       </main>
