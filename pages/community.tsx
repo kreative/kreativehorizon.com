@@ -101,7 +101,10 @@ export default function Community() {
                 </span>{" "}
                 KREATIVE HORIZON{" "}
                 <span>
-                  <DiscordLogo size={58} className="inline drop-shadow-xl text-blue-600" />
+                  <DiscordLogo
+                    size={58}
+                    className="inline drop-shadow-xl text-blue-600"
+                  />
                 </span>{" "}
                 DISCORD
               </h1>

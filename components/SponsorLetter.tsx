@@ -33,8 +33,7 @@ export default function SponsorLetter() {
         <br />
         <br />
         We&apos;re thrilled to have you join us in exploring the exciting realm
-        of sponsoring Kreative Horizon and the Kreative Buildes League
-        events.
+        of sponsoring Kreative Horizon and the Kreative Buildes League events.
         <br />
         <br />
         Get ready for an incredible lineup of events this year! From hackathons
@@ -54,15 +53,17 @@ export default function SponsorLetter() {
         <br />
         <br />
         We value your feedback and insights as we continue to build upon the
-        success of our previous events. Let&apos;s make the Kreative
-        Builders League a resounding success together.
+        success of our previous events. Let&apos;s make the Kreative Builders
+        League a resounding success together.
         <br />
         <br />
         Thank you for considering our invitation. We look forward to the
         exciting journey ahead!
       </p>
       <p className="text-right text-xl mt-8">
-        Sincerely, <br/>Armaan Gupta <br/>Founder and CEO
+        Sincerely, <br />
+        Armaan Gupta <br />
+        Founder and CEO
       </p>
     </div>
   );
