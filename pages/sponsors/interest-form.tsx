@@ -15,10 +15,7 @@ export default function SponsorInterestForm() {
       <main>
         <div className="py-12">
           <Container>
-            <Widget
-              id="fvG3urfp"
-              style={{ width: "100%", height: "80vh" }}
-            />
+            <Widget id="fvG3urfp" style={{ width: "100%", height: "80vh" }} />
           </Container>
         </div>
       </main>
