@@ -40,7 +40,7 @@ export default function StudentReviews() {
                   >
                     <Link
                       className="rounded-md py-2.5 px-5 font-bold bg-white text-horizon-grey-800"
-                      href="/"
+                      href="/sponsors/interest-form"
                     >
                       Sponsor us
                     </Link>
@@ -84,7 +84,7 @@ export default function StudentReviews() {
                 >
                   <Link
                     className="rounded-md py-2.5 px-5 font-bold bg-black text-white"
-                    href="/"
+                    href="/sponsors/interest-form"
                   >
                     Sponsor now
                   </Link>
@@ -134,7 +134,7 @@ export default function StudentReviews() {
                 >
                   <Link
                     className="rounded-md py-2.5 px-5 font-bold bg-black text-white"
-                    href="/"
+                    href="/sponsors/interest-form"
                   >
                     Get started
                   </Link>
@@ -395,7 +395,7 @@ export default function StudentReviews() {
               >
                 <Link
                   className="rounded-md py-2.5 px-5 font-bold bg-horizon-grey-800 border border-horizon-grey-800 text-white"
-                  href="/"
+                  href="/sponsors/interest-form"
                 >
                   Sponsor now
                 </Link>
