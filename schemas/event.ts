@@ -11,9 +11,19 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'description',
-      title: 'Event Description',
-      type: 'text',
+      name: 'tagline',
+      title: 'Event Tagline',
+      type: 'string',
+    }),
+    defineField({
+      name: 'season',
+      title: 'Season',
+      type: 'number',
+    }),
+    defineField({
+      name: 'year',
+      title: 'Year',
+      type: 'number',
     }),
     defineField({
       name: 'start_datetime',
@@ -26,19 +36,30 @@ export default defineType({
       type: 'datetime',
     }),
     defineField({
+      name: 'date_label',
+      title: 'Date Label',
+      type: 'string',
+      description: 'This will appear on the Event Card components',
+    }),
+    defineField({
       name: 'location',
       title: 'Event Location',
       type: 'string',
     }),
     defineField({
-      name: 'link',
-      title: 'Event Link',
-      type: 'url',
+      name: 'slug',
+      title: 'Event Slug',
+      type: 'string',
     }),
     defineField({
-      name: 'cover_image',
-      title: 'Cover Image',
-      type: 'image',
+      name: 'cld_id',
+      title: 'Cloudinary ID',
+      type: 'string',
     }),
+    defineField({
+      name: 'alt',
+      title: 'Alt Text',
+      type: 'string',
+    })
   ],
 })
