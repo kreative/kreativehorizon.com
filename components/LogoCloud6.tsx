@@ -14,29 +14,29 @@ export default function LogoCloud6() {
           <CldImage
             src="kreativehorizon.com/universities/uillinois_j5lxm9"
             alt="University of Illinois Logo in Color"
-            width="200"
-            height="100"
+            width="800"
+            height="209"
             className="w-[65%] sm:w-1/5 h-auto"
           />
           <CldImage
             src="kreativehorizon.com/universities/uic_whymrx"
             alt="University of Illinois at Chicago Logo in Color"
-            width="200"
-            height="100"
+            width="865"
+            height="169"
             className="w-[65%] sm:w-1/5 h-auto"
           />
           <CldImage
             src="kreativehorizon.com/universities/iowastate_ansvbr"
             alt="Iowa State University Logo in Color"
-            width="200"
-            height="100"
+            width="3840"
+            height="1239"
             className="w-[65%] sm:w-1/6 h-auto"
           />
           <CldImage
             src="kreativehorizon.com/universities/northwestern_g5769c"
             alt="Northwestern University Logo in Color"
-            width="200"
-            height="100"
+            width="820"
+            height="200"
             className="w-[65%] sm:w-1/5 h-auto"
           />
         </div>

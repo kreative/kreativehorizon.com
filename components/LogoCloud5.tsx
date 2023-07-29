@@ -15,36 +15,36 @@ export default function LogoCloud5() {
           <CldImage
             src="kreativehorizon.com/sponsors/PUSHER_bvjime"
             alt="Pusher Logo in Color"
-            width="200"
-            height="100"
+            width="625"
+            height="190"
             className="mr-4 sm:mr-0 w-1/4 sm:w-1/6 h-auto"
           />
           <CldImage
             src="kreativehorizon.com/sponsors/MORNINGSTAR_mrz9n3"
             alt="Morningstar Logo in Color"
-            width="200"
-            height="100"
+            width="611"
+            height="176"
             className="mr-4 sm:mr-0 w-1/4 sm:w-1/6 h-auto"
           />
           <CldImage
             src="kreativehorizon.com/sponsors/BALSAMIQ_fhtvid"
             alt="Balsamiq Logo in Color"
-            width="200"
-            height="100"
+            width="507"
+            height="134"
             className="w-1/4 sm:w-1/6 h-auto"
           />
           <CldImage
             src="kreativehorizon.com/sponsors/MICROSOFT_snwyb4"
             alt="Microsoft Logo in Color"
-            width="200"
-            height="100"
+            width="785"
+            height="170"
             className="mr-4 sm:mr-0 w-1/4 sm:w-1/6 h-auto"
           />
           <CldImage
             src="kreativehorizon.com/sponsors/IVY_COLLEGE_jurgig"
             alt="Ivy College of Business Start Something Logo in Color"
-            width="200"
-            height="100"
+            width="186"
+            height="47"
             className="w-1/4 sm:w-1/6 h-auto"
           />
         </div>
