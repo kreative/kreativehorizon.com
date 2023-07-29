@@ -23,7 +23,15 @@ function FooterLinkGroupLabel({ title }: { title: string }) {
   );
 }
 
-function FooterLink({ href, title, target }: { href: string; title: string, target?: string }) {
+function FooterLink({
+  href,
+  title,
+  target,
+}: {
+  href: string;
+  title: string;
+  target?: string;
+}) {
   return (
     <motion.div
       whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
@@ -302,7 +310,11 @@ export default function Footer() {
               </div>
               <FooterLinkGroupLabel title="Support" />
               <div className="flex flex-col items-start space-y-3 md:space-y-2">
-                <FooterLink href="/support" title="Get support" target="_blank" />
+                <FooterLink
+                  href="/support"
+                  title="Get support"
+                  target="_blank"
+                />
                 <FooterLink
                   href="/support/submit-incident"
                   title="Report a violation"
