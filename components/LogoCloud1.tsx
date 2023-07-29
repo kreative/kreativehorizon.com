@@ -16,7 +16,7 @@ export default function LogoCloud1() {
 
   return (
     <Container>
-      <p className="text-2xl tracking-wide font-guthen text-horizon-grey-800 text-center mb-6">
+      <p className="text-2xl tracking-wide font-guthen text-horizon-grey-600 text-center mb-6">
         Trusted by sponsors big and small
       </p>
       <div className="flex flex-wrap space-x-4 sm:space-x-6 space-y-4 md:space-y-0 justify-center items-center">
