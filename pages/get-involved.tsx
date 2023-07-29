@@ -44,27 +44,27 @@ export default function GetInvolved() {
               <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                   <CldImage
-                    width="317"
-                    height="73"
-                    src="kreativehorizon.com/about-us/hackisu-v2-sticker_gwc3xr"
+                    width="674"
+                    height="154"
+                    src="kreativehorizon.com/about-us/hackisu_v2_2x_tyt9l0"
                     alt="HackISU v2 Sticker Logo"
                     className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                   />
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                   <CldImage
-                    width="317"
-                    height="119"
-                    src="kreativehorizon.com/about-us/dataisu-sticker_tclcuj"
+                    width="489"
+                    height="165"
+                    src="kreativehorizon.com/about-us/dataisu_v1_2x_itgjv8"
                     alt="DataISU v1 Sticker Logo"
                     className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                   />
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                   <CldImage
-                    width="317"
-                    height="84"
-                    src="kreativehorizon.com/about-us/designjamisu-sticker_fhjnmv"
+                    width="642"
+                    height="170"
+                    src="kreativehorizon.com/about-us/designjamisu_v1_2x_xj1zx6"
                     alt="DesignJamISU v1 Sticker Logo"
                     className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                   />
@@ -120,27 +120,27 @@ export default function GetInvolved() {
               <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                   <CldImage
-                    width="317"
-                    height="97"
-                    src="kreativehorizon.com/about-us/pitchames-sticker_qjxm7u"
+                    width="661"
+                    height="203"
+                    src="kreativehorizon.com/about-us/pitchames_v1_2x_vxg6un"
                     alt="PitchAmes v1 Sticker Logo"
                     className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                   />
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                   <CldImage
-                    width="317"
-                    height="80"
-                    src="kreativehorizon.com/about-us/hackisu-v3-sticker_o9hr8n"
+                    width="688"
+                    height="173"
+                    src="kreativehorizon.com/about-us/hackisu_v3_2x_pehptp"
                     alt="HackISU v3 Sticker Logo"
                     className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                   />
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                   <CldImage
-                    width="317"
-                    height="104"
-                    src="kreativehorizon.com/about-us/builddsm-sticker_it79ii"
+                    width="566"
+                    height="185"
+                    src="kreativehorizon.com/about-us/builddsm_v1_2x_go6cxt"
                     alt="BuildDSM v1 Sticker Logo"
                     className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                   />
