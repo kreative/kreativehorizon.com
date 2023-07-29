@@ -35,6 +35,7 @@ module.exports = {
       colors: {
         "horizon-orange": "#FF900E",
         "horizon-orange-100": "#FFE8DB",
+        "horizon-orange-200": "#FFBB94",
         "horizon-pink": "#FF0E9F",
         "horizon-pink-200": "#FFAFDF",
         "horizon-pink-300": "#FF5EBF",

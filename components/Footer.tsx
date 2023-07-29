@@ -413,6 +413,7 @@ export default function Footer() {
                 <a
                   href="https://kreativedreamflow.com"
                   className="text-horizon-grey-400 hover:text-horizon-purple hover:underline text-sm"
+                  target="_blank"
                 >
                   Website made with ♥ by Kreative Dreamflow.
                 </a>
