@@ -20,10 +20,10 @@ export default function EventCard({ event }: { event: Event }) {
               width="760"
               height="460"
             />
-            <h3 className="text-6xl md:text-5xl lg:text-4xl font-chedros mt-6 mb-2">{event.title}</h3>
-            <p className="text-3xl md:text-xl text-horizon-grey-600">{event.tagline}</p>
+            <h3 className="text-4xl md:text-5xl lg:text-4xl font-chedros mt-6 mb-2">{event.title}</h3>
+            <p className="text-2xl sm:text-xl text-horizon-grey-600">{event.tagline}</p>
           </div>
-          <p className="text-2xl md:text-xl mt-4">
+          <p className="text-xl mt-4">
             <span className="font-bold">{event.date_label}</span> @{" "}
             {event.location}
           </p>

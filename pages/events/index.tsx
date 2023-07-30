@@ -45,7 +45,7 @@ export default function Events({
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
               {events._2023.map((event: Event) => (
-                <div className="col-span-2 md:col-span-1" key={event._id}>
+                <div className="col-span-2 sm:col-span-1" key={event._id}>
                   <EventCard event={event} />
                 </div>
               ))}
@@ -59,7 +59,7 @@ export default function Events({
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
               {events._2024.map((event: Event) => (
-                <div className="col-span-2 md:col-span-1" key={event._id}>
+                <div className="col-span-2 sm:col-span-1" key={event._id}>
                   <EventCard event={event} />
                 </div>
               ))}
