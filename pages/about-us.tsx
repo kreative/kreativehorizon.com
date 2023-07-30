@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import LogoCloud1 from "../components/LogoCloud1";
+import WhatWeDoSection from "@/components/WhatWeDoSection";
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { CldImage } from "next-cloudinary";
@@ -119,6 +120,7 @@ export default function AboutUs() {
         <div className="py-24">
           <LogoCloud1 />
         </div>
+        <WhatWeDoSection />
         <Container>
           <div className="grid grid-cols-2 gap-8 py-12 md:py-24">
             <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-start space-y-3 pr-6">
