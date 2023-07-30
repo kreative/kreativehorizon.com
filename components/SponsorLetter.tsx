@@ -1,5 +1,4 @@
-import TaglineSVG from "./svgs/TaglineSVG";
-import Link from "next/link";
+import TaglineSVG from "./TaglineSVG";
 
 export default function SponsorLetter() {
   return (
