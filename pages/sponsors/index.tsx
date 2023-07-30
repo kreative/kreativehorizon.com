@@ -205,7 +205,13 @@ export default function StudentReviews() {
               <div className="col-span-3 md:col-span-1">
                 <div className="p-8 bg-horizon-grey-100 border border-grey-400 rounded-xl">
                   <div className="p-4 rounded-xl border border-grey-400 bg-white inline-block -mt-16 mb-4">
-                    <HiringSVG />
+                    <CldImage
+                      src="kreativehorizon.com/ikons/NowHiring_Ikon_jse3x6"
+                      alt="Now Hiring Ikon"
+                      width="280"
+                      height="280"
+                      className="w-12 h-auto"
+                    />
                   </div>
                   <h4 className="font-chedros text-4xl text-horizon-orange mb-4">
                     Talent recruitment
@@ -240,7 +246,13 @@ export default function StudentReviews() {
               <div className="col-span-3 md:col-span-1">
                 <div className="p-8 bg-horizon-grey-100 border border-grey-400 rounded-xl">
                   <div className="p-4 rounded-xl border border-grey-400 bg-white inline-block -mt-16 mb-4">
-                    <BullhornSVG />
+                    <CldImage
+                      src="kreativehorizon.com/ikons/Bullhorn_Ikon_kxxwiy"
+                      alt="Bullhorn Ikon"
+                      width="280"
+                      height="280"
+                      className="w-12 h-auto"
+                    />
                   </div>
                   <h4 className="font-chedros text-4xl text-horizon-pink mb-4">
                     Brand Awareness
@@ -276,7 +288,13 @@ export default function StudentReviews() {
               <div className="col-span-3 md:col-span-1">
                 <div className="p-8 bg-horizon-grey-100 border border-grey-400 rounded-xl">
                   <div className="p-4 rounded-xl border border-grey-400 bg-white inline-block -mt-16 mb-4">
-                    <CommunitySVG />
+                    <CldImage
+                      src="kreativehorizon.com/ikons/Community_Ikon_m0bydd"
+                      alt="Community Ikon"
+                      width="280"
+                      height="280"
+                      className="w-12 h-auto"
+                    />
                   </div>
                   <h4 className="font-chedros text-4xl text-horizon-purple mb-4">
                     Community Outreach
