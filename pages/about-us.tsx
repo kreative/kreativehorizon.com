@@ -21,14 +21,14 @@ export default function AboutUs() {
           .text-stroke {
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-color: white;
           }
         `}</style>
       </Head>
       <Navbar />
       <main>
         <Container>
-          <div className="flex flex-col justify-start items-center rounded-[30px] bg-horizon-grey-200 pt-20 px-6 xs:px-12 md:px-20 lg:px-24 mt-8 mb-16 sm:mb-24 md:mb-44">
+          <div className="flex flex-col justify-start items-center rounded-[30px] bg-aboutus-splash bg-cover bg-bottom pt-20 px-6 xs:px-12 md:px-20 lg:px-24 mt-8 mb-16 sm:mb-24 md:mb-44">
             <p className="text-2xl font-guthen tracking-wide pb-2">
               About Kreative Horizon
             </p>
@@ -38,7 +38,7 @@ export default function AboutUs() {
                 of tomorrow today.
               </span>{" "}
               <span className="text-5xl sm:text-6xl font-chedros text-stroke">
-                Through hackathons, workshops, anD MORE.
+                Through hackathons, workshops, and more.
               </span>
             </h1>
             <svg

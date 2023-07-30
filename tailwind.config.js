@@ -26,6 +26,8 @@ module.exports = {
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1689572375/kreativehorizon.com/newsletter_signup_ipktg5.webp')",
         "sponsor-image-gallery":
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1690379142/kreativehorizon.com/sponsors-page/darker-image-gallery_q5mhir.webp')",
+        "aboutus-splash":
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1690757036/kreativehorizon.com/about-us/aboutus-splash-2_uvc6to.png')",
       },
       fontFamily: {
         sans: ["var(--font-craftworksans)"],
@@ -36,6 +38,7 @@ module.exports = {
         "horizon-orange": "#FF900E",
         "horizon-orange-100": "#FFE8DB",
         "horizon-orange-200": "#FFBB94",
+        "horizon-orange-300": "#FFAC4D",
         "horizon-pink": "#FF0E9F",
         "horizon-pink-200": "#FFAFDF",
         "horizon-pink-300": "#FF5EBF",
