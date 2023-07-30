@@ -7,8 +7,8 @@ export default function LogoCloud1() {
       <CldImage
         src={src}
         alt={alt}
-        width={w}
-        height={h}
+        width={parseInt(w)}
+        height={parseInt(h)}
         className="mr-0 w-1/4 sm:w-1/6 h-auto p-0 md:p-2"
       />
     );
