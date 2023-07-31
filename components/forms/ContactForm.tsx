@@ -65,12 +65,6 @@ export default function ContactForm() {
               >
                 Phone number
               </label>
-              <span
-                className="text-sm leading-6 text-gray-500"
-                id="phone-optional"
-              >
-                Optional
-              </span>
             </div>
             <div className="relative mt-2 rounded-md shadow-sm">
               <div className="absolute inset-y-0 left-0 flex items-center">
