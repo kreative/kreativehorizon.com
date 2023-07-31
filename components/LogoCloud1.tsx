@@ -34,10 +34,10 @@ export default function LogoCloud1() {
           h="99"
         />
         <LogoImage
-          src="kreativehorizon.com/sponsors/AMBIDEXTER_ocblfh"
-          alt="Ambidexter Logo in Color"
-          w="316"
-          h="55"
+          src="kreativehorizon.com/sponsors/Color-ISURP-Logo_2022-1_xg70hq"
+          alt="Iowa State University Research Park Logo in Color"
+          w="818"
+          h="199"
         />
         <LogoImage
           src="kreativehorizon.com/sponsors/TECHNEXUS_gwqk9q"
@@ -87,6 +87,18 @@ export default function LogoCloud1() {
           alt="Ivy College of Business Start Something Logo in Color"
           w="186"
           h="47"
+        />
+        <LogoImage
+          src="kreativehorizon.com/sponsors/Visionary-4PMS-2.75IN_fgsaxz"
+          alt="Visionary Media Logo in Color"
+          w="818"
+          h="199"
+        />
+        <LogoImage
+          src="kreativehorizon.com/sponsors/AMBIDEXTER_ocblfh"
+          alt="Ambidexter Logo in Color"
+          w="316"
+          h="55"
         />
       </div>
     </Container>
