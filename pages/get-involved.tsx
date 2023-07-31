@@ -21,7 +21,7 @@ export default function GetInvolved() {
         <SplashContainer>
           <div className="bg-gradient-to-b from-horizon-orange via-horizon-pink to-horizon-purple">
             <Container>
-              <div className="pt-64 pb-16">
+              <div className="pt-44 md:pt-64 pb-16">
                 <p className="tracking-wide font-guthen text-white text-2xl text-center mb-4">
                   Get involved
                 </p>
