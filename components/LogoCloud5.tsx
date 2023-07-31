@@ -5,8 +5,8 @@ import { CldImage } from "next-cloudinary";
 export default function LogoCloud5() {
   return (
     <Container>
-      <div className="grid grid-cols-12 gap-8">
-        <div className="col-span-12 xl:col-span-4">
+      <div className="grid grid-cols-12 xl:gap-8">
+        <div className="col-span-12 pb-4 xl:p-0 xl:col-span-4">
           <p className="text-center xl:text-left text-2xl text-horizon-grey-600">
             Trusted by the world&apos;s most mission driven companies
           </p>
