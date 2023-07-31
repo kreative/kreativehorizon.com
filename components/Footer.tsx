@@ -24,7 +24,15 @@ function FooterLinkGroupLabel({ title }: { title: string }) {
   );
 }
 
-function FooterLink({ href, title, target }: { href: string; title: string, target?: string }) {
+function FooterLink({
+  href,
+  title,
+  target,
+}: {
+  href: string;
+  title: string;
+  target?: string;
+}) {
   return (
     <motion.div
       whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
