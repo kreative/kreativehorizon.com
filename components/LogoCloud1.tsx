@@ -2,7 +2,17 @@ import Container from "./Container";
 import { CldImage } from "next-cloudinary";
 
 export default function LogoCloud1() {
-  const LogoImage = ({ src, alt, w, h }: { src: string; alt: string, w: string, h: string }) => {
+  const LogoImage = ({
+    src,
+    alt,
+    w,
+    h,
+  }: {
+    src: string;
+    alt: string;
+    w: string;
+    h: string;
+  }) => {
     return (
       <CldImage
         src={src}

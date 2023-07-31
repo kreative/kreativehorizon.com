@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 
 export default function FloatingCTA3() {
   return (
-    <div className={`grid grid-cols-6 gap-4 p-6 rounded-2xl bg-white bg-opacity-30`}>
+    <div
+      className={`grid grid-cols-6 gap-4 p-6 rounded-2xl bg-white bg-opacity-30`}
+    >
       <div className="col-span-6 md:col-span-4 flex justify-start items-center space-x-6">
         <div>
           <svg
@@ -118,7 +120,10 @@ export default function FloatingCTA3() {
           </p>
           <p className="text-xl text-horizon-grey-700">
             Our team is here for you. Drop us a line and we&apos;ll be in touch
-            to help you soon!{" "}<span className="inline-block md:hidden underline underline-offset-2"><Link href="/contact-us">You can reach our team here</Link></span>
+            to help you soon!{" "}
+            <span className="inline-block md:hidden underline underline-offset-2">
+              <Link href="/contact-us">You can reach our team here</Link>
+            </span>
           </p>
         </div>
       </div>
