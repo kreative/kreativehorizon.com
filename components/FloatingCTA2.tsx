@@ -19,7 +19,7 @@ export default function FloatingCTA2({
 }) {
   return (
     <Container>
-      <div className="bg-horizon-grey-200 rounded-3xl p-16">
+      <div className="bg-horizon-grey-200 rounded-3xl py-16 px-8 sm:p-16">
         <div className="grid grid-cols-12 gap-0 ">
           <div className="col-span-12 sm:col-span-7 flex flex-col justify-center space-y-2">
             <p className="text-2xl tracking-wide font-guthen">{label}</p>
@@ -45,9 +45,9 @@ export default function FloatingCTA2({
             </div>
           </div>
           <div className="col-span-12 sm:col-span-1" />
-          <div className="col-span-12 sm:col-span-4 flex justify-end items-center">
+          <div className="col-span-12 sm:col-span-4 flex justify-end items-center mt-10">
             <svg
-              className="-mt-10 sm:m-0 w-[60%] sm:w-full h-auto"
+              className="w-full h-auto"
               viewBox="0 0 250 249"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
