@@ -38,7 +38,11 @@ function FooterLink({
       whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
       whileTap={{ scale: 0.95 }}
     >
-      <Link href={href} className="text-2xl lg:text-lg text-white" target={target}>
+      <Link
+        href={href}
+        className="text-2xl lg:text-lg text-white"
+        target={target}
+      >
         {title}
       </Link>
     </motion.div>
