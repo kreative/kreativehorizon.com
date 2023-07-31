@@ -1,0 +1,29 @@
+import { createClient, groq } from "next-sanity";
+import Event from "../types/Events";
+
+export async function getLatestEvents(): Promise<Event[]> {
+  const client = createClient({
+    dataset: 'production',
+    apiVersion: '2021-03-25',
+    projectId: 'laarr84g',
+  });
+
+  return client.fetch(
+    groq`*[ _type == "event" ] | order(start_datetime asc)[0..2] {
+      _id,
+      _createdAt,
+      title,
+      tagline,
+      season,
+      year,
+      start_datetime,
+      end_datetime,
+      date_label,
+      location,
+      slug,
+      cld_id,
+      alt,
+    }
+    `
+  );
+}
