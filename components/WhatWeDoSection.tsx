@@ -1,9 +1,5 @@
 import Link from "next/link";
 import Container from "@/components/Container";
-import HammerAndWrenchSVG from "./svgs/HammerAndWrenchSVG";
-import PlantSVG from "./svgs/PlantSVG";
-import BullhornSVG from "./svgs/BullhornSVG";
-import HandshakeSVG from "./svgs/HandshakeSVG";
 import { motion } from "framer-motion";
 import { CldImage } from "next-cloudinary";
 
