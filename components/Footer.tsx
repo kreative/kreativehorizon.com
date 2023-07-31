@@ -14,6 +14,7 @@ import {
   DribbbleLogo,
   DiscordLogo,
 } from "@phosphor-icons/react";
+import Marquee from "react-fast-marquee";
 
 function FooterLinkGroupLabel({ title }: { title: string }) {
   return (
@@ -36,9 +37,84 @@ function FooterLink({ href, title, target }: { href: string; title: string, targ
   );
 }
 
+function HorizonSphere() {
+  return (
+    <div className="h-full flex justify-center items-center pb-1">
+      <svg
+        className="h-12 w-auto"
+        viewBox="0 0 174 174"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="87.1369"
+          cy="86.8634"
+          r="86.8634"
+          fill="url(#paint0_radial_548_275)"
+        />
+        <defs>
+          <radialGradient
+            id="paint0_radial_548_275"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(48.5309 41.8231) rotate(59.144) scale(146.625)"
+          >
+            <stop stop-color="#FFBB94" />
+            <stop offset="0.229167" stopColor="#FF7629" />
+            <stop offset="0.723958" stopColor="#FF5EBF" />
+            <stop offset="1" stopColor="#C479FF" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
 export default function Footer() {
   return (
     <div>
+      <Marquee
+        className="bg-gradient-to-r from-horizon-pink to-horizon-purple pt-5 pb-2"
+        autoFill={true}
+        speed={75}
+      >
+        <p className="font-chedros text-white text-6xl mx-8 italic pr-2">
+          &quot;I would totally come back to another event&quot; - Noah Lim
+        </p>
+        <HorizonSphere />
+        <p className="font-chedros text-white text-6xl mx-8 italic pr-2">
+          Hackathons
+        </p>
+        <HorizonSphere />
+        <p className="font-chedros text-white text-6xl mx-8 italic pr-2">
+          &quot;The event was super nice! I would come back, it was fun!&quot; -
+          Endi Odobasic
+        </p>
+        <HorizonSphere />
+        <p className="font-chedros text-white text-6xl mx-8 italic pr-1">
+          Pitch Competitions
+        </p>
+        <HorizonSphere />
+        <p className="font-chedros text-white text-6xl mx-8 italic pr-2">
+          Recruit the best students at every school
+        </p>
+        <HorizonSphere />
+        <p className="font-chedros text-white text-6xl mx-8 italic pr-1">
+          &quot;I got to learn new technologies that I don&apos;t get to use in
+          the classroom&quot;
+        </p>
+        <HorizonSphere />
+        <p className="font-chedros text-white text-6xl mx-8 italic pr-1">
+          Design Jams
+        </p>
+        <HorizonSphere />
+        <p className="font-chedros text-white text-6xl mx-8 italic pr-1">
+          face-to-face with the best companies in tech
+        </p>
+        <HorizonSphere />
+      </Marquee>
       <div id="top_cta" className="pt-32 pb-72 bg-clouds-horizon bg-cover">
         <Container>
           <div className="flex justify-center">
@@ -302,7 +378,11 @@ export default function Footer() {
               </div>
               <FooterLinkGroupLabel title="Support" />
               <div className="flex flex-col items-start space-y-3 md:space-y-2">
-                <FooterLink href="/support" title="Get support" target="_blank" />
+                <FooterLink
+                  href="/support"
+                  title="Get support"
+                  target="_blank"
+                />
                 <FooterLink
                   href="/support/submit-incident"
                   title="Report a violation"
