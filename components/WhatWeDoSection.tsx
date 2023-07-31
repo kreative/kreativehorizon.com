@@ -67,11 +67,12 @@ export default function WhatWeDoSection() {
                   height="280"
                   className="w-32 h-auto"
                 />
-                <h3 className="text-2xl md:text-3xl font-chedros text-horizon-grey-700 text-center">
+                <h3 className="text-4xl sm:text-2xl md:text-3xl font-chedros text-horizon-grey-700 text-center">
                   Builder Events
                 </h3>
                 <p className="text-lg text-horizon-grey-600 text-center">
-                  Designed to bring students together to solve tomorrow&apos;s problems, today.
+                  Designed to bring students together to solve tomorrow&apos;s
+                  problems, today.
                 </p>
               </Link>
             </motion.div>
@@ -92,11 +93,12 @@ export default function WhatWeDoSection() {
                   height="280"
                   className="w-32 h-auto"
                 />
-                <h3 className="text-2xl md:text-3xl font-chedros text-horizon-grey-700 text-center">
+                <h3 className="text-4xl sm:text-2xl md:text-3xl font-chedros text-horizon-grey-700 text-center">
                   Sponsorships
                 </h3>
                 <p className="text-lg text-horizon-grey-600 text-center">
-                  The fastest way to get in front of the most motivated students on campus.
+                  The fastest way to get in front of the most motivated students
+                  on campus.
                 </p>
               </Link>
             </motion.div>
@@ -117,11 +119,12 @@ export default function WhatWeDoSection() {
                   height="280"
                   className="w-32 h-auto"
                 />
-                <h3 className="text-2xl md:text-3xl font-chedros text-horizon-grey-700 text-center">
+                <h3 className="text-4xl sm:text-2xl md:text-3xl font-chedros text-horizon-grey-700 text-center">
                   Horizon clubs
                 </h3>
                 <p className="text-lg text-horizon-grey-600 text-center">
-                  We&apos;re building a network of student organizations to help students grow.
+                  We&apos;re building a network of student organizations to help
+                  students grow.
                 </p>
               </Link>
             </motion.div>
