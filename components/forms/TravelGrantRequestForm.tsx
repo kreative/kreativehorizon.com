@@ -172,7 +172,8 @@ export default function TravelGrantRequestForm() {
             htmlFor="event-name"
             className="block text-base font-medium leading-6 text-horizon-grey-800"
           >
-            Event you&apos;re applying for<span className="text-horizon-pink"> *</span>
+            Event you&apos;re applying for
+            <span className="text-horizon-pink"> *</span>
           </label>
           <div className="mt-2">
             <select
@@ -301,7 +302,7 @@ export default function TravelGrantRequestForm() {
           >
             <button
               type="submit"
-              className="rounded-md py-2.5 px-5 font-bold bg-gradient-to-r from-horizon-orange to-horizon-pink text-white shadow-lg"
+              className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-gradient-to-r from-horizon-orange to-horizon-pink text-white shadow-lg"
             >
               Submit now
             </button>

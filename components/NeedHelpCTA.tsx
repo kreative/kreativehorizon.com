@@ -14,13 +14,13 @@ export default function NeedHelpCTA() {
             <h2 className="text-5xl font-chedros text-center pb-3">
               Contact our support team and we&apos;ll get back to you soon
             </h2>
-            <div className="flex items-center justify-center space-x-3">
+            <div className="flex items-center justify-center space-x-3 pt-3 sm:p-0">
               <motion.div
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 font-bold bg-horizon-grey-800 text-white border border-horizon-grey-800"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white border border-horizon-grey-800"
                   href="/contact-us"
                 >
                   Contact us
@@ -31,7 +31,7 @@ export default function NeedHelpCTA() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
                   href="/support"
                   target="_blank"
                 >

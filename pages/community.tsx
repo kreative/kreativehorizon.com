@@ -50,7 +50,7 @@ export default function Community() {
                         width="260"
                         height="449"
                         filterUnits="userSpaceOnUse"
-                        colorInterpolation-filters="sRGB"
+                        colorInterpolationFilters="sRGB"
                       >
                         <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend
@@ -101,7 +101,10 @@ export default function Community() {
                 </span>{" "}
                 KREATIVE HORIZON{" "}
                 <span>
-                  <DiscordLogo size={58} className="inline drop-shadow-xl text-blue-600" />
+                  <DiscordLogo
+                    size={58}
+                    className="inline drop-shadow-xl text-blue-600"
+                  />
                 </span>{" "}
                 DISCORD
               </h1>

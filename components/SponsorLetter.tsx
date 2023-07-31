@@ -2,7 +2,7 @@ import TaglineSVG from "./TaglineSVG";
 
 export default function SponsorLetter() {
   return (
-    <div className="bg-white border border-horizon-grey-200 drop-shadow-md p-16 sm:py-20 sm:px-24 z-10">
+    <div className="bg-white border border-horizon-grey-200 drop-shadow-md p-12 sm:py-20 sm:px-24 z-10">
       <svg
         className="w-32 h-auto"
         viewBox="0 0 152 41"

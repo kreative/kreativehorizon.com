@@ -35,7 +35,7 @@ export default function Home({ events }: { events: Event[] }) {
                     Hackathons, workshops, and more, so you can go beyond the
                     horizon.
                   </h1>
-                  <div className="flex flex-col xs:flex-row items-center ustify-center space-y-8 xs:space-y-0 xs:space-x-3">
+                  <div className="flex flex-col xs:flex-row items-center ustify-center space-y-8 xs:space-y-0 xs:space-x-3 pt-3 sm:p-0">
                     <motion.div
                       whileHover={{
                         scale: 1.05,
@@ -44,7 +44,7 @@ export default function Home({ events }: { events: Event[] }) {
                       whileTap={{ scale: 0.95 }}
                     >
                       <Link
-                        className="rounded-md py-2.5 px-5 font-bold bg-white text-horizon-grey-800 border border-white grow"
+                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-white text-horizon-grey-800 border border-white grow"
                         href="/events"
                       >
                         See events
@@ -58,7 +58,7 @@ export default function Home({ events }: { events: Event[] }) {
                       whileTap={{ scale: 0.95 }}
                     >
                       <Link
-                        className="rounded-md py-2.5 px-5 bg-opacity-0 bg-transparent text-white border border-white grow"
+                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-transparent text-white border border-white grow"
                         href="/get-involved"
                       >
                         Get involved
@@ -153,7 +153,7 @@ export default function Home({ events }: { events: Event[] }) {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 font-bold bg-horizon-grey-800 text-white"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white mt-3 sm:m-0"
                   href="/events"
                 >
                   See all events &rarr;

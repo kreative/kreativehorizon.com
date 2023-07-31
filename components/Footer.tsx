@@ -24,13 +24,21 @@ function FooterLinkGroupLabel({ title }: { title: string }) {
   );
 }
 
-function FooterLink({ href, title, target }: { href: string; title: string, target?: string }) {
+function FooterLink({
+  href,
+  title,
+  target,
+}: {
+  href: string;
+  title: string;
+  target?: string;
+}) {
   return (
     <motion.div
       whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
       whileTap={{ scale: 0.95 }}
     >
-      <Link href={href} className="text-lg text-white" target={target}>
+      <Link href={href} className="text-2xl lg:text-lg text-white" target={target}>
         {title}
       </Link>
     </motion.div>
@@ -130,13 +138,13 @@ export default function Footer() {
                 Every student deserves the opportunity to see the future for
                 what it could be - and then build it.
               </p>
-              <div className="flex items-center justify-center space-x-3">
+              <div className="flex items-center justify-center space-x-3 pt-3 md:p-0">
                 <motion.div
                   whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    className="rounded-md py-2.5 px-5 font-bold bg-white text-horizon-grey-800 border border-white"
+                    className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-white text-horizon-grey-800 border border-white"
                     href="/get-involved"
                   >
                     Get involved
@@ -147,7 +155,7 @@ export default function Footer() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    className="rounded-md py-2.5 px-5 bg-opacity-0 bg-white text-white border border-white"
+                    className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-white border border-white"
                     href="/sponsor"
                   >
                     Sponsor now
@@ -164,19 +172,19 @@ export default function Footer() {
         </div>
         <Container>
           <div className="grid grid-cols-12 gap-y-6 sm:gap-y-12 gap-x-4 lg:gap-4">
-            <div className="col-span-12 sm:col-span-8 lg:col-span-4">
-              <h3 className="text-4xl text-white font-chedros">
+            <div className="col-span-12 lg:col-span-4">
+              <h3 className="text-6xl lg:text-4xl text-white font-chedros">
                 JOIN THE JOURNEY
               </h3>
-              <p className="text-white text-base mb-4">
+              <p className="text-horizon-grey-300 text-2xl lg:text-base mb-4">
                 Providing students the tools and resources to build the future
                 of tomorrow, today so we can see the world for what it could be.
               </p>
-              <div className="flex justify-start space-x-2 items-center mb-1">
+              <div className="flex justify-start space-x-2 items-center mb-3 md:mb-1">
                 <Phone className="text-white" size={20} />
                 <Link
                   href="tel:+15152126468"
-                  className="text-white text-base hover:underline transition duration-300 ease-in-out"
+                  className="text-white text-2xl lg:text-base hover:underline transition duration-300 ease-in-out"
                 >
                   +1 (515) 212-6468
                 </Link>
@@ -185,12 +193,12 @@ export default function Footer() {
                 <Envelope className="text-white" size={20} />
                 <Link
                   href="mailto:horizon@kreativeusa.com"
-                  className="text-white text-base hover:underline transition duration-300 ease-in-out"
+                  className="text-white text-2xl lg:text-base hover:underline transition duration-300 ease-in-out"
                 >
                   horizon@kreativeusa.com
                 </Link>
               </div>
-              <div className="flex justify-start items-center space-x-2 mt-8">
+              <div className="hidden lg:flex justify-start items-center space-x-2 mt-8">
                 <motion.div
                   whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
@@ -198,7 +206,7 @@ export default function Footer() {
                   <Link href="#">
                     <InstagramLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-lg"
-                      size={36}
+                      size={44}
                     />
                   </Link>
                 </motion.div>
@@ -209,7 +217,7 @@ export default function Footer() {
                   <Link href="#">
                     <FacebookLogo
                       className="text-white hover:text-horizon-pink p-1 bg-horizon-grey-700 rounded-lg"
-                      size={36}
+                      size={44}
                     />
                   </Link>
                 </motion.div>
@@ -220,7 +228,7 @@ export default function Footer() {
                   <Link href="#">
                     <TwitterLogo
                       className="text-white hover:text-horizon-purple p-1 bg-horizon-grey-700 rounded-lg"
-                      size={36}
+                      size={44}
                     />
                   </Link>
                 </motion.div>
@@ -231,7 +239,7 @@ export default function Footer() {
                   <Link href="#">
                     <GithubLogo
                       className="text-white p-1 hover:text-horizon-orange bg-horizon-grey-700 rounded-lg"
-                      size={36}
+                      size={44}
                     />
                   </Link>
                 </motion.div>
@@ -242,7 +250,7 @@ export default function Footer() {
                   <Link href="#">
                     <MediumLogo
                       className="text-white hover:text-horizon-pink p-1 bg-horizon-grey-700 rounded-lg"
-                      size={36}
+                      size={44}
                     />
                   </Link>
                 </motion.div>
@@ -253,7 +261,7 @@ export default function Footer() {
                   <Link href="#">
                     <LinkedinLogo
                       className="text-white hover:text-horizon-purple p-1 bg-horizon-grey-700 rounded-lg"
-                      size={36}
+                      size={44}
                     />
                   </Link>
                 </motion.div>
@@ -264,7 +272,7 @@ export default function Footer() {
                   <Link href="#">
                     <DribbbleLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-lg"
-                      size={36}
+                      size={44}
                     />
                   </Link>
                 </motion.div>
@@ -275,16 +283,106 @@ export default function Footer() {
                   <Link href="#">
                     <DiscordLogo
                       className="text-white p-1 hover:text-horizon-pink bg-horizon-grey-700 rounded-lg"
-                      size={36}
+                      size={44}
+                    />
+                  </Link>
+                </motion.div>
+              </div>
+              <div className="flex justify-start items-center space-x-2 mt-8 lg:hidden">
+                <motion.div
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link href="#">
+                    <InstagramLogo
+                      className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
+                      size={64}
+                    />
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link href="#">
+                    <FacebookLogo
+                      className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
+                      size={64}
+                    />
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link href="#">
+                    <TwitterLogo
+                      className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
+                      size={64}
+                    />
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link href="#">
+                    <GithubLogo
+                      className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
+                      size={64}
+                    />
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link href="#">
+                    <MediumLogo
+                      className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
+                      size={64}
+                    />
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link href="#">
+                    <LinkedinLogo
+                      className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
+                      size={64}
+                    />
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link href="#">
+                    <DribbbleLogo
+                      className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
+                      size={64}
+                    />
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link href="#">
+                    <DiscordLogo
+                      className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
+                      size={64}
                     />
                   </Link>
                 </motion.div>
               </div>
             </div>
-            <div className="col-span-12 sm:col-span-4 lg:col-span-2" />
+            <div className="col-span-12 hidden lg:block lg:col-span-2" />
             <div className="col-span-6 xs:col-span-4 lg:col-span-2">
               <FooterLinkGroupLabel title="Company" />
-              <div className="flex flex-col items-start space-y-3 md:space-y-2">
+              <div className="flex flex-col items-start space-y-4 lg:space-y-2">
                 <FooterLink href="/about-us" title="About Horizon" />
                 <FooterLink href="/contact-us" title="Contact us" />
                 <FooterLink href="/reviews" title="Student reviews" />
@@ -297,7 +395,7 @@ export default function Footer() {
               </div>
               <div className="block xs:hidden mt-6 xs:mt-0">
                 <FooterLinkGroupLabel title="Support" />
-                <div className="flex flex-col items-start space-y-3 md:space-y-2">
+                <div className="flex flex-col items-start space-y-4 lg:space-y-2">
                   <FooterLink href="/support" title="Get support" />
                   <FooterLink
                     href="/support/submit-incident"
@@ -307,15 +405,15 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-span-6 xs:col-span-4 lg:col-span-2">
-              <div className="mb-4">
+              <div className="mb-6">
                 <FooterLinkGroupLabel title="2023 Events" />
-                <div className="flex flex-col items-start space-y-3 md:space-y-2">
+                <div className="flex flex-col items-start space-y-4 lg:space-y-2">
                   <FooterLink href="/events/hackisu-v2" title="HackISU v2" />
                   <FooterLink href="/events/dataisu-v1" title="DataISU v1" />
                 </div>
               </div>
               <FooterLinkGroupLabel title="2024 Events" />
-              <div className="flex flex-col items-start space-y-3 md:space-y-2">
+              <div className="flex flex-col items-start space-y-4 lg:space-y-2">
                 <FooterLink href="/events/hackisu-v3" title="HackISU v3" />
                 <FooterLink href="/events/builddsm-v1" title="BuildDSM v1" />
                 <FooterLink
@@ -326,7 +424,7 @@ export default function Footer() {
               </div>
               <div className="block xs:hidden mt-6 xs:mt-0">
                 <FooterLinkGroupLabel title="Policies" />
-                <div className="flex flex-col items-start space-y-3 md:space-y-2">
+                <div className="flex flex-col items-start space-y-4 lg:space-y-2">
                   <FooterLink
                     href="/policies/code-of-conduct"
                     title="Code of conduct"
@@ -351,7 +449,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="hidden xs:block xs:col-span-4 lg:col-span-2">
-              <div className="mb-4">
+              <div className="mb-6">
                 <FooterLinkGroupLabel title="Policies" />
                 <div className="flex flex-col items-start space-y-3 md:space-y-2">
                   <FooterLink

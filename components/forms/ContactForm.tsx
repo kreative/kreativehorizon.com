@@ -119,7 +119,7 @@ export default function ContactForm() {
           >
             <button
               type="submit"
-              className="rounded-md py-2.5 px-5 font-bold bg-gradient-to-r from-horizon-orange to-horizon-pink text-white shadow-lg"
+              className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-gradient-to-r from-horizon-orange to-horizon-pink text-white shadow-lg"
             >
               Submit now
             </button>

@@ -79,7 +79,7 @@ export function PressReleaseLayout({
                   operations had to shut down. Now, Kreative Horizon is back to
                   empower students on campuses everywhere!
                 </p>
-                <p className="text-lg mt-6 text-horizon-grey-700">
+                <p className="text-2xl mt-6 text-horizon-grey-700">
                   For media inquiries, see our{" "}
                   <Link href="/press" className="text-horizon-purple underline">
                     Press page

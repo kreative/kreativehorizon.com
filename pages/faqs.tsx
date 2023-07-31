@@ -233,9 +233,9 @@ const hackathonFaqs = [
     question: "How do I come up with an idea for a hackathon?",
     answer: (
       <p>
-        Brainstorm solutions to problems you&apos;re passionate about! You can also
-        look for inspiration from current events, industry trends, and your own
-        workflows!
+        Brainstorm solutions to problems you&apos;re passionate about! You can
+        also look for inspiration from current events, industry trends, and your
+        own workflows!
       </p>
     ),
   },
@@ -290,7 +290,7 @@ export default function Faqs() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 bg-opacity-0 bg-white text-horizon-orange border border-horizon-orange"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-orange border border-horizon-orange"
                   href="/events"
                 >
                   See events
@@ -317,7 +317,7 @@ export default function Faqs() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 bg-opacity-0 bg-white text-horizon-pink border border-horizon-pink"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-pink border border-horizon-pink"
                   href="/contact-us"
                 >
                   Contact Us
@@ -344,7 +344,7 @@ export default function Faqs() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 bg-opacity-0 bg-white text-horizon-purple border border-horizon-purple"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-purple border border-horizon-purple"
                   href="/travel-grants"
                 >
                   Submit a request
@@ -371,7 +371,7 @@ export default function Faqs() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 bg-opacity-0 bg-white text-horizon-orange border border-horizon-orange"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-orange border border-horizon-orange"
                   href="/events"
                 >
                   See events

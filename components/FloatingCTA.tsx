@@ -9,7 +9,7 @@ export default function FloatingCTA() {
           <p className="text-2xl font-guthen tracking-wide text-white mb-2">
             Horizon Newsletter
           </p>
-          <h2 className="text-5xl text-white font-chedros w-full sm:w-[70%] md:w-full">
+          <h2 className="text-5xl text-white font-chedros w-full">
             YOU NEED MORE EMAILS. JOIN THE LETTER.
           </h2>
           <p className="text-base text-white w-full lg:w-[70%] xl:w-[85%] mb-4">

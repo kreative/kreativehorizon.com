@@ -15,7 +15,7 @@ export default function WhatWeDoSection() {
             We serve students and sponsors in tandem, for the benefit of the
             student experience.
           </h2>
-          <div className="flex flex-col xs:flex-row items-center justify-center space-y-8 xs:space-y-0 xs:space-x-3">
+          <div className="flex items-center justify-center space-x-3 pt-3 sm:p-0">
             <motion.div
               whileHover={{
                 scale: 1.05,
@@ -24,7 +24,7 @@ export default function WhatWeDoSection() {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                className="rounded-md py-2.5 px-5 font-bold bg-horizon-grey-800 text-white border border-horizon-grey-800"
+                className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white border border-horizon-grey-800"
                 href="/get-involved"
               >
                 Get involved
@@ -38,7 +38,7 @@ export default function WhatWeDoSection() {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                className="rounded-md py-2.5 px-5 bg-opacity-0 bg-transparent text-horizon-grey-800 border border-horizon-grey-800"
+                className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-transparent text-horizon-grey-800 border border-horizon-grey-800"
                 href="/sponsors"
               >
                 Sponsor now

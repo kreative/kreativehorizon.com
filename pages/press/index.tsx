@@ -27,9 +27,9 @@ function PressReleaseCard({ article }: { article: any }) {
         <h2 className="text-2xl font-bold text-horizon-grey-800">
           {article.title}
         </h2>
-        <p className="text-horizon-grey-600 text-lg">{article.description}</p>
+        <p className="text-horizon-grey-600 text-xl">{article.description}</p>
         <div className="flex justify-start items-center space-x-1">
-          <p className="text-horizon-purple">View press release</p>
+          <p className="text-horizon-purple text-2xl">View press release</p>
           <CaretRight size={14} className="text-horizon-purple -mb-1" />
         </div>
       </Link>
@@ -86,7 +86,7 @@ export default function Press({ articles }: { articles: any[] }) {
             <div className="col-span-12 md:col-span-1" />
             <div className="col-span-12 md:col-span-4">
               <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:gap-8">
-                <div className="bg-horizon-grey-100 rounded-2xl p-10 flex flex-col space-y-6 col-span-2 sm:col-span-1">
+                <div className="bg-horizon-grey-100 rounded-2xl p-10 flex flex-col space-y-6 col-span-2 md:col-span-1">
                   <Camera size={50} className="text-horizon-purple" />
                   <h2 className="text-4xl font-chedros text-horizon-grey-700">
                     Event Photo Albums

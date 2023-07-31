@@ -67,7 +67,7 @@ export default function AboutUs() {
                   width="260"
                   height="449"
                   filterUnits="userSpaceOnUse"
-                  colorInterpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
                   <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
@@ -160,12 +160,12 @@ export default function AboutUs() {
                 className="w-full xs:w-[80%] sm:w-[60%] md:w-full h-auto"
               />
             </div>
-            <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-start space-y-3 pl-6">
+            <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-start space-y-3 pl-0 md:pl-6">
               <p className="text-2xl font-guthen text-left">
                 Following our success
               </p>
               <h2 className="text-5xl font-chedros">
-                WE planned to run 4 new events across the country
+                We planned to run 4 new events across the country
               </h2>
               <p className="text-lg text-horizon-grey-600">
                 Following the success of “BuildChicago,” Kreative Horizon
@@ -312,7 +312,7 @@ export default function AboutUs() {
                     We&apos;re bringing the best student technology events to
                     Iowa and we want you to be apart of it!
                   </p>
-                  <div className="flex items-center justify-center space-x-3">
+                  <div className="flex items-center justify-center space-x-3 pt-3 sm:p-0">
                     <motion.div
                       whileHover={{
                         scale: 1.05,
@@ -321,7 +321,7 @@ export default function AboutUs() {
                       whileTap={{ scale: 0.95 }}
                     >
                       <Link
-                        className="rounded-md py-2.5 px-5 font-bold bg-horizon-grey-800 text-white border border-border"
+                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white border border-border"
                         href="/events"
                       >
                         See events
@@ -335,7 +335,7 @@ export default function AboutUs() {
                       whileTap={{ scale: 0.95 }}
                     >
                       <Link
-                        className="rounded-md py-2.5 px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
+                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
                         href="/get-involved"
                       >
                         Get involved

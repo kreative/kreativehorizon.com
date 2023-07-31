@@ -27,13 +27,13 @@ export default function Custom404() {
             <h1 className="text-6xl xs:text-7xl font-chedros text-center">
               We couldn&apos;t find this page
             </h1>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-y-0 sm:space-x-3">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-y-0 sm:space-x-3 pt-3 sm:p-0">
               <motion.div
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 font-bold bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple text-white"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple text-white"
                   href="/"
                 >
                   Go back home
@@ -44,7 +44,7 @@ export default function Custom404() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 bg-opacity-0 bg-transparent text-horizon-grey-800"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-transparent text-horizon-grey-800"
                   href="/support"
                   target="_blank"
                 >

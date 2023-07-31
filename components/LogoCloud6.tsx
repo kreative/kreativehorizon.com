@@ -6,7 +6,7 @@ export default function LogoCloud6() {
     <Container>
       <div className="grid grid-cols-12 xl:gap-8">
         <div className="col-span-12 pb-4 xl:p-0 xl:col-span-4">
-          <p className="text-center xl:text-left text-2xl text-horizon-grey-600">
+          <p className="text-center xl:text-left text-2xl text-horizon-grey-600 mb-6 xl:m-0">
             Trusted by innovative students at these schools
           </p>
         </div>

@@ -43,7 +43,7 @@ export default function PopupMenu() {
               <MenuItem link={"/contact-us"} name={"Contact"} />
               <MenuItem link={"/support"} name={"Get support"} target="_blank" />
               <MenuItem link={"/faqs"} name={"FAQs"} />
-              <MenuItem link={"/sponsor"} name={"Sponsor"} />
+              <MenuItem link={"/sponsors"} name={"Sponsor"} />
               <MenuItem link={"/reviews"} name={"Reviews"} />
             </div>
           </Dialog.Panel>

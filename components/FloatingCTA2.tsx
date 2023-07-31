@@ -36,7 +36,7 @@ export default function FloatingCTA2({
               >
                 <Link
                   href={btnLink}
-                  className="rounded-md py-2.5 px-5 font-bold bg-horizon-pink text-white shadow-md"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-pink text-white shadow-md"
                   target={btnTarget}
                 >
                   {btnLabel}

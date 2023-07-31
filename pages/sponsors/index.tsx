@@ -30,13 +30,13 @@ export default function StudentReviews() {
                   We&apos;re supporting over 450 students this year and
                   we&apos;d love for you to be a part of it
                 </h1>
-                <div className="flex flex-col xs:flex-row items-center justify-center space-y-8 xs:space-y-0 xs:space-x-3">
+                <div className="flex flex-col xs:flex-row items-center justify-center space-y-8 xs:space-y-0 xs:space-x-3 pt-3 sm:p-0">
                   <motion.div
                     whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                     whileTap={{ scale: 0.95 }}
                   >
                     <Link
-                      className="rounded-md py-2.5 px-5 font-bold bg-white text-horizon-grey-800"
+                      className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-white text-horizon-grey-800 border border-white"
                       href="/sponsors/interest-form"
                     >
                       Sponsor us
@@ -47,7 +47,7 @@ export default function StudentReviews() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Link
-                      className="rounded-md py-2.5 px-5 bg-opacity-0 bg-transparent text-white"
+                      className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-transparent text-white border border-white"
                       href="/contact-us"
                     >
                       Get in touch
@@ -72,7 +72,7 @@ export default function StudentReviews() {
             </h2>
             <div className="grid grid-cols-12 my-12 gap-8 md:gap-4">
               <div className="col-span-12 md:col-span-4">
-                <h3 className="text-5xl font-chedros mb-4">
+                <h3 className="text-5xl font-chedros mb-6 sm:mb-4">
                   WHAT IS THE KREATIVE BUILDERS LEAGUE?
                 </h3>
                 <motion.div
@@ -80,7 +80,7 @@ export default function StudentReviews() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    className="rounded-md py-2.5 px-5 font-bold bg-black text-white"
+                    className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-black text-white"
                     href="/sponsors/interest-form"
                   >
                     Sponsor now
@@ -122,7 +122,7 @@ export default function StudentReviews() {
             </div>
             <div className="grid grid-cols-12 my-12 gap-8 md:gap-4">
               <div className="col-span-12 md:col-span-4">
-                <h3 className="text-5xl font-chedros mb-4">
+                <h3 className="text-5xl font-chedros mb-6 sm:mb-4">
                   EVENTS FOR THIS YEARS SEASON
                 </h3>
                 <motion.div
@@ -130,14 +130,14 @@ export default function StudentReviews() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    className="rounded-md py-2.5 px-5 font-bold bg-black text-white"
+                    className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-black text-white"
                     href="/sponsors/interest-form"
                   >
                     Get started
                   </Link>
                 </motion.div>
               </div>
-              <div className="col-span-12 md:col-span-8">
+              <div className="col-span-12 md:col-span-8 mt-8 md:m-0">
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   <div className="col-span-2 xs:col-span-1">
                     <EventCardSimple
@@ -403,13 +403,13 @@ export default function StudentReviews() {
             <h2 className="mb-6 text-center font-chedros text-6xl sm:text-7xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple">
               WHAT ARE YOU WAITING FOR? COME CHANGE THE MIDWEST FOR GOOD.
             </h2>
-            <div className="flex flex-col xs:flex-row items-center justify-center space-y-8 xs:space-y-0 xs:space-x-3">
+            <div className="flex flex-col xs:flex-row items-center justify-center space-y-8 xs:space-y-0 xs:space-x-3 pt-3 sm:p-0">
               <motion.div
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 font-bold bg-horizon-grey-800 border border-horizon-grey-800 text-white"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 border border-horizon-grey-800 text-white"
                   href="/sponsors/interest-form"
                 >
                   Sponsor now
@@ -420,7 +420,7 @@ export default function StudentReviews() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  className="rounded-md py-2.5 px-5 bg-opacity-0 bg-transparent text-horizon-grey-800 border border-horizon-grey-800"
+                  className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-transparent text-horizon-grey-800 border border-horizon-grey-800"
                   href="/contact-us"
                 >
                   Get in touch
