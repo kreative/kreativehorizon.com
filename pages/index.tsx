@@ -175,7 +175,7 @@ export default function Home({ events }: { events: Event[] }) {
         <div className="pt-20 pb-24 sm:py-24 bg-horizon-orange-300">
           <Container>
             <div className="grid grid-cols-2 gap-4">
-              <div className="col-span-2 sm:col-span-1 flex flex-col space-y-4 items-start justify-center order-last sm:order-1">
+              <div className="col-span-2 sm:col-span-1 flex flex-col space-y-4 items-start justify-center order-last sm:order-none">
                 <p className="font-guthen tracking-wide text-2xl">
                   Why we started
                 </p>
