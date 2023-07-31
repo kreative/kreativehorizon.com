@@ -1,14 +1,19 @@
-
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Container from "@/components/Container";
 import SplashContainer from "@/components/SplashContainer";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ReportViolationForm from "@/components/forms/ReportViolationForm";
 import NeedHelpCTA from "@/components/NeedHelpCTA";
+import SuccessAlert from "@/components/SuccessAlert";
 import { NextSeo } from "next-seo";
 
 export default function SubmitIncident() {
+  const router = useRouter();
+  const success =
+    router.query?.form_completed && router.query.form_completed === "true";
+
   return (
     <div>
       <NextSeo
@@ -108,6 +113,9 @@ export default function SubmitIncident() {
                   your information with anyone, and we will not take any action
                   without your consent.
                 </p>
+              </div>
+              <div className="max-w-2xl mx-auto">
+                {success && <SuccessAlert />}
               </div>
             </Container>
           </div>

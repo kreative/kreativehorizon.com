@@ -9,7 +9,7 @@ export default function ReportViolationForm() {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         className="grid grid-cols-1 gap-6"
-        action="/contact-us?form_completed=true"
+        action="/support/submit-incident?form_completed=true"
       >
         <input type="hidden" name="form-name" value="violation-form" />
         <p className="hidden">
