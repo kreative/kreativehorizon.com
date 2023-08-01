@@ -17,7 +17,7 @@ export default function FloatingCTA() {
             programs, discounts, and giveaways straight to your phone. We
             promise it&apos;ll be worth it :)
           </p>
-          <div className="bg-white bg-opacity-[.85] rounded-lg px-2 xs:pl-4 xs:pr-1 pt-1 pb-2 xs:pb-1 block xs:flex justify-between items-center w-full sm:w-[75%] lg:w-[60%] xs:space-x-1">
+          <div className="bg-white bg-opacity-[.85] rounded-lg px-2 xs:pl-4 xs:pr-1 pt-1 pb-2 xs:pb-1 block xs:flex justify-between items-center w-full md:w-[75%] lg:w-[60%] xs:space-x-1">
             <input
               type="text"
               placeholder="Email Address"
@@ -27,7 +27,7 @@ export default function FloatingCTA() {
               whileHover={{ scale: 0.97, transition: { duration: 0.2 } }}
               whileTap={{ scale: 0.9 }}
             >
-              <button className="bg-white py-1.5 px-4 rounded-md text-[#FF2684] w-full xs:w-auto">
+              <button className="bg-white py-3 px-6 md:py-1.5 md:px-4 rounded-md text-[#FF2684] w-full xs:w-auto font-bold">
                 Subscribe
               </button>
             </motion.div>

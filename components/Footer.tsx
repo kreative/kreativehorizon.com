@@ -181,7 +181,7 @@ export default function Footer() {
                 of tomorrow, today so we can see the world for what it could be.
               </p>
               <div className="flex justify-start space-x-2 items-center mb-3 md:mb-1">
-                <Phone className="text-white" size={20} />
+                <Phone className="text-white" size={32} />
                 <Link
                   href="tel:+15152126468"
                   className="text-white text-2xl lg:text-base hover:underline transition duration-300 ease-in-out"
@@ -190,7 +190,7 @@ export default function Footer() {
                 </Link>
               </div>
               <div className="flex justify-start space-x-2 items-center">
-                <Envelope className="text-white" size={20} />
+                <Envelope className="text-white" size={32} />
                 <Link
                   href="mailto:horizon@kreativeusa.com"
                   className="text-white text-2xl lg:text-base hover:underline transition duration-300 ease-in-out"
