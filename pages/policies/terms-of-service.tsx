@@ -348,7 +348,7 @@ export default function TermsOfService() {
               If you have any questions about these Terms and Conditions, You
               can contact us:
             </p>
-            <ul>
+            <ul className="pl-3 list-disc space-y-3 py-6">
               <li>
                 <p className="py-3">
                   By email:{" "}
