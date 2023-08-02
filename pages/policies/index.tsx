@@ -24,11 +24,11 @@ const policies = [
     link: "/policies/terms-of-service",
     icon: <Pen size={54} className="text-horizon-purple" />,
   },
-  {
-    title: "Cookies Policy",
-    link: "/policies/cookies-policy",
-    icon: <Cookie size={54} className="text-horizon-purple" />,
-  },
+  // {
+  //   title: "Cookies Policy",
+  //   link: "/policies/cookies-policy",
+  //   icon: <Cookie size={54} className="text-horizon-purple" />,
+  // },
   {
     title: "Code of Conduct",
     link: "/policies/code-of-conduct",

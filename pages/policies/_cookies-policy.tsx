@@ -10,7 +10,7 @@ export default function CookiesPolicy() {
     <div>
       <NextSeo
         title="Cookies Policy | Policies"
-        description="Review Kreative Horizon's event code of conduct and other digital policies"
+        description="Review Kreative Horizon's cookies policy and other digital policies."
       />
       <Navbar />
       <main>

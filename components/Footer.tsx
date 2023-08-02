@@ -433,10 +433,10 @@ export default function Footer() {
                     href="/policies/privacy-policy"
                     title="Privacy policy"
                   />
-                  <FooterLink
+                  {/* <FooterLink
                     href="/policies/cookies-policy"
                     title="Cookies policy"
-                  />
+                  /> */}
                   <FooterLink
                     href="/policies/transparency"
                     title="Transparency"
@@ -460,10 +460,10 @@ export default function Footer() {
                     href="/policies/privacy-policy"
                     title="Privacy policy"
                   />
-                  <FooterLink
+                  {/* <FooterLink
                     href="/policies/cookies-policy"
                     title="Cookies policy"
-                  />
+                  /> */}
                   <FooterLink
                     href="/policies/transparency"
                     title="Transparency"
