@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import LogoCloud1 from "./LogoCloud1";
 import Container from "./Container";
 import { formatDate } from "@/lib/formatDate";
+import PressReleaseMeta from "@/types/PressReleaseMeta";
 
 export function PressReleaseLayout({
   children,
@@ -12,7 +13,7 @@ export function PressReleaseLayout({
   isRssFeed = false,
 }: {
   children: React.ReactNode;
-  meta: any;
+  meta: PressReleaseMeta;
   isRssFeed?: boolean;
 }) {
   if (isRssFeed) {
