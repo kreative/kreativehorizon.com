@@ -18,13 +18,13 @@ export default function PopupMenu() {
       <div>
         <button
           className={`pr-1 pl-1 py-1 ${isOpen ? "hidden" : "block"}`}
-          onClick={() => setIsOpen(true)}
+          onClick={setIsOpen(true)}
         >
           <List size={24} />
         </button>
         <button
           className={`pr-1 pl-1 py-1 ${isOpen ? "block" : "hidden"}`}
-          onClick={() => setIsOpen(false)}
+          onClick={setIsOpen(false)}
         >
           <X size={24} />
         </button>
@@ -32,7 +32,7 @@ export default function PopupMenu() {
 
       <Dialog
         open={isOpen}
-        onClose={() => setIsOpen(false)}
+        onClose={setIsOpen(false)}
         className="relative z-50"
       >
         <div

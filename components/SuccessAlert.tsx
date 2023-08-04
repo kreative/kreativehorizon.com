@@ -26,7 +26,7 @@ export default function SuccessAlert() {
                 <button
                   type="button"
                   className="inline-flex rounded-md bg-green-50 p-1.5 text-green-500 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 focus:ring-offset-green-50"
-                  onClick={() => setHidden(true)}
+                  onClick={setHidden(true)}
                 >
                   <span className="sr-only">Dismiss</span>
                   <X size={18} aria-hidden="true" />
