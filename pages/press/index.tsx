@@ -158,7 +158,7 @@ export async function getStaticProps() {
     props: {
       articles: (await getAllPressReleases()).map(
         ({ component, ...meta }: { component: any; meta?: PressReleaseMeta }) =>
-          meta
+          meta,
       ),
     },
   };
