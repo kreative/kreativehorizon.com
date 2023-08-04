@@ -9,7 +9,6 @@ import { getAllPressReleases } from "@/lib/getAllPressReleases";
 import { motion } from "framer-motion";
 import {
   Camera,
-  Eyedropper,
   BookOpen,
   CaretRight,
 } from "@phosphor-icons/react";
@@ -29,7 +28,7 @@ function PressReleaseCard({ article }: { article: any }) {
         </h2>
         <p className="text-horizon-grey-600 text-xl">{article.description}</p>
         <div className="flex justify-start items-center space-x-1">
-          <p className="text-horizon-purple text-2xl">View press release</p>
+          <p className="text-horizon-purple text-xl font-bold">View press release</p>
           <CaretRight size={14} className="text-horizon-purple -mb-1" />
         </div>
       </Link>

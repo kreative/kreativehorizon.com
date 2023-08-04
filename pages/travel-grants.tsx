@@ -4,7 +4,6 @@ import SplashContainer from "../components/SplashContainer";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TravelGrantRequestForm from "@/components/forms/TravelGrantRequestForm";
-import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
 
 export default function TravelGrants() {

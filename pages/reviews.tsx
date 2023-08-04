@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { getStudentReviews } from "@/lib/getStudentReviews";
+import getStudentReviews from "@/lib/getStudentReviews";
 import StudentReview from "@/types/StudentReview";
 import TestimonialCard from "@/components/testimonials/TestimonialCard";
 import LogoCloud6 from "../components/LogoCloud6";

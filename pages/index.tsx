@@ -9,7 +9,7 @@ import WhatWeDoSection from "@/components/WhatWeDoSection";
 import EventCard from "@/components/EventCard";
 import FloatingCTA3 from "@/components/FloatingCTA3";
 import Event from "@/types/Events";
-import { getLatestEvents } from "@/lib/getLatestEvents";
+import getLatestEvents from "@/lib/getLatestEvents";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import { CldImage } from "next-cloudinary";

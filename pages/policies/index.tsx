@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
 import {
   LockKey,
-  Cookie,
   Handshake,
   Pen,
   CubeTransparent,

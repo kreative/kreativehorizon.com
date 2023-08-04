@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import LogoCloud6 from "@/components/LogoCloud6";
 import EventCard from "@/components/EventCard";
 import Event from "@/types/Events";
-import { getEvents } from "@/lib/getEvents";
+import getEvents from "@/lib/getEvents";
 import { NextSeo } from "next-seo";
 
 export default function Events({
