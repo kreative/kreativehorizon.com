@@ -93,11 +93,11 @@ export async function getStaticProps() {
   const reviews1 = studentReviews.slice(0, Math.floor(totalReviews / 3));
   const reviews2 = studentReviews.slice(
     Math.floor(totalReviews / 3),
-    Math.floor((totalReviews / 3) * 2)
+    Math.floor((totalReviews / 3) * 2),
   );
   const reviews3 = studentReviews.slice(
     Math.floor((totalReviews / 3) * 2),
-    totalReviews
+    totalReviews,
   );
 
   return {

@@ -485,7 +485,7 @@ export default function Footer() {
                   href="/support"
                   title="Get support"
                   target="_blank"
-                  rel='noopener noreferrer'
+                  rel="noopener noreferrer"
                 />
                 <FooterLink
                   href="/support/submit-incident"
@@ -598,7 +598,7 @@ export default function Footer() {
                   href="https://kreativedreamflow.com"
                   className="text-horizon-grey-400 hover:text-horizon-purple hover:underline text-sm"
                   target="_blank"
-                  rel='noopener noreferrer'
+                  rel="noopener noreferrer"
                 >
                   Website made with ♥ by Kreative Dreamflow.
                 </a>

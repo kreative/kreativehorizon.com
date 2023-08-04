@@ -16,11 +16,11 @@ const getStudentReviews = async (): Promise<StudentReview[]> => {
         "avatar": avatar.asset->url,
         testimonial,
       }
-      `
+      `,
     );
     return studentReviews;
   } catch (error) {
-    console.error('Error fetching student reviews:', error);
+    console.error("Error fetching student reviews:", error);
     return [];
   }
 };

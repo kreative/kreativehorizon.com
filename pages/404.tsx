@@ -47,7 +47,7 @@ export default function Custom404() {
                   className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-transparent text-horizon-grey-800"
                   href="/support"
                   target="_blank"
-                  rel='noopener noreferrer'
+                  rel="noopener noreferrer"
                 >
                   Contact support <span aria-hidden="true">&rarr;</span>
                 </Link>
