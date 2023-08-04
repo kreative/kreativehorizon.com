@@ -159,7 +159,7 @@ export async function getStaticProps() {
     props: {
       articles: (await getAllPressReleases()).map(
         (
-          { component, ...meta }: { component: any; meta?: PressReleaseMeta } // skipcq: JS-0323
+          { component, ...meta }: { component: any; meta?: PressReleaseMeta } // skipcq: JS-0323, JS-0356
         ) => meta
       ),
     },

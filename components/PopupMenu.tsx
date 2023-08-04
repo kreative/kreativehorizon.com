@@ -11,7 +11,7 @@ function MenuItem({ link, name, target }: { link: string; name: string, target?:
 }
 
 export default function PopupMenu() {
-  let [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
