@@ -150,7 +150,7 @@ export default function PrivacyPolicy() {
                   accessible from{" "}
                   <a
                     href="https://kreativehorizon.com"
-                    rel="nofollow noopener"
+                    rel="noopener noreferrer nofollow"
                     target="_blank"
                   >
                     https://kreativehorizon.com
@@ -636,7 +636,7 @@ export default function PrivacyPolicy() {
                   By email:{" "}
                   <a
                     href="mailto:horizon@kreativeusa.com"
-                    rel="nofollow noopener"
+                    rel="noopener noreferrer nofollow"
                     target="_blank"
                     className="underline text-horizon-purple font-bold"
                   >
@@ -649,7 +649,7 @@ export default function PrivacyPolicy() {
                   By visiting this page on our website:{" "}
                   <a
                     href="https://kreativehorizon.com/contact-us"
-                    rel="nofollow noopener"
+                    rel="noopener noreferrer nofollow"
                     target="_blank"
                     className="underline text-horizon-purple font-bold"
                   >
@@ -662,7 +662,7 @@ export default function PrivacyPolicy() {
                   By phone number:{" "}
                   <a
                     href="tel:+15152126469"
-                    rel="nofollow noopener"
+                    rel="noopener noreferrer nofollow"
                     target="_blank"
                     className="underline text-horizon-purple font-bold"
                   >
