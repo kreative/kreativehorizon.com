@@ -46,6 +46,7 @@ export default function PrivacyPolicy() {
               <a
                 href="https://www.termsfeed.com/privacy-policy-generator/"
                 target="_blank"
+                rel='noopener noreferrer'
               >
                 Privacy Policy Generator
               </a>
@@ -151,6 +152,7 @@ export default function PrivacyPolicy() {
                     href="https://kreativehorizon.com"
                     rel="external nofollow noopener"
                     target="_blank"
+                    rel='noopener noreferrer'
                   >
                     https://kreativehorizon.com
                   </a>
@@ -281,6 +283,7 @@ export default function PrivacyPolicy() {
               <a
                 href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
                 target="_blank"
+                rel='noopener noreferrer'
               >
                 TermsFeed website
               </a>{" "}

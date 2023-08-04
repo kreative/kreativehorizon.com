@@ -38,7 +38,12 @@ function FooterLink({
       whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
       whileTap={{ scale: 0.95 }}
     >
-      <Link href={href} className="text-2xl lg:text-lg text-white" target={target}>
+      <Link
+        href={href}
+        className="text-2xl lg:text-lg text-white"
+        target={target}
+        rel="noopener noreferrer"
+      >
         {title}
       </Link>
     </motion.div>
@@ -480,6 +485,7 @@ export default function Footer() {
                   href="/support"
                   title="Get support"
                   target="_blank"
+                  rel='noopener noreferrer'
                 />
                 <FooterLink
                   href="/support/submit-incident"
@@ -592,6 +598,7 @@ export default function Footer() {
                   href="https://kreativedreamflow.com"
                   className="text-horizon-grey-400 hover:text-horizon-purple hover:underline text-sm"
                   target="_blank"
+                  rel='noopener noreferrer'
                 >
                   Website made with ♥ by Kreative Dreamflow.
                 </a>

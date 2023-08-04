@@ -86,6 +86,7 @@ export default function ContactUs() {
             btnLabel="Get Support"
             btnLink="/support"
             btnTarget="_blank"
+            rel='noopener noreferrer'
           />
         </div>
       </main>

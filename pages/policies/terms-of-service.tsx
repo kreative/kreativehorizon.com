@@ -94,6 +94,7 @@ export default function TermsOfService() {
                   <a
                     href="https://www.termsfeed.com/terms-conditions-generator/"
                     target="_blank"
+                    rel='noopener noreferrer'
                   >
                     Terms and Conditions Generator
                   </a>
