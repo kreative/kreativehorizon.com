@@ -74,7 +74,7 @@ function HorizonSphere() {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(48.5309 41.8231) rotate(59.144) scale(146.625)"
           >
-            <stop stop-color="#FFBB94" />
+            <stop stopColor="#FFBB94" />
             <stop offset="0.229167" stopColor="#FF7629" />
             <stop offset="0.723958" stopColor="#FF5EBF" />
             <stop offset="1" stopColor="#C479FF" />
