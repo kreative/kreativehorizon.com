@@ -27,7 +27,7 @@ export default function NavMenu() {
     <NavigationMenu.Root orientation="vertical">
       <NavigationMenu.List className="flex justify-center items-center space-x-5">
         <MenuItem link="/events" name="Events" />
-        <MenuItem link="/about-us" name="About us" negativeSkew={true} />
+        <MenuItem link="/about-us" name="About us" negativeSkew />
         <MenuItem link="/contact-us" name="Contact" />
         <NavigationMenu.Item>
           <NavigationMenu.Trigger
@@ -83,7 +83,7 @@ export default function NavMenu() {
           </NavigationMenu.Content>
         </NavigationMenu.Item>
         <MenuItem link="/sponsors" name="Sponsor" />
-        <MenuItem link="/reviews" name="Reviews" negativeSkew={true} />
+        <MenuItem link="/reviews" name="Reviews" negativeSkew />
       </NavigationMenu.List>
     </NavigationMenu.Root>
   );

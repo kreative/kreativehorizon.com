@@ -10,7 +10,7 @@ export default function HelloBar({
 }) {
   return (
     <div className="bg-horizon-grey-800 py-1">
-      <Marquee speed={25} autoFill={true} pauseOnHover={true} direction="right">
+      <Marquee speed={25} autoFill pauseOnHover direction="right">
         <div className="px-6 md:px-10">
           <Link href={link} className="text-white text-sm font-mono hover:underline italic">
             {headline}
