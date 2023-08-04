@@ -94,7 +94,7 @@ export default function TermsOfService() {
                   <a
                     href="https://www.termsfeed.com/terms-conditions-generator/"
                     target="_blank"
-                    rel='noopener noreferrer'
+                    rel="noopener noreferrer"
                   >
                     Terms and Conditions Generator
                   </a>
@@ -115,7 +115,7 @@ export default function TermsOfService() {
                   accessible from{" "}
                   <a
                     href="https://kreativehorizon.com"
-                    rel="external nofollow noopener"
+                    rel="nofollow noopener"
                     target="_blank"
                   >
                     https://kreativehorizon.com
@@ -355,7 +355,7 @@ export default function TermsOfService() {
                   By email:{" "}
                   <a
                     href="mailto:horizon@kreativeusa.com"
-                    rel="external nofollow noopener"
+                    rel="nofollow noopener"
                     target="_blank"
                     className="underline text-horizon-purple font-bold"
                   >
@@ -368,7 +368,7 @@ export default function TermsOfService() {
                   By visiting this page on our website:{" "}
                   <a
                     href="https://kreativehorizon.com/contact-us"
-                    rel="external nofollow noopener"
+                    rel="nofollow noopener"
                     target="_blank"
                     className="underline text-horizon-purple font-bold"
                   >
@@ -381,7 +381,7 @@ export default function TermsOfService() {
                   By phone number:{" "}
                   <a
                     href="tel:+15152126469"
-                    rel="external nofollow noopener"
+                    rel="nofollow noopener"
                     target="_blank"
                     className="underline text-horizon-purple font-bold"
                   >

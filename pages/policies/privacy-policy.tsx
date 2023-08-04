@@ -46,7 +46,7 @@ export default function PrivacyPolicy() {
               <a
                 href="https://www.termsfeed.com/privacy-policy-generator/"
                 target="_blank"
-                rel='noopener noreferrer'
+                rel="noopener noreferrer"
               >
                 Privacy Policy Generator
               </a>
@@ -150,9 +150,8 @@ export default function PrivacyPolicy() {
                   accessible from{" "}
                   <a
                     href="https://kreativehorizon.com"
-                    rel="external nofollow noopener"
+                    rel="nofollow noopener"
                     target="_blank"
-                    rel='noopener noreferrer'
                   >
                     https://kreativehorizon.com
                   </a>
@@ -283,7 +282,7 @@ export default function PrivacyPolicy() {
               <a
                 href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
                 target="_blank"
-                rel='noopener noreferrer'
+                rel="noopener noreferrer"
               >
                 TermsFeed website
               </a>{" "}
@@ -637,7 +636,7 @@ export default function PrivacyPolicy() {
                   By email:{" "}
                   <a
                     href="mailto:horizon@kreativeusa.com"
-                    rel="external nofollow noopener"
+                    rel="nofollow noopener"
                     target="_blank"
                     className="underline text-horizon-purple font-bold"
                   >
@@ -650,7 +649,7 @@ export default function PrivacyPolicy() {
                   By visiting this page on our website:{" "}
                   <a
                     href="https://kreativehorizon.com/contact-us"
-                    rel="external nofollow noopener"
+                    rel="nofollow noopener"
                     target="_blank"
                     className="underline text-horizon-purple font-bold"
                   >
@@ -663,7 +662,7 @@ export default function PrivacyPolicy() {
                   By phone number:{" "}
                   <a
                     href="tel:+15152126469"
-                    rel="external nofollow noopener"
+                    rel="nofollow noopener"
                     target="_blank"
                     className="underline text-horizon-purple font-bold"
                   >
