@@ -1,5 +1,5 @@
 import Link from "next/link";
-import * as NavigationMenu from "@radix-ui/react-navigation-menu";
+import * as NavigationMenu from "@radix-ui/react-navigation-menu"; // skipcq: JS-C1003
 import { useFloating } from "@floating-ui/react";
 import { CaretDown } from "@phosphor-icons/react";
 import { motion } from "framer-motion";

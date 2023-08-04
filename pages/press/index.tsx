@@ -35,8 +35,8 @@ function PressReleaseCard({ article }: { article: any }) { // skipcq: JS-0323
   );
 }
 
+// skipcq: JS-0323
 export default function Press({ articles }: { articles: any[] }) {
-  // skipcq: JS-0356
   return (
     <div>
       <NextSeo
@@ -159,7 +159,7 @@ export async function getStaticProps() {
     props: {
       articles: (await getAllPressReleases()).map(
         (
-          { component, ...meta }: { component: any; meta?: PressReleaseMeta } // skipcq: JS-0356
+          { component, ...meta }: { component: any; meta?: PressReleaseMeta } // skipcq: JS-0323
         ) => meta
       ),
     },
