@@ -1,29 +1,33 @@
-import { createClient, groq } from "next-sanity";
+import { groq } from "next-sanity";
+import sanityClient from "./sanityClient";
 import Event from "../types/Events";
 
-export async function getLatestEvents(): Promise<Event[]> {
-  const client = createClient({
-    dataset: 'production',
-    apiVersion: '2021-03-25',
-    projectId: 'laarr84g',
-  });
+const getLatestEvents = async (): Promise<Event[]> => {
+  try {
+    // Fetch the StudentReviews using the defined query
+    const events = await sanityClient.fetch(
+      groq`*[ _type == "event" ] | order(start_datetime asc)[0..2] {
+        _id,
+        _createdAt,
+        title,
+        tagline,
+        season,
+        year,
+        start_datetime,
+        end_datetime,
+        date_label,
+        location,
+        slug,
+        cld_id,
+        alt,
+      }
+      `
+    );
+    return events;
+  } catch (error) {
+    console.error('Error fetching events:', error);
+    return [];
+  }
+};
 
-  return client.fetch(
-    groq`*[ _type == "event" ] | order(start_datetime asc)[0..2] {
-      _id,
-      _createdAt,
-      title,
-      tagline,
-      season,
-      year,
-      start_datetime,
-      end_datetime,
-      date_label,
-      location,
-      slug,
-      cld_id,
-      alt,
-    }
-    `
-  );
-}
+export default getLatestEvents;
