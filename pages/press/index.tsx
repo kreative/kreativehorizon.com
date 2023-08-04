@@ -10,7 +10,8 @@ import PressReleaseMeta from "@/types/PressReleaseMeta";
 import { motion } from "framer-motion";
 import { Camera, BookOpen, CaretRight } from "@phosphor-icons/react";
 
-function PressReleaseCard({ article }: { article: any }) { // skipcq: JS-0323
+function PressReleaseCard({ article }: { article: any }) {
+  // skipcq: JS-0323
   return (
     <motion.div whileHover={{ scale: 0.97, transition: { duration: 0.2 } }}>
       <Link
@@ -159,8 +160,8 @@ export async function getStaticProps() {
     props: {
       articles: (await getAllPressReleases()).map(
         (
-          { component, ...meta }: { component: any; meta?: PressReleaseMeta } // skipcq: JS-0323, JS-0356
-        ) => meta
+          { component, ...meta }: { component: any; meta?: PressReleaseMeta }, // skipcq: JS-0323, JS-0356
+        ) => meta,
       ),
     },
   };
