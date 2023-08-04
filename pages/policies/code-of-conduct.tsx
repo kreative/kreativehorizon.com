@@ -176,7 +176,13 @@ export default function CodeOfConduct() {
               Kreative reserves the right to revise, make exceptions to, or
               otherwise amend these policies in whole or in part. If you have
               any questions regarding these policies, please contact Kreative by
-              email at <a href="mailto:hello@kreativeusa.com" className="underline text-horizon-purpl">hello@kreativeusa.com.</a>
+              email at{" "}
+              <a
+                href="mailto:hello@kreativeusa.com"
+                className="underline text-horizon-purpl"
+              >
+                hello@kreativeusa.com.
+              </a>
             </p>
           </div>
         </Container>
