@@ -1,8 +1,8 @@
 import { groq } from "next-sanity";
 import sanityClient from "./sanityClient";
-import Event from "../types/Events";
+import EventCardType from "../types/EventCard";
 
-const getLatestEvents = async (): Promise<Event[]> => {
+const getLatestEvents = async (): Promise<EventCardType[]> => {
   try {
     // Fetch the StudentReviews using the defined query
     const events = await sanityClient.fetch(

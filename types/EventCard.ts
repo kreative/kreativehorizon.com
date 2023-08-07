@@ -1,4 +1,4 @@
-export default interface Event {
+export default interface EventCardType {
   _id: string;
   _createdAt: string;
   title: string;

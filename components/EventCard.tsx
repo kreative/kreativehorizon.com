@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Event from "@/types/Events";
+import EventCardType from "@/types/EventCard";
 import { CldImage } from "next-cloudinary";
 import { motion } from "framer-motion";
 
-export default function EventCard({ event }: { event: Event }) {
+export default function EventCard({ event }: { event: EventCardType }) {
   return (
     <div>
       <Link href={`/events/${event.slug}`}>
@@ -20,8 +20,12 @@ export default function EventCard({ event }: { event: Event }) {
               width="760"
               height="460"
             />
-            <h3 className="text-4xl md:text-5xl lg:text-4xl font-chedros mt-6 mb-2">{event.title}</h3>
-            <p className="text-2xl sm:text-xl text-horizon-grey-600">{event.tagline}</p>
+            <h3 className="text-4xl md:text-5xl lg:text-4xl font-chedros mt-6 mb-2">
+              {event.title}
+            </h3>
+            <p className="text-2xl sm:text-xl text-horizon-grey-600">
+              {event.tagline}
+            </p>
           </div>
           <p className="text-xl mt-4">
             <span className="font-bold">{event.date_label}</span> @{" "}

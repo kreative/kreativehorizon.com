@@ -8,13 +8,13 @@ import SplashContainer from "@/components/SplashContainer";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import EventCard from "@/components/EventCard";
 import FloatingCTA3 from "@/components/FloatingCTA3";
-import Event from "@/types/Events";
+import EventCardType from "@/types/EventCard";
 import getLatestEvents from "@/lib/getLatestEvents";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import { CldImage } from "next-cloudinary";
 
-export default function Home({ events }: { events: Event[] }) {
+export default function Home({ events }: { events: EventCardType[] }) {
   return (
     <div>
       <NextSeo
@@ -161,7 +161,7 @@ export default function Home({ events }: { events: Event[] }) {
               </motion.div>
             </div>
             <div className="pt-12 grid grid-cols-2 lg:grid-cols-3 gap-4">
-              {events.map((event: Event) => (
+              {events.map((event: EventCardType) => (
                 <div className="col-span-2 sm:col-span-1" key={event._id}>
                   <EventCard event={event} />
                 </div>
@@ -183,9 +183,9 @@ export default function Home({ events }: { events: Event[] }) {
                   “We started Kreative Horizon to give students the sort of
                   tools they can&apos;t get in the classroom. Events like
                   hackathons and pitch competitions{" "}
-                  <span className="text-4xl md:text-[3.5rem] underline">
-                    give students the chance to build something in the real
-                    world and have fun doing it.”
+                  <span className="text-4xl md:text-6xl underline">
+                    give students the chance to build something real and have
+                    fun doing it.”
                   </span>
                 </h2>
                 <p className="text-xl">Armaan Gupta, Founder</p>
@@ -218,7 +218,7 @@ export default function Home({ events }: { events: Event[] }) {
 }
 
 export async function getStaticProps() {
-  const events: Event[] = await getLatestEvents();
+  const events: EventCardType[] = await getLatestEvents();
 
   return {
     props: {

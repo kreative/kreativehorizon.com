@@ -4,14 +4,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LogoCloud6 from "@/components/LogoCloud6";
 import EventCard from "@/components/EventCard";
-import Event from "@/types/Events";
+import EventCardType from "@/types/EventCard";
 import getEvents from "@/lib/getEvents";
 import { NextSeo } from "next-seo";
 
 export default function Events({
   events,
 }: {
-  events: { _2023: Event[]; _2024: Event[] };
+  events: { _2023: EventCardType[]; _2024: EventCardType[] };
 }) {
   return (
     <div>
@@ -44,7 +44,7 @@ export default function Events({
               2023 Events
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-              {events._2023.map((event: Event) => (
+              {events._2023.map((event: EventCardType) => (
                 <div className="col-span-2 sm:col-span-1" key={event._id}>
                   <EventCard event={event} />
                 </div>
@@ -58,7 +58,7 @@ export default function Events({
               2024 Events
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-              {events._2024.map((event: Event) => (
+              {events._2024.map((event: EventCardType) => (
                 <div className="col-span-2 sm:col-span-1" key={event._id}>
                   <EventCard event={event} />
                 </div>
@@ -73,11 +73,11 @@ export default function Events({
 }
 
 export async function getStaticProps() {
-  const events: Event[] = await getEvents();
-  const _2023: Event[] = [];
-  const _2024: Event[] = [];
+  const events: EventCardType[] = await getEvents();
+  const _2023: EventCardType[] = [];
+  const _2024: EventCardType[] = [];
 
-  events.forEach((event: Event) => {
+  events.forEach((event: EventCardType) => {
     if (event.year === 2023) {
       _2023.push(event);
     } else if (event.year === 2024) {
