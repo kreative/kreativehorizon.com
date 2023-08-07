@@ -8,7 +8,7 @@ export default defineType({
     defineField({
       name: 'testimonial',
       title: 'Testimonial',
-      type: 'string',
+      type: 'text',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
