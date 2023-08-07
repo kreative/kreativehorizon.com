@@ -20,7 +20,7 @@ function Star() {
 
 export default function TestimonialCard({ review }: { review: StudentReview }) {
   return (
-    <div className="px-8 py-10 rounded-2xl bg-horizon-grey-100 border border-horizon-grey-300 flex flex-col space-y-3 justify-start items-start">
+    <div className="px-8 py-10 rounded-2xl bg-horizon-grey-100 flex flex-col space-y-3 justify-start items-start">
       <div className="flex justify-start items-center space-x-2">
         <Star />
         <Star />
