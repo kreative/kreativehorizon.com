@@ -25,7 +25,7 @@ const getLatestEvents = async (excludeSlug?: string): Promise<EventCardType[]> =
       }
       `
       );
-      console.log('events', events)
+  
     } else {
       events = await sanityClient.fetch(
         groq`*[ _type == "event" && start_datetime > now() ] | order(start_datetime asc)[0..2] {

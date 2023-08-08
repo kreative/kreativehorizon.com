@@ -47,9 +47,6 @@ function TestimonialRef({
   const firstPart = splitWords[0];
   const secondPart = splitWords[1];
 
-  console.log(splitWords);
-  console.log(firstPart);
-
   return (
     <div className="bg-horizon-purple-50 rounded-2xl p-10">
       <div className="flex justify-start items-center space-x-2 pb-4">
@@ -567,7 +564,7 @@ export default function EventPageTemplate({
 
 export async function getStaticPaths() {
   // Fetch the list of event slugs from your data or database
-  const eventSlugs = ["hackisu-v2", "hackisu-v3"];
+  const eventSlugs = ["hackisu-v2"];
 
   // Generate dynamic paths based on event slugs
   const paths = eventSlugs.map((slug) => ({ params: { slug } }));

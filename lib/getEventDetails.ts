@@ -50,7 +50,6 @@ const getEventDetails = async (slug: string): Promise<any[]> => {
         typeform_id,
       }`
     );
-    console.log(event)
     return event;
   } catch (error) {
     console.error('Error fetching event:', error);
