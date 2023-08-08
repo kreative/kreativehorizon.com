@@ -36,5 +36,11 @@ jobs:
             ${{ steps.netlify.outputs.url }}/sponsors/interest-form
             ${{ steps.netlify.outputs.url }}/get-involved
             ${{ steps.netlify.outputs.url }}/events
+            ${{ steps.netlify.outputs.url }}/events/hackisu-v2
+            ${{ steps.netlify.outputs.url }}/events/dataisu-v1
+            ${{ steps.netlify.outputs.url }}/events/hackisu-v3
+            ${{ steps.netlify.outputs.url }}/events/builddsm-v1
+            ${{ steps.netlify.outputs.url }}/events/designjamisu-v1
+            ${{ steps.netlify.outputs.url }}/events/pitchames-v1
           budgetPath: .github/workflows/budget.json
           uploadArtifacts: true
