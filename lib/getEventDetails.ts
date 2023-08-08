@@ -48,12 +48,12 @@ const getEventDetails = async (slug: string): Promise<any[]> => {
         cld_id,
         alt,
         typeform_id,
-      }`
+      }`,
     );
-    console.log(event)
+    console.log(event);
     return event;
   } catch (error) {
-    console.error('Error fetching event:', error);
+    console.error("Error fetching event:", error);
     return [];
   }
 };
