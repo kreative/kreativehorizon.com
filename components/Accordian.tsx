@@ -1,17 +1,13 @@
 import { Disclosure } from "@headlessui/react";
 import { Minus, Plus } from "@phosphor-icons/react";
-
-type FAQ = {
-  question: string;
-  answer: React.ReactNode;
-};
+import FAQ from "@/types/FAQ";
 
 export default function Accordian({ faqs }: { faqs: FAQ[] }) {
   return (
     <div>
-      <dl className="space-y-6 divide-y divide-gray-900/10">
+      <dl className="space-y-3 divide-y divide-gray-900/10">
         {faqs.map((faq) => (
-          <Disclosure as="div" key={faq.question} className="pt-6 -mt-6">
+          <Disclosure as="div" key={faq.question} className="pt-3 -mt-6">
             {({ open }) => (
               <>
                 <dt>
