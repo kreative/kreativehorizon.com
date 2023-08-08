@@ -352,33 +352,35 @@ export default function EventPageTemplate({
                           />
                         </label>
                       </p>
-                      <div>
-                        <input
-                          type="text"
-                          name="full_name"
-                          id="full_name"
-                          className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
-                          placeholder="Full name"
-                          value={fullName}
-                          onChange={(e) => setFullName(e.target.value)}
-                          required
-                          aria-required="true"
-                          onKeyUp={handleKeyPress}
-                        />
-                      </div>
-                      <div>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
-                          placeholder="Personal email address"
-                          onChange={(e) => setEmail(e.target.value)}
-                          value={email}
-                          required
-                          aria-required="true"
-                          onKeyUp={handleKeyPress}
-                        />
+                      <div className="grid grid-cols-2 gap-2">
+                        <div className="col-span-2">
+                          <input
+                            type="text"
+                            name="full_name"
+                            id="full_name"
+                            className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
+                            placeholder="Full name"
+                            value={fullName}
+                            onChange={(e) => setFullName(e.target.value)}
+                            required
+                            aria-required="true"
+                            onKeyUp={handleKeyPress}
+                          />
+                        </div>
+                        <div className="col-span-2">
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
+                            placeholder="Personal email address"
+                            onChange={(e) => setEmail(e.target.value)}
+                            value={email}
+                            required
+                            aria-required="true"
+                            onKeyUp={handleKeyPress}
+                          />
+                        </div>
                       </div>
                       <div>
                         <motion.div
