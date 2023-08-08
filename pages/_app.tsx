@@ -154,7 +154,10 @@ export default function App({ Component, pageProps }: AppProps) {
           cardType: "summary_large_image",
         }}
       />
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-8D33N2GVHQ"/>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-8D33N2GVHQ"
+      />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
