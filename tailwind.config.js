@@ -28,6 +28,8 @@ module.exports = {
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1690379142/kreativehorizon.com/sponsors-page/darker-image-gallery_q5mhir.webp')",
         "aboutus-splash":
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1690757036/kreativehorizon.com/about-us/aboutus-splash-2_uvc6to.png')",
+        "rocket-bg":
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1691519913/kreativehorizon.com/about-us/rocket-bg_wh0zrb.webp')",
       },
       fontFamily: {
         sans: ["var(--font-craftworksans)"],

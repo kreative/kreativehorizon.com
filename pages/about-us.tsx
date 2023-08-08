@@ -16,30 +16,16 @@ export default function AboutUs() {
         title="About Us"
         description="Discover the story behind Kreative Horizon and our mission to help students build tomorrow, today."
       />
-      <Head>
-        <style>{`
-          .text-stroke {
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: white;
-          }
-        `}</style>
-      </Head>
       <Navbar />
       <main>
         <Container>
-          <div className="flex flex-col justify-start items-center rounded-[30px] bg-aboutus-splash bg-cover bg-bottom pt-20 px-6 xs:px-12 md:px-20 lg:px-24 mt-8 mb-16 sm:mb-24 md:mb-44">
-            <p className="text-2xl font-guthen tracking-wide pb-2">
+          <div className="flex flex-col justify-start items-center rounded-[30px] bg-rocket-bg bg-cover bg-bottom pt-20 px-6 xs:px-12 md:px-20 lg:px-24 mt-8 mb-16 sm:mb-24 md:mb-44">
+            <p className="text-2xl font-guthen tracking-wide pb-2 text-white">
               About Kreative Horizon
             </p>
-            <h1 className="text-center pb-8">
-              <span className="text-5xl sm:text-6xl font-chedros">
-                We&apos;re on a mission to empower students to build the future
-                of tomorrow today.
-              </span>{" "}
-              <span className="text-5xl sm:text-6xl font-chedros text-stroke">
-                Through hackathons, workshops, and more.
-              </span>
+            <h1 className="text-center pb-8 text-white text-5xl sm:text-6xl font-chedros">
+              We&apos;re on a mission to empower students to build the future of
+              tomorrow today. Through hackathons, workshops, and more.
             </h1>
             <svg
               className="h-auto w-[50%] -mb-16 sm:-mb-24 md:-mb-44"
