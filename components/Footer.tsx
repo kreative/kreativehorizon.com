@@ -579,7 +579,6 @@ export default function Footer() {
                   href="/support"
                   title="Get support"
                   target="_blank"
-                  rel="noopener noreferrer"
                 />
                 <FooterLink
                   href="/support/submit-incident"
