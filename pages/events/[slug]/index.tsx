@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -100,6 +100,18 @@ export default function EventPageTemplate({
 }) {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
+  const imageRef = useRef<null | HTMLDivElement>(null);
+  const appBoxRef = useRef<null | HTMLDivElement>(null);
+
+  const handleBottomButton = (e: any) => {
+    e.preventDefault();
+    imageRef.current?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  };
+
+  const handleTopButton = (e: any) => {
+    e.preventDefault();
+    appBoxRef.current?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  };
 
   const faqs: FAQ[] = event.faqs.map((faq: any) => {
     return {
@@ -124,16 +136,20 @@ export default function EventPageTemplate({
       <main>
         <Container>
           <div className="max-w-5xl mx-auto pt-12 pb-32">
-            <CldImage
-              src={`kreativehorizon.com/events/${event.page_cld_id}`}
-              alt={event.page_alt}
-              className="w-full h-auto rounded-2xl"
-              width={1826}
-              height={946}
-            />
+            <div ref={imageRef}>
+              <CldImage
+                src={`kreativehorizon.com/events/${event.page_cld_id}`}
+                alt={event.page_alt}
+                className="w-full h-auto rounded-2xl"
+                width={1826}
+                height={946}
+              />
+            </div>
             <div className="pt-12 grid grid-cols-12 gap-6">
               <div className="col-span-12 lg:col-span-8">
-                <h1 className="text-5xl xs:text-6xl sm:text-7xl font-chedros">{event.title}</h1>
+                <h1 className="text-5xl xs:text-6xl sm:text-7xl font-chedros">
+                  {event.title}
+                </h1>
                 <div className="grid grid-cols-2 gap-4 py-6">
                   <div className="col-span-2 xs:col-span-1">
                     <div className="flex space-x-4 items-start justify-start">
@@ -187,12 +203,12 @@ export default function EventPageTemplate({
                       }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <Link
-                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white border border-horizon-grey-800"
-                        href="/get-involved"
+                      <button
+                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white"
+                        onClick={handleTopButton}
                       >
                         Apply now 👇
-                      </Link>
+                      </button>
                     </motion.div>
                     <motion.div
                       whileHover={{
@@ -246,7 +262,7 @@ export default function EventPageTemplate({
                   <h2 className="text-4xl font-chedros mb-6">
                     Why you should attend {event.title}
                   </h2>
-                  
+
                   <div className="grid grid-cols-2 gap-4 mb-12">
                     <div className="col-span-2 sm:col-span-1 space-y-4">
                       {event.reasons_to_attend
@@ -323,12 +339,12 @@ export default function EventPageTemplate({
                       }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <Link
-                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white border border-horizon-grey-800"
-                        href="/get-involved"
+                      <button
+                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white"
+                        onClick={handleBottomButton}
                       >
                         Apply now ☝️
-                      </Link>
+                      </button>
                     </motion.div>
                     <motion.div
                       whileHover={{
@@ -458,7 +474,9 @@ export default function EventPageTemplate({
                     </svg>
                   </div>
                 </div>
-                <h2 className="text-3xl text-horizon-grey-600 font-chedros mb-6 mt-12 text-center">
+                <h2
+                  className="text-3xl text-horizon-grey-600 font-chedros mb-6 mt-12 text-center"
+                >
                   Proudly sponsored by
                 </h2>
                 <div className="flex flex-wrap lg:flex-col items-center justify-center space-x-4 space-y-4 lg:space-x-0 lg:space-y-0">
@@ -474,7 +492,7 @@ export default function EventPageTemplate({
                     </div>
                   ))}
                 </div>
-                <div className="pt-6 lg:p-0 text-center">
+                <div className="pt-6 lg:p-0 text-center" ref={appBoxRef}>
                   <h3 className="text-lg text-horizon-purple">
                     Interested in sponsoring?
                   </h3>
