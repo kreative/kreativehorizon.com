@@ -132,11 +132,11 @@ export default function EventPageTemplate({
               height={946}
             />
             <div className="pt-12 grid grid-cols-12 gap-6">
-              <div className="col-span-12 md:col-span-8">
-                <h1 className="text-7xl font-chedros">{event.title}</h1>
+              <div className="col-span-12 lg:col-span-8">
+                <h1 className="text-5xl xs:text-6xl sm:text-7xl font-chedros">{event.title}</h1>
                 <div className="grid grid-cols-2 gap-4 py-6">
-                  <div className="col-span-1">
-                    <div className="flex space-x-4 items-center justify-start">
+                  <div className="col-span-2 xs:col-span-1">
+                    <div className="flex space-x-4 items-start justify-start">
                       <div className="p-2 bg-horizon-orange-100 rounded-lg">
                         <Calendar className="w-8 h-8 text-horizon-orange" />
                       </div>
@@ -150,7 +150,7 @@ export default function EventPageTemplate({
                       </div>
                     </div>
                   </div>
-                  <div className="col-span-1">
+                  <div className="col-span-2 xs:col-span-1">
                     <div className="flex space-x-4 items-start justify-start">
                       <div className="p-2 bg-horizon-orange-100 rounded-lg">
                         <MapPin className="w-8 h-8 text-horizon-orange" />
@@ -179,6 +179,36 @@ export default function EventPageTemplate({
                   <p className="text-lg text-horizon-grey-600">
                     {event.description}
                   </p>
+                  <div className="flex items-center justify-start space-x-3 mt-9 md:p-0 lg:hidden">
+                    <motion.div
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Link
+                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white border border-horizon-grey-800"
+                        href="/get-involved"
+                      >
+                        Apply now 👇
+                      </Link>
+                    </motion.div>
+                    <motion.div
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Link
+                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
+                        href="/contact-us"
+                      >
+                        Contact us 📬
+                      </Link>
+                    </motion.div>
+                  </div>
                 </div>
                 <div className="mt-12">
                   <h2 className="text-4xl font-chedros mb-9">
@@ -186,7 +216,7 @@ export default function EventPageTemplate({
                   </h2>
                   <Accordian faqs={faqs} />
                   <div className="mt-12 grid grid-cols-5 p-6 bg-horizon-orange-100 rounded-xl">
-                    <div className="col-span-3 flex flex-col items-start justify-center">
+                    <div className="col-span-5 sm:col-span-3 flex flex-col items-start justify-center">
                       <p className="text-lg text-horizon-grey-700 font-bold">
                         Have another question?
                       </p>
@@ -194,7 +224,7 @@ export default function EventPageTemplate({
                         Drop us a line and we&apos;ll get back to you soooon!
                       </p>
                     </div>
-                    <div className="col-span-2 flex justify-end items-center">
+                    <div className="col-span-5 sm:col-span-2 block mt-8 pb-4 sm:m-0 sm:flex justify-end items-center">
                       <motion.div
                         whileHover={{
                           scale: 1.05,
@@ -203,7 +233,7 @@ export default function EventPageTemplate({
                         whileTap={{ scale: 0.95 }}
                       >
                         <Link
-                          className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
+                          className="w-full rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
                           href="/contact-us"
                         >
                           Contact us 📬
@@ -216,6 +246,7 @@ export default function EventPageTemplate({
                   <h2 className="text-4xl font-chedros mb-6">
                     Why you should attend {event.title}
                   </h2>
+                  
                   <div className="grid grid-cols-2 gap-4 mb-12">
                     <div className="col-span-2 sm:col-span-1 space-y-4">
                       {event.reasons_to_attend
@@ -284,7 +315,7 @@ export default function EventPageTemplate({
                   <p className="text-lg text-horizon-grey-600 mb-8">
                     {event.conclusion_description}
                   </p>
-                  <div className="flex items-center justify-start space-x-3 pt-3 md:p-0">
+                  <div className="lg:flex items-center justify-start space-x-3 pt-3 md:p-0 hidden">
                     <motion.div
                       whileHover={{
                         scale: 1.05,
@@ -316,7 +347,7 @@ export default function EventPageTemplate({
                   </div>
                 </div>
               </div>
-              <div className="col-span-12 md:col-span-4 flex flex-col justify-start items-center">
+              <div className="col-span-12 lg:col-span-4">
                 <div className="p-8 bg-horizon-grey-100 rounded-2xl">
                   <h2 className="text-3xl font-chedros text-center mb-3">
                     Apply to participate and secure your spot now
@@ -353,7 +384,7 @@ export default function EventPageTemplate({
                         </label>
                       </p>
                       <div className="grid grid-cols-2 gap-2">
-                        <div className="col-span-2">
+                        <div className="col-span-2 xs:col-span-1 lg:col-span-2">
                           <input
                             type="text"
                             name="full_name"
@@ -367,7 +398,7 @@ export default function EventPageTemplate({
                             onKeyUp={handleKeyPress}
                           />
                         </div>
-                        <div className="col-span-2">
+                        <div className="col-span-2 xs:col-span-1 lg:col-span-2">
                           <input
                             type="email"
                             name="email"
@@ -427,27 +458,28 @@ export default function EventPageTemplate({
                     </svg>
                   </div>
                 </div>
-
-                <h2 className="text-3xl text-horizon-grey-600 font-chedros mb-6 mt-12">
+                <h2 className="text-3xl text-horizon-grey-600 font-chedros mb-6 mt-12 text-center">
                   Proudly sponsored by
                 </h2>
-                {event.season.sponsors.map((sponsor: any) => (
-                  <div key={sponsor._id} className="mb-6 w-[60%]">
-                    <CldImage
-                      src={`kreativehorizon.com/sponsors/${sponsor.logo_cld_id}`}
-                      alt={sponsor.logo_alt}
-                      className="w-full h-auto mb-8"
-                      width={sponsor.logo_width}
-                      height={sponsor.logo_height}
-                    />
-                  </div>
-                ))}
-                <div className="text-center">
+                <div className="flex flex-wrap lg:flex-col items-center justify-center space-x-4 space-y-4 lg:space-x-0 lg:space-y-0">
+                  {event.season.sponsors.map((sponsor: any) => (
+                    <div key={sponsor._id} className="w-[35%] lg:w-[60%]">
+                      <CldImage
+                        src={`kreativehorizon.com/sponsors/${sponsor.logo_cld_id}`}
+                        alt={sponsor.logo_alt}
+                        className="w-full h-auto mb-8"
+                        width={sponsor.logo_width}
+                        height={sponsor.logo_height}
+                      />
+                    </div>
+                  ))}
+                </div>
+                <div className="pt-6 lg:p-0 text-center">
                   <h3 className="text-lg text-horizon-purple">
                     Interested in sponsoring?
                   </h3>
                   <Link
-                    href={event.google_maps_link}
+                    href="/sponsors"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xl font-bold text-horizon-purple hover:text-horizon-pink underline"
@@ -461,10 +493,10 @@ export default function EventPageTemplate({
         </Container>
         <div className="py-24 border-t border-horizon-grey-300">
           <Container>
-            <p className="text-2xl font-guthen tracking-wide pb-2">
+            <p className="text-center sm:text-left text-2xl font-guthen tracking-wide pb-2">
               Student <span className="ml-2">Testimonials</span>
             </p>
-            <h1 className="pb-8 text-5xl sm:text-6xl font-chedros">
+            <h1 className="text-center sm:text-left pb-8 text-5xl sm:text-6xl font-chedros">
               OUR STUDENT AND BUILDERS LOVE HORIZON EVENTS
             </h1>
             <div className="py-4 grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -494,7 +526,7 @@ export default function EventPageTemplate({
         </div>
         <div className="py-24 bg-horizon-grey-100">
           <Container>
-            <h1 className="pb-8 text-5xl sm:text-6xl font-chedros">
+            <h1 className="text-center sm:text-left pb-8 text-5xl sm:text-6xl font-chedros">
               MORE EVENTS YOU MIGHT LIKE
             </h1>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
