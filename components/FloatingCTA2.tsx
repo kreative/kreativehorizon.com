@@ -9,6 +9,7 @@ export default function FloatingCTA2({
   btnLabel,
   btnLink,
   btnTarget,
+  rel,
 }: {
   label: string;
   title: string;
@@ -16,6 +17,7 @@ export default function FloatingCTA2({
   btnLabel: string;
   btnLink: string;
   btnTarget?: string;
+  rel?: string;
 }) {
   return (
     <Container>
@@ -38,7 +40,7 @@ export default function FloatingCTA2({
                   href={btnLink}
                   className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-pink text-white shadow-md"
                   target={btnTarget}
-                  rel="noopener noreferrer"
+                  rel={rel}
                 >
                   {btnLabel}
                 </Link>
