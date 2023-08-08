@@ -335,7 +335,7 @@ export default function EventPageTemplate({
                       action={`/events/${
                         event.slug
                       }/complete-app?first_name=${encodeURIComponent(
-                        fullName
+                        fullName,
                       )}&email=${encodeURIComponent(email)}`}
                     >
                       <input
@@ -539,11 +539,11 @@ export async function getStaticProps(context: any) {
   const reviews1 = studentReviews.slice(0, Math.floor(totalReviews / 3));
   const reviews2 = studentReviews.slice(
     Math.floor(totalReviews / 3),
-    Math.floor((totalReviews / 3) * 2)
+    Math.floor((totalReviews / 3) * 2),
   );
   const reviews3 = studentReviews.slice(
     Math.floor((totalReviews / 3) * 2),
-    totalReviews
+    totalReviews,
   );
 
   return {
