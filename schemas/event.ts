@@ -92,9 +92,9 @@ export default defineType({
     }),
     defineField({
       name: 'google_maps_link',
-      title: 'Google Maps iFrame Src',
+      title: 'Google Maps Link',
       type: 'string',
-      description: 'This will be used to embed a Google Maps iFrame on the Event Page',
+      description: 'This should be to help people find the address on Google Maps'
     }),
     defineField({
       name: 'subheadline',
@@ -204,6 +204,12 @@ export default defineType({
       name: 'typeform_id',
       title: 'Typeform ID',
       type: 'string',
+    }),
+    defineField({
+      name: 'netlify_forms_name',
+      title: 'Netlify Forms Name',
+      type: 'string',
+      description: 'THIS CANNOT CHANGE ONCE SET',
     }),
   ],
 })
