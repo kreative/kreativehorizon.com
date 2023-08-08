@@ -11,10 +11,10 @@ export default defineType({
       type: 'number',
     }),
     defineField({
-      name: 'sponsor_cld_ids',
-      title: 'Sponsor Cloudinary IDs',
+      name: 'sponsors',
+      title: 'Sponsors',
       type: 'array',
-      of: [{ type: 'string' }],
+      of: [{ type: 'reference', to: [{ type: 'sponsor' }] }],
     }),
   ],
 })

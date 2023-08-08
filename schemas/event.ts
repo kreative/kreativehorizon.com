@@ -38,6 +38,16 @@ export default defineType({
       type: 'datetime',
     }),
     defineField({
+      name: 'date_top_label',
+      title: 'Date Top Label',
+      type: 'string',
+    }),
+    defineField({
+      name: 'date_bottom_label',
+      title: 'Date Bottom Label',
+      type: 'string',
+    }),
+    defineField({
       name: 'timezone',
       title: 'Timezone',
       type: 'string',
@@ -59,12 +69,12 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'City',
+      name: 'city',
       title: 'City',
       type: 'string',
     }),
     defineField({
-      name: 'State',
+      name: 'state',
       title: 'State',
       type: 'string',
       description: 'Use the two-letter abbreviation',

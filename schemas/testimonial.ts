@@ -12,6 +12,12 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'highlighted_text',
+      title: 'Highlighted Text',
+      type: 'text',
+      description: 'This is the text that will be highlighted in the testimonial',
+    }),
+    defineField({
       name: 'fullName',
       title: 'Full name',
       type: 'string',
@@ -23,6 +29,12 @@ export default defineType({
       type: 'string',
       description: 'University name, school name, or company name',
       validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'position',
+      title: "Major or Position",
+      type: 'string',
+      description: 'Major or position at the organization or school',
     }),
     defineField({
       name: 'type',
