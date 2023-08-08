@@ -224,7 +224,7 @@ export default function EventPageTemplate({
                         Drop us a line and we&apos;ll get back to you soooon!
                       </p>
                     </div>
-                    <div className="col-span-5 sm:col-span-2 block mt-8 pb-4 sm:m-0 sm:flex justify-end items-center">
+                    <div className="col-span-5 sm:col-span-2 block mt-8 mb-4 sm:m-0 sm:flex justify-end items-center">
                       <motion.div
                         whileHover={{
                           scale: 1.05,
