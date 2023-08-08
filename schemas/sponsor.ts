@@ -25,5 +25,15 @@ export default defineType({
       title: 'Logo Alt Text',
       type: 'string',
     }),
+    defineField({
+      name: 'logo_width',
+      title: 'Logo Width',
+      type: 'number',
+    }),
+    defineField({
+      name: 'logo_height',
+      title: 'Logo Height',
+      type: 'number',
+    }),
   ],
 })
