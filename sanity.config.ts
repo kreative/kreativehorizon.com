@@ -11,6 +11,7 @@ export default defineConfig({
   projectId: 'laarr84g',
   dataset: 'production',
   plugins: [deskTool(), visionTool()],
+  useCdn: true,
   schema: {
     types: schemaTypes,
   },
