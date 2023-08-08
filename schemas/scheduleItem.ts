@@ -1,19 +1,19 @@
-import { defineField, defineType } from 'sanity'
+import { defineField, defineType } from "sanity";
 
 export default defineType({
-  name: 'schedule_item',
-  title: 'ScheduleItem',
-  type: 'object',
+  name: "schedule_item",
+  title: "ScheduleItem",
+  type: "object",
   fields: [
     defineField({
-      name: 'time',
-      title: 'Time',
-      type: 'string',
+      name: "time",
+      title: "Time",
+      type: "string",
     }),
     defineField({
-      name: 'description',
-      title: 'Description',
-      type: 'string',
+      name: "description",
+      title: "Description",
+      type: "string",
     }),
   ],
-})
+});

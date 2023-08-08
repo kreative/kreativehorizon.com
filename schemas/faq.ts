@@ -1,34 +1,34 @@
-import { defineField, defineType } from 'sanity'
+import { defineField, defineType } from "sanity";
 
 export default defineType({
-  name: 'faq',
-  title: 'FAQ',
-  type: 'document',
+  name: "faq",
+  title: "FAQ",
+  type: "document",
   fields: [
     defineField({
-      name: 'question',
-      title: 'Question',
-      type: 'string',
+      name: "question",
+      title: "Question",
+      type: "string",
     }),
     defineField({
-      name: 'answer',
-      title: 'Answer',
-      type: 'text',
+      name: "answer",
+      title: "Answer",
+      type: "text",
     }),
     defineField({
-      name: 'category',
-      title: 'Category',
-      type: 'string',
+      name: "category",
+      title: "Category",
+      type: "string",
       options: {
         list: [
-          { value: 'general', title: 'General' },
-          { value: 'travel_grants', title: 'Kreative Travel Grants' },
-          { value: 'labs', title: 'Kreative Horizon Labs' },
-          { value: 'events', title: 'Events' },
-          { value: 'hackathons', title: 'Hackathons' }
+          { value: "general", title: "General" },
+          { value: "travel_grants", title: "Kreative Travel Grants" },
+          { value: "labs", title: "Kreative Horizon Labs" },
+          { value: "events", title: "Events" },
+          { value: "hackathons", title: "Hackathons" },
         ],
-        layout: 'radio',
+        layout: "radio",
       },
-    })
+    }),
   ],
-})
+});

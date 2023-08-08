@@ -21,11 +21,11 @@ const getLatestEvents = async (): Promise<EventCardType[]> => {
         cld_id,
         alt,
       }
-      `
+      `,
     );
     return events;
   } catch (error) {
-    console.error('Error fetching events:', error);
+    console.error("Error fetching events:", error);
     return [];
   }
 };
