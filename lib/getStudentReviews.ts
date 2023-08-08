@@ -2,11 +2,26 @@ import { groq } from "next-sanity";
 import sanityClient from "./sanityClient";
 import StudentReview from "../types/StudentReview";
 
-const getStudentReviews = async (): Promise<StudentReview[]> => {
+const getStudentReviews = async (amount?: number): Promise<StudentReview[]> => {
+  let studentReviews: StudentReview[];
+
   try {
-    // Fetch the StudentReviews using the defined query
-    const studentReviews = await sanityClient.fetch(
-      groq`*[ _type == "testimonial" && type == "student" ]{
+    if (amount) {
+      const top = amount - 1 || 6;
+      studentReviews = await sanityClient.fetch(
+        groq`*[ _type == "testimonial" && type == "student" ] | order(_createdAt asc)[0..${top}]{
+          _id,
+          _createdAt,
+          fullName,
+          organization,
+          rating,
+          testimonial,
+        }
+        `
+      );
+    } else {
+      studentReviews = await sanityClient.fetch(
+        groq`*[ _type == "testimonial" && type == "student" ]{
         _id,
         _createdAt,
         fullName,
@@ -17,7 +32,8 @@ const getStudentReviews = async (): Promise<StudentReview[]> => {
         testimonial,
       }
       `
-    );
+      );
+    }
     return studentReviews;
   } catch (error) {
     console.error('Error fetching student reviews:', error);
