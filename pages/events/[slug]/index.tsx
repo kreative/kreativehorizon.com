@@ -379,7 +379,7 @@ export default function EventPageTemplate({
                       action={`/events/${
                         event.slug
                       }/complete-app?first_name=${encodeURIComponent(
-                        fullName
+                        fullName,
                       )}&email=${encodeURIComponent(email)}`}
                     >
                       <input
@@ -471,9 +471,7 @@ export default function EventPageTemplate({
                     </svg>
                   </div>
                 </div>
-                <h2
-                  className="text-3xl text-horizon-grey-600 font-chedros mb-6 mt-12 text-center"
-                >
+                <h2 className="text-3xl text-horizon-grey-600 font-chedros mb-6 mt-12 text-center">
                   Proudly sponsored by
                 </h2>
                 <div className="flex flex-wrap lg:flex-col items-center justify-center space-x-4 space-y-4 lg:space-x-0 lg:space-y-0">
@@ -586,11 +584,11 @@ export async function getStaticProps(context: any) {
   const reviews1 = studentReviews.slice(0, Math.floor(totalReviews / 3));
   const reviews2 = studentReviews.slice(
     Math.floor(totalReviews / 3),
-    Math.floor((totalReviews / 3) * 2)
+    Math.floor((totalReviews / 3) * 2),
   );
   const reviews3 = studentReviews.slice(
     Math.floor((totalReviews / 3) * 2),
-    totalReviews
+    totalReviews,
   );
 
   return {
