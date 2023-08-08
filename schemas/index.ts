@@ -8,5 +8,6 @@ import faq from './faq';
 import season from './season';
 import scheduleItem from './scheduleItem';
 import reasonToAttend from './reasonToAttend';
+import sponsor from './sponsor';
 
-export const schemaTypes = [post, author, category, blockContent, event, testimonial, faq, season, scheduleItem, reasonToAttend];
+export const schemaTypes = [post, author, category, blockContent, event, testimonial, faq, season, scheduleItem, reasonToAttend, sponsor];
