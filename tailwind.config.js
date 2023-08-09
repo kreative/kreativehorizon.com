@@ -25,7 +25,7 @@ module.exports = {
         "floating-cta-w-logo":
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1689572375/kreativehorizon.com/newsletter_signup_ipktg5.webp')",
         "sponsor-image-gallery":
-          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1690379142/kreativehorizon.com/sponsors-page/darker-image-gallery_q5mhir.webp')",
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1691608331/kreativehorizon.com/darker-image-gallery-2x_pnuahm.png')",
         "aboutus-splash":
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1690757036/kreativehorizon.com/about-us/aboutus-splash-2_uvc6to.png')",
         "rocket-bg":

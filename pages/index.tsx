@@ -87,7 +87,7 @@ export default function Home({ events }: { events: EventCardType[] }) {
         </div>
         <Container>
           <div className="py-20 grid grid-cols-2 gap-4">
-            <div className="col-span-2 sm:col-span-1">
+            <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-start">
               <p className="text-2xl tracking-wide font-guthen mb-4">
                 Our mission
               </p>
@@ -95,8 +95,6 @@ export default function Home({ events }: { events: EventCardType[] }) {
                 We&apos;re on a mission to give students the tools to build the
                 future of tomorrow, today.
               </h2>
-            </div>
-            <div className="col-span-2 sm:col-span-1">
               <p className="text-lg text-horizon-grey-700 pt-8">
                 When we started Kreative Horizon back in 2019, we had one goal:
                 run a fantastic hackathon for the students of Chicago. Since
@@ -108,26 +106,41 @@ export default function Home({ events }: { events: EventCardType[] }) {
                 students on their campus or area, make new friends, connect with
                 sponsors (that are looking to hire 👀), and have a great time.
               </p>
-              <div className="flex justify-start items-center space-x-10 max-w-[75%] mt-8">
+              <div className="flex justify-center items-end space-x-10 max-w-[75%] mt-8">
                 <div className="">
-                  <p className="text-6xl sm:text-8xl font-chedros">154</p>
+                  <p className="text-6xl sm:text-7xl lg:text-8xl font-chedros">
+                    154
+                  </p>
                   <p className="text-xl font-guthen text-horizon-grey-600">
                     Students empowered
                   </p>
                 </div>
                 <div className="">
-                  <p className="text-6xl sm:text-8xl font-chedros">14</p>
+                  <p className="text-6xl sm:text-7xl lg:text-8xl font-chedros">
+                    14
+                  </p>
                   <p className="text-xl font-guthen text-horizon-grey-600">
                     Sponsors served
                   </p>
                 </div>
                 <div className="">
-                  <p className="text-6xl sm:text-8xl font-chedros">24</p>
+                  <p className="text-6xl sm:text-7xl lg:text-8xl font-chedros">
+                    24
+                  </p>
                   <p className="text-xl font-guthen text-horizon-grey-600">
                     Projects submitted
                   </p>
                 </div>
               </div>
+            </div>
+            <div className="col-span-2 md:col-span-1 flex justify-end items-center">
+              <CldImage
+                src="kreativehorizon.com/homepage-image-1_zesjjt"
+                alt="Kreative Horizon Mission Photo on Homepage of Students at Hackathons"
+                className="w-full h-auto"
+                width={1080}
+                height={1064}
+              />
             </div>
           </div>
         </Container>
