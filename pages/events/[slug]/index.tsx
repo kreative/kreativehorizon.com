@@ -403,7 +403,7 @@ export default function EventPageTemplate({
                           <input
                               type="hidden"
                               name="form-name"
-                              value={event.netlify_forms_name}
+                              value={event.netlify_forms_name_leads}
                           />
                           <p className="hidden">
                             <label id="contact-form-bot-label">
