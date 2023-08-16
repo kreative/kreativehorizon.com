@@ -189,13 +189,13 @@ export default function EventPageTemplate({
                   <h2 className="text-4xl font-chedros mb-3">
                     {event.subheadline}
                   </h2>
-                    <div className="text-lg space-y-3 text-horizon-grey-600">
-                      {event.description
-                        .split("\n")
-                        .map((item: any, i: number) => {
-                          return <p key={i}>{item}</p>;
-                        })}
-                    </div>
+                  <div className="text-lg space-y-3 text-horizon-grey-600">
+                    {event.description
+                      .split("\n")
+                      .map((item: any, i: number) => {
+                        return <p key={i}>{item}</p>;
+                      })}
+                  </div>
                   <div className="flex items-center justify-start space-x-3 mt-9 md:p-0 lg:hidden">
                     <motion.div
                       whileHover={{
@@ -297,7 +297,13 @@ export default function EventPageTemplate({
                     Schedule for the Event
                   </h2>
                   <div className="grid grid-cols-2 gap-4">
-                    <div className={`bg-horizon-grey-100 p-8 rounded-2xl ${event.schedule_days_num === 2 ? "col-span-2 sm:col-span-1" : "col-span-2"}`}>
+                    <div
+                      className={`bg-horizon-grey-100 p-8 rounded-2xl ${
+                        event.schedule_days_num === 2
+                          ? "col-span-2 sm:col-span-1"
+                          : "col-span-2"
+                      }`}
+                    >
                       <h3 className="text-3xl font-chedros text-horizon-grey-700 mb-3">
                         {event.day_one_title}
                       </h3>
@@ -329,13 +335,13 @@ export default function EventPageTemplate({
                   <h2 className="text-4xl font-chedros mb-3">
                     {event.conclusion_headline}
                   </h2>
-                    <div className="text-lg space-y-3 text-horizon-grey-600 mb-8">
-                      {event.conclusion_description
-                          .split("\n")
-                          .map((item: any, i: number) => {
-                            return <p key={i}>{item}</p>;
-                          })}
-                    </div>
+                  <div className="text-lg space-y-3 text-horizon-grey-600 mb-8">
+                    {event.conclusion_description
+                      .split("\n")
+                      .map((item: any, i: number) => {
+                        return <p key={i}>{item}</p>;
+                      })}
+                  </div>
                   <div className="lg:flex items-center justify-start space-x-3 pt-3 md:p-0 hidden">
                     <motion.div
                       whileHover={{
@@ -386,8 +392,10 @@ export default function EventPageTemplate({
                       className="grid grid-cols-1 gap-3"
                       action={`/events/${
                         event.slug
-                      }/complete-app?form_id=${encodeURIComponent(event.typeform_id)}&first_name=${encodeURIComponent(
-                        fullName
+                      }/complete-app?form_id=${encodeURIComponent(
+                        event.typeform_id,
+                      )}&first_name=${encodeURIComponent(
+                        fullName,
                       )}&email=${encodeURIComponent(email)}`}
                     >
                       <input
@@ -479,9 +487,7 @@ export default function EventPageTemplate({
                     </svg>
                   </div>
                 </div>
-                <h2
-                  className="text-3xl text-horizon-grey-600 font-chedros mb-6 mt-12 text-center"
-                >
+                <h2 className="text-3xl text-horizon-grey-600 font-chedros mb-6 mt-12 text-center">
                   Proudly sponsored by
                 </h2>
                 <div className="flex flex-wrap lg:flex-col items-center justify-center space-x-4 space-y-4 lg:space-x-0 lg:space-y-0">
@@ -572,7 +578,14 @@ export default function EventPageTemplate({
 
 export async function getStaticPaths() {
   // Fetch the list of event slugs from your data or database
-  const eventSlugs = ["hackisu-v2", "dataisu-v1", "hackisu-v3", "builddsm-v1", "designjamisu-v1", "pitchames-v1"];
+  const eventSlugs = [
+    "hackisu-v2",
+    "dataisu-v1",
+    "hackisu-v3",
+    "builddsm-v1",
+    "designjamisu-v1",
+    "pitchames-v1",
+  ];
 
   // Generate dynamic paths based on event slugs
   const paths = eventSlugs.map((slug) => ({ params: { slug } }));
@@ -594,11 +607,11 @@ export async function getStaticProps(context: any) {
   const reviews1 = studentReviews.slice(0, Math.floor(totalReviews / 3));
   const reviews2 = studentReviews.slice(
     Math.floor(totalReviews / 3),
-    Math.floor((totalReviews / 3) * 2)
+    Math.floor((totalReviews / 3) * 2),
   );
   const reviews3 = studentReviews.slice(
     Math.floor((totalReviews / 3) * 2),
-    totalReviews
+    totalReviews,
   );
 
   return {
