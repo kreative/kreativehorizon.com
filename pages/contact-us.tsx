@@ -33,7 +33,11 @@ export default function ContactUs() {
               <p className="text-lg text-horizon-grey-500">
                 Mon - Fri 9:00 AM- 6:00 PM CST
               </p>
-              {success && <SuccessAlert />}
+              {success &&
+                <div className={"mt-4"}>
+                  <SuccessAlert />
+                </div>
+              }
               <div className="py-12">
                 <ContactForm />
               </div>

@@ -109,6 +109,12 @@ export default defineType({
       description: 'This is when the event page will display the Application Box for users to apply for the event'
     }),
     defineField({
+      name: 'registration_opens_date_label',
+      title: 'Registration Opens Date_label',
+      type: 'string',
+      description: "This will be shown in the Lead Box. Use the format 'MM/DD/YYYY'"
+    }),
+    defineField({
       name: 'subheadline',
       title: 'Event Subheadline',
       type: 'string',
@@ -222,6 +228,12 @@ export default defineType({
       title: 'Netlify Forms Name',
       type: 'string',
       description: 'THIS CANNOT CHANGE ONCE SET',
+    }),
+    defineField({
+      name: 'netlify_forms_name_leads',
+      title: 'Netlify Forms Name for Lead Box',
+      type: 'string',
+      description: 'THIS CANNOT CHANGE ONCE SET. Will be used to collect leads before people are able to register.',
     }),
   ],
 })

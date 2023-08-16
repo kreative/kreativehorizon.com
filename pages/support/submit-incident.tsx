@@ -115,7 +115,11 @@ export default function SubmitIncident() {
                 </p>
               </div>
               <div className="max-w-2xl mx-auto">
-                {success && <SuccessAlert />}
+                {success &&
+                  <div className={"my-4"}>
+                    <SuccessAlert />
+                  </div>
+                }
               </div>
             </Container>
           </div>

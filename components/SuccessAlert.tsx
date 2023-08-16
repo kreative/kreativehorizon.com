@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { SealCheck, X } from "@phosphor-icons/react";
 
-export default function SuccessAlert() {
+export default function SuccessAlert({ message }: { message?: string }) {
   const [hidden, setHidden] = useState(false);
 
   return (
     <div>
       {!hidden && (
-        <div className="rounded-md bg-green-50 p-4 mt-6">
+        <div className="rounded-md bg-green-50 p-4">
           <div className="flex">
             <div className="flex-shrink-0">
               <SealCheck
@@ -18,7 +18,7 @@ export default function SuccessAlert() {
             </div>
             <div className="ml-3 flex justify-start items-center">
               <p className="text-sm font-medium text-green-800">
-                Form submitted successfully!
+                {message || "Form submitted successfully!"}
               </p>
             </div>
             <div className="ml-auto pl-3 flex justify-start items-center">

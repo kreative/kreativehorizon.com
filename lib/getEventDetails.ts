@@ -19,6 +19,8 @@ const getEventDetails = async (slug: string): Promise<any[]> => {
         end_datetime,
         date_top_label,
         date_bottom_label,
+        registration_opens_date,
+        registration_opens_date_label,
         timezone,
         date_label,
         location,
@@ -48,6 +50,8 @@ const getEventDetails = async (slug: string): Promise<any[]> => {
         cld_id,
         alt,
         typeform_id,
+        netlify_forms_name,
+        netlify_forms_names_leads
       }`
     );
     return event;
