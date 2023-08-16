@@ -189,13 +189,13 @@ export default function EventPageTemplate({
                   <h2 className="text-4xl font-chedros mb-3">
                     {event.subheadline}
                   </h2>
-                    <div className="text-lg space-y-3 text-horizon-grey-600">
-                      {event.description
-                        .split("\n")
-                        .map((item: any, i: number) => {
-                          return <p key={i}>{item}</p>;
-                        })}
-                    </div>
+                  <div className="text-lg space-y-3 text-horizon-grey-600">
+                    {event.description
+                      .split("\n")
+                      .map((item: any, i: number) => {
+                        return <p key={i}>{item}</p>;
+                      })}
+                  </div>
                   <div className="flex items-center justify-start space-x-3 mt-9 md:p-0 lg:hidden">
                     <motion.div
                       whileHover={{
@@ -329,13 +329,13 @@ export default function EventPageTemplate({
                   <h2 className="text-4xl font-chedros mb-3">
                     {event.conclusion_headline}
                   </h2>
-                    <div className="text-lg space-y-3 text-horizon-grey-600 mb-8">
-                      {event.conclusion_description
-                          .split("\n")
-                          .map((item: any, i: number) => {
-                            return <p key={i}>{item}</p>;
-                          })}
-                    </div>
+                  <div className="text-lg space-y-3 text-horizon-grey-600 mb-8">
+                    {event.conclusion_description
+                      .split("\n")
+                      .map((item: any, i: number) => {
+                        return <p key={i}>{item}</p>;
+                      })}
+                  </div>
                   <div className="lg:flex items-center justify-start space-x-3 pt-3 md:p-0 hidden">
                     <motion.div
                       whileHover={{
@@ -386,8 +386,10 @@ export default function EventPageTemplate({
                       className="grid grid-cols-1 gap-3"
                       action={`/events/${
                         event.slug
-                      }/complete-app?form_id=${encodeURIComponent(event.typeform_id)}&first_name=${encodeURIComponent(
-                        fullName
+                      }/complete-app?form_id=${encodeURIComponent(
+                        event.typeform_id,
+                      )}&first_name=${encodeURIComponent(
+                        fullName,
                       )}&email=${encodeURIComponent(email)}`}
                     >
                       <input
@@ -479,9 +481,7 @@ export default function EventPageTemplate({
                     </svg>
                   </div>
                 </div>
-                <h2
-                  className="text-3xl text-horizon-grey-600 font-chedros mb-6 mt-12 text-center"
-                >
+                <h2 className="text-3xl text-horizon-grey-600 font-chedros mb-6 mt-12 text-center">
                   Proudly sponsored by
                 </h2>
                 <div className="flex flex-wrap lg:flex-col items-center justify-center space-x-4 space-y-4 lg:space-x-0 lg:space-y-0">
@@ -594,11 +594,11 @@ export async function getStaticProps(context: any) {
   const reviews1 = studentReviews.slice(0, Math.floor(totalReviews / 3));
   const reviews2 = studentReviews.slice(
     Math.floor(totalReviews / 3),
-    Math.floor((totalReviews / 3) * 2)
+    Math.floor((totalReviews / 3) * 2),
   );
   const reviews3 = studentReviews.slice(
     Math.floor((totalReviews / 3) * 2),
-    totalReviews
+    totalReviews,
   );
 
   return {
