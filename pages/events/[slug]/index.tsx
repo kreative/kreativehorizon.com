@@ -123,9 +123,15 @@ export default function EventPageTemplate({
     };
   });
 
-  const handleKeyPress = (e: any) => {
+  const handleKeyPressAppbox = (e: any) => {
     if (e.key === "Enter") {
       document.getElementById("create-download-btn")?.click();
+    }
+  };
+
+  const handleKeyPressLeadbox = (e: any) => {
+    if (e.key === "Enter") {
+      document.getElementById("leadbox-download-btn")?.click();
     }
   };
 
@@ -423,7 +429,7 @@ export default function EventPageTemplate({
                                   onChange={(e) => setFullName(e.target.value)}
                                   required
                                   aria-required="true"
-                                  onKeyUp={handleKeyPress}
+                                  onKeyUp={handleKeyPressLeadbox}
                               />
                             </div>
                             <div className="col-span-2 xs:col-span-1 lg:col-span-2">
@@ -437,7 +443,7 @@ export default function EventPageTemplate({
                                   value={email}
                                   required
                                   aria-required="true"
-                                  onKeyUp={handleKeyPress}
+                                  onKeyUp={handleKeyPressLeadbox}
                               />
                             </div>
                           </div>
@@ -451,6 +457,7 @@ export default function EventPageTemplate({
                             >
                               <button
                                   type="submit"
+                                  id={"reminder-btn"}
                                   className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-gradient-to-r from-horizon-orange to-horizon-pink text-white shadow-lg w-full"
                               >
                                 Set a reminder
@@ -535,7 +542,7 @@ export default function EventPageTemplate({
                                   onChange={(e) => setFullName(e.target.value)}
                                   required
                                   aria-required="true"
-                                  onKeyUp={handleKeyPress}
+                                  onKeyUp={handleKeyPressAppbox}
                               />
                             </div>
                             <div className="col-span-2 xs:col-span-1 lg:col-span-2">
@@ -549,7 +556,7 @@ export default function EventPageTemplate({
                                   value={email}
                                   required
                                   aria-required="true"
-                                  onKeyUp={handleKeyPress}
+                                  onKeyUp={handleKeyPressAppbox}
                               />
                             </div>
                           </div>
@@ -563,6 +570,7 @@ export default function EventPageTemplate({
                             >
                               <button
                                   type="submit"
+                                  id={"continue-btn"}
                                   className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-gradient-to-r from-horizon-orange to-horizon-pink text-white shadow-lg w-full"
                               >
                                 Continue &rarr;
