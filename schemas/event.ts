@@ -103,6 +103,12 @@ export default defineType({
       description: 'This should be to help people find the address on Google Maps'
     }),
     defineField({
+      name: 'registration_opens_date',
+      title: 'Registration Opens Date',
+      type: 'datetime',
+      description: 'This is when the event page will display the Application Box for users to apply for the event'
+    }),
+    defineField({
       name: 'subheadline',
       title: 'Event Subheadline',
       type: 'string',

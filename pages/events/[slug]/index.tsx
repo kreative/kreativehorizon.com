@@ -189,9 +189,13 @@ export default function EventPageTemplate({
                   <h2 className="text-4xl font-chedros mb-3">
                     {event.subheadline}
                   </h2>
-                  <p className="text-lg text-horizon-grey-600">
-                    {event.description}
-                  </p>
+                    <div className="text-lg space-y-3 text-horizon-grey-600">
+                      {event.description
+                        .split("\n")
+                        .map((item: any, i: number) => {
+                          return <p key={i}>{item}</p>;
+                        })}
+                    </div>
                   <div className="flex items-center justify-start space-x-3 mt-9 md:p-0 lg:hidden">
                     <motion.div
                       whileHover={{
@@ -325,9 +329,13 @@ export default function EventPageTemplate({
                   <h2 className="text-4xl font-chedros mb-3">
                     {event.conclusion_headline}
                   </h2>
-                  <p className="text-lg text-horizon-grey-600 mb-8">
-                    {event.conclusion_description}
-                  </p>
+                    <div className="text-lg space-y-3 text-horizon-grey-600 mb-8">
+                      {event.conclusion_description
+                          .split("\n")
+                          .map((item: any, i: number) => {
+                            return <p key={i}>{item}</p>;
+                          })}
+                    </div>
                   <div className="lg:flex items-center justify-start space-x-3 pt-3 md:p-0 hidden">
                     <motion.div
                       whileHover={{
@@ -378,7 +386,7 @@ export default function EventPageTemplate({
                       className="grid grid-cols-1 gap-3"
                       action={`/events/${
                         event.slug
-                      }/complete-app?first_name=${encodeURIComponent(
+                      }/complete-app?form_id=${encodeURIComponent(event.typeform_id)}&first_name=${encodeURIComponent(
                         fullName
                       )}&email=${encodeURIComponent(email)}`}
                     >
