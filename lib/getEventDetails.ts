@@ -51,7 +51,7 @@ const getEventDetails = async (slug: string): Promise<any[]> => {
         alt,
         typeform_id,
         netlify_forms_name,
-        netlify_forms_names_leads
+        netlify_forms_name_leads
       }`
     );
     return event;

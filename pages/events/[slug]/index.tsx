@@ -104,10 +104,7 @@ export default function EventPageTemplate({
   const imageRef = useRef<null | HTMLDivElement>(null);
   const appBoxRef = useRef<null | HTMLDivElement>(null);
 
-  console.log(Date.now() > new Date(event.registration_opens_date).getDate())
-  console.log(Date.now())
-  console.log(event.registration_opens_date)
-  console.log(new Date(event.registration_opens_date).getTime())
+  console.log(event.netlify_forms_name_leads)
 
   const handleBottomButton = (e: any) => {
     e.preventDefault();
