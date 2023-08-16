@@ -29,7 +29,7 @@ export default function EventCard({ event }: { event: EventCardType }) {
           </div>
           <p className="text-xl mt-4">
             <span className="font-bold">{event.date_label}</span> @{" "}
-            {event.location}
+            {event.location_nickname}
           </p>
         </motion.div>
       </Link>

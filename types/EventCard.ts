@@ -8,7 +8,7 @@ export default interface EventCardType {
   start_datetime: string;
   end_datetime: string;
   date_label: string;
-  location: string;
+  location_nickname: string;
   slug: string;
   cld_id: string;
   alt: string;

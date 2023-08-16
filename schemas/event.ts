@@ -59,6 +59,12 @@ export default defineType({
       description: 'This will appear on the Event Card components',
     }),
     defineField({
+      name: 'location_nickname',
+      title: "Event Location Nickname",
+      type: "string",
+      description: "This is a shorter name for the location (if possible) and will appear on the Event Card component."
+    }),
+    defineField({
       name: 'location',
       title: 'Event Location',
       type: 'string',
