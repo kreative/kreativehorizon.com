@@ -297,7 +297,7 @@ export default function EventPageTemplate({
                     Schedule for the Event
                   </h2>
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="col-span-2 sm:col-span-1 bg-horizon-grey-100 p-8 rounded-2xl">
+                    <div className={`bg-horizon-grey-100 p-8 rounded-2xl ${event.schedule_days_num === 2 ? "col-span-2 sm:col-span-1" : "col-span-2"}`}>
                       <h3 className="text-3xl font-chedros text-horizon-grey-700 mb-3">
                         {event.day_one_title}
                       </h3>
@@ -572,7 +572,7 @@ export default function EventPageTemplate({
 
 export async function getStaticPaths() {
   // Fetch the list of event slugs from your data or database
-  const eventSlugs = ["hackisu-v2"];
+  const eventSlugs = ["hackisu-v2", "dataisu-v1", "hackisu-v3", "builddsm-v1", "designjamisu-v1", "pitchames-v1"];
 
   // Generate dynamic paths based on event slugs
   const paths = eventSlugs.map((slug) => ({ params: { slug } }));
