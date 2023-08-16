@@ -52,11 +52,11 @@ const getEventDetails = async (slug: string): Promise<any[]> => {
         typeform_id,
         netlify_forms_name,
         netlify_forms_name_leads
-      }`
+      }`,
     );
     return event;
   } catch (error) {
-    console.error('Error fetching event:', error);
+    console.error("Error fetching event:", error);
     return [];
   }
 };
