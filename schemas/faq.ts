@@ -25,7 +25,10 @@ export default defineType({
           { value: 'travel_grants', title: 'Kreative Travel Grants' },
           { value: 'labs', title: 'Kreative Horizon Labs' },
           { value: 'events', title: 'Events' },
-          { value: 'hackathons', title: 'Hackathons' }
+          { value: 'hackathons', title: 'Hackathons' },
+          { value: 'datathons', title: 'Datathons' },
+          { value: 'design_jams', title: 'Design Jams' },
+          { value: 'pitch_offs', title: 'Pitch Offs' },
         ],
         layout: 'radio',
       },
