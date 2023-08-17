@@ -1,10 +1,10 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import MailerLite from '@mailerlite/mailerlite-nodejs';
+import MailerLite from "@mailerlite/mailerlite-nodejs";
 import logger from "@/lib/logger";
 
 const mailerlite = new MailerLite({
   api_key: process.env.MAILERLITE_TOKEN!,
-})
+});
 
 interface LeadRequest extends NextApiRequest {
   body: {
@@ -25,19 +25,20 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
 
   console.log("mailerlite functionality started");
 
-  mailerlite.subscribers.createOrUpdate({
-    email,
-    groups: ["96632678153979799"], // second string is for 'KHZ Newsletter'
-    status: "active",
-  })
-      .then((addResponse) => {
-        console.log(addResponse);
-        logger.info("added subscriber to MailerLite", { req, addResponse });
-        return res.redirect(302, `/newsletter/thank-you`);
-      })
-      .catch((addError) => {
-        // we need to notify the business that the lead was not collected and to fix this
-        logger.error("error adding subscriber to MailerLite", { req, addError });
-        return res.redirect(302, `/newsletter/thank-you`);
-      });
+  mailerlite.subscribers
+    .createOrUpdate({
+      email,
+      groups: ["96632678153979799"], // second string is for 'KHZ Newsletter'
+      status: "active",
+    })
+    .then((addResponse) => {
+      console.log(addResponse);
+      logger.info("added subscriber to MailerLite", { req, addResponse });
+      return res.redirect(302, `/newsletter/thank-you`);
+    })
+    .catch((addError) => {
+      // we need to notify the business that the lead was not collected and to fix this
+      logger.error("error adding subscriber to MailerLite", { req, addError });
+      return res.redirect(302, `/newsletter/thank-you`);
+    });
 }

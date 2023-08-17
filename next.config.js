@@ -50,11 +50,11 @@ const nextConfig = {
         source: "/newsletter",
         destination: "/community",
         permanent: true,
-      }
+      },
     ];
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   reactStrictMode: true,
 };
 
-module.exports = withMDX(nextConfig)
+module.exports = withMDX(nextConfig);

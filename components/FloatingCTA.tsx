@@ -17,27 +17,24 @@ export default function FloatingCTA() {
             programs, discounts, and giveaways straight to your phone. We
             promise it&apos;ll be worth it :)
           </p>
-          <form
-              method="POST"
-              action={`/api/subscribe`}
-          >
-          <div className="bg-white bg-opacity-[.85] rounded-lg px-2 xs:pl-4 xs:pr-1 pt-1 pb-2 xs:pb-1 block xs:flex justify-between items-center w-full md:w-[75%] lg:w-[60%] xs:space-x-1">
-            <input
-              type="email"
-              placeholder="Email Address"
-              name={"email"}
-              required
-              className="bg-transparent px-2 xs:px-0 xs:mr-2 py-2 placeholder-[#E33232] placeholder-opacity-75 text-[#E33232] text-opacity-85 w-full border-transparent focus:border-transparent focus:ring-0"
-            />
-            <motion.div
-              whileHover={{ scale: 0.97, transition: { duration: 0.2 } }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <button className="bg-white py-3 px-6 md:py-1.5 md:px-4 rounded-md text-[#FF2684] w-full xs:w-auto font-bold">
-                Subscribe
-              </button>
-            </motion.div>
-          </div>
+          <form method="POST" action={`/api/subscribe`}>
+            <div className="bg-white bg-opacity-[.85] rounded-lg px-2 xs:pl-4 xs:pr-1 pt-1 pb-2 xs:pb-1 block xs:flex justify-between items-center w-full md:w-[75%] lg:w-[60%] xs:space-x-1">
+              <input
+                type="email"
+                placeholder="Email Address"
+                name={"email"}
+                required
+                className="bg-transparent px-2 xs:px-0 xs:mr-2 py-2 placeholder-[#E33232] placeholder-opacity-75 text-[#E33232] text-opacity-85 w-full border-transparent focus:border-transparent focus:ring-0"
+              />
+              <motion.div
+                whileHover={{ scale: 0.97, transition: { duration: 0.2 } }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <button className="bg-white py-3 px-6 md:py-1.5 md:px-4 rounded-md text-[#FF2684] w-full xs:w-auto font-bold">
+                  Subscribe
+                </button>
+              </motion.div>
+            </div>
           </form>
         </div>
         <div className="xl:col-span-4" />
