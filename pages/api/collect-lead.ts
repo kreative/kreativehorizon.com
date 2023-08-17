@@ -47,10 +47,8 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
   const firstName = fullName!.split(" ")[0];
   const lastName = fullName!.split(" ")[fullName!.split(" ").length - 1];
 
-  // add a new subscriber into MailerLite with the correct group
-  const newsletterGroupId: number = 96632678153979799;
-
   logger.info("getting list of groups from MailerLite", { req });
+  console.log("mailerlite functionality started");
 
   mailerlite.groups.get({
     limit: 25,
@@ -62,6 +60,7 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
     sort: "-name",
   })
       .then(response => {
+        console.log(response)
         const groupId = response.data.data[0].id;
         logger.info("retrieved groups from MailerLite", { req, response });
         mailerlite.subscribers.createOrUpdate({
@@ -74,17 +73,21 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
           status: "active",
         })
             .then((addResponse) => {
+              console.log(addResponse);
               logger.info("added subscriber to MailerLite", { req, addResponse });
             })
             .catch((addError) => {
               // we need to notify the business that the lead was not collected and to fix this
+              console.log(addError)
               logger.error("error adding subscriber to MailerLite", { req, addError });
             });
       })
       .catch(error => {
         // we need to notify the business that the lead was not collected and to fix this
+        console.log(error);
         logger.error("error retrieving groups from MailerLite", { req, error });
       });
 
+  console.log("redirecting..")
   return res.redirect(302, `/events/${event}?lead_success=true`);
 }
