@@ -31,6 +31,7 @@ export default function CompleteApp() {
                       id={router.query.form_id!.toString()}
                       style={{ width: "100%", height: "60vh" }}
                       inlineOnMobile={true}
+                      transitiveSearchParams={["email"]}
                     />
                   </div>
                 </div>
