@@ -75,19 +75,19 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
             .then((addResponse) => {
               console.log(addResponse);
               logger.info("added subscriber to MailerLite", { req, addResponse });
+              return res.redirect(302, `/events/${event}?lead_success=true`);
             })
             .catch((addError) => {
               // we need to notify the business that the lead was not collected and to fix this
               console.log(addError)
               logger.error("error adding subscriber to MailerLite", { req, addError });
+              return res.redirect(302, `/events/${event}?lead_success=false`);
             });
       })
       .catch(error => {
         // we need to notify the business that the lead was not collected and to fix this
         console.log(error);
         logger.error("error retrieving groups from MailerLite", { req, error });
+        return res.redirect(302, `/events/${event}?lead_success=false`);
       });
-
-  console.log("redirecting..")
-  return res.redirect(302, `/events/${event}?lead_success=true`);
 }
