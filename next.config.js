@@ -45,6 +45,11 @@ const nextConfig = {
         source: "/hackisu",
         destination: "/events/hackisu-v2",
         permanent: true,
+      },
+      {
+        source: "/newsletter",
+        destination: "/community",
+        permanent: true,
       }
     ];
   },
