@@ -21,6 +21,7 @@ const getEventDetails = async (slug: string): Promise<any[]> => {
         date_bottom_label,
         registration_opens_date,
         registration_opens_date_label,
+        registration_closes_date,
         timezone,
         date_label,
         location,

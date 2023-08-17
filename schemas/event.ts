@@ -115,6 +115,11 @@ export default defineType({
       description: "This will be shown in the Lead Box. Use the format 'MM/DD/YYYY'"
     }),
     defineField({
+      name: 'registration_closes_date',
+      title: 'Registration Closes Date',
+      type: 'date',
+    }),
+    defineField({
       name: 'subheadline',
       title: 'Event Subheadline',
       type: 'string',
