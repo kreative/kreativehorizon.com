@@ -16,38 +16,36 @@ interface LeadRequest extends NextApiRequest {
 
 export default function handler(req: LeadRequest, res: NextApiResponse) {
   logger.info("Lead request initiated", { req });
+  const event = req.query.event;
 
   if (req.method !== "POST") {
     logger.warn("Lead request method not allowed", { req });
     res.status(405).send("Method not allowed");
-    return;
+    return res.redirect(301, `/events/${event}?lead_success=false`);
   }
 
   if (!req.body.email || !req.body.fullName) {
     logger.warn("Lead request missing email or full name", { req });
     res.status(400).send("Email and Full Name are required");
-    return;
+    return res.redirect(301, `/events/${event}?lead_success=false`);
   }
 
   if (req.body.botField !== "") {
     logger.warn("Lead request bot field not empty", { req });
     res.status(400).send("Bot field must be empty");
-    return;
+    return res.redirect(301, `/events/${event}?lead_success=false`);
   }
 
   if (req.query.event === "") {
     logger.warn("Lead request missing event", { req });
     res.status(400).send("Event is required");
-    return;
+    return res.redirect(301, `/events/${event}?lead_success=false`);
   }
 
-  const event = req.query.event;
   const email = req.body.email;
   const fullName = req.body.fullName;
   let firstName = fullName!.split(" ")[0];
   let lastName = fullName!.split(" ")[fullName!.split(" ").length - 1];
-
-  // capitalize the first letter of each part of the name
   firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
   lastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
 
@@ -81,22 +79,22 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
               logger.info("added subscriber to MailerLite", { req, addResponse });
 
               if (req.query.function === "appbox") {
-                return res.redirect(302, `/events/${event}/complete-app?email=${email}&form_id=${req.query.form_id}`);
+                return res.redirect(301, `/events/${event}/complete-app?email=${encodeURIComponent(email)}&form_id=${encodeURIComponent(req.query.form_id)}`);
               } else {
-                return res.redirect(302, `/events/${event}?lead_success=true`);
+                return res.redirect(301, `/events/${event}?lead_success=true`);
               }
             })
             .catch((addError) => {
               // we need to notify the business that the lead was not collected and to fix this
               console.log(addError)
               logger.error("error adding subscriber to MailerLite", { req, addError });
-              return res.redirect(302, `/events/${event}?lead_success=false`);
+              return res.redirect(301, `/events/${event}?lead_success=false`);
             });
       })
       .catch(error => {
         // we need to notify the business that the lead was not collected and to fix this
         console.log(error);
         logger.error("error retrieving groups from MailerLite", { req, error });
-        return res.redirect(302, `/events/${event}?lead_success=false`);
+        return res.redirect(301, `/events/${event}?lead_success=false`);
       });
 }
