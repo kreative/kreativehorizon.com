@@ -50,6 +50,7 @@ const nextConfig = {
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   reactStrictMode: true,
+  target: "serverless",
 };
 
 module.exports = withMDX(nextConfig)
