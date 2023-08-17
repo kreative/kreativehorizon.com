@@ -44,8 +44,12 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
   const event = req.query.event;
   const email = req.body.email;
   const fullName = req.body.fullName;
-  const firstName = fullName!.split(" ")[0];
-  const lastName = fullName!.split(" ")[fullName!.split(" ").length - 1];
+  let firstName = fullName!.split(" ")[0];
+  let lastName = fullName!.split(" ")[fullName!.split(" ").length - 1];
+
+  // capitalize the first letter of each part of the name
+  firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
+  lastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
 
   logger.info("getting list of groups from MailerLite", { req });
   console.log("mailerlite functionality started");
@@ -75,7 +79,12 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
             .then((addResponse) => {
               console.log(addResponse);
               logger.info("added subscriber to MailerLite", { req, addResponse });
-              return res.redirect(302, `/events/${event}?lead_success=true`);
+
+              if (req.query.function === "appbox") {
+                return res.redirect(302, `/events/${event}/complete-app?email=${email}&form_id=${req.query.form_id}`);
+              } else {
+                return res.redirect(302, `/events/${event}?lead_success=true`);
+              }
             })
             .catch((addError) => {
               // we need to notify the business that the lead was not collected and to fix this
