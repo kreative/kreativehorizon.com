@@ -25,12 +25,14 @@ export default function CompleteApp() {
                   <span className="font-bold">2 minutes</span> (or we&apos;ll
                   buy you dinner!)
                 </p>
-                <div className="border border-horizon-purple rounded-xl">
-                  <Widget
-                    id={router.query.form_id!.toString()}
-                    style={{ width: "100%", height: "60vh" }}
-                    inlineOnMobile={true}
-                  />
+                <div className="bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple p-1.5 rounded-[12px]">
+                  <div className="bg-white rounded-[10px]">
+                    <Widget
+                      id={router.query.form_id!.toString()}
+                      style={{ width: "100%", height: "60vh" }}
+                      inlineOnMobile={true}
+                    />
+                  </div>
                 </div>
               </div>
             </Container>
