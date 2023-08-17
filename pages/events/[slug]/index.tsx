@@ -526,7 +526,7 @@ export default function EventPageTemplate({
                         <form
                           method="POST"
                           className="grid grid-cols-1 gap-3"
-                          action={`/api/collect-app?event=${event.slug}&form_id=${event.typeform_id}&function=appbox`}
+                          action={`/api/collect-lead?event=${event.slug}&form_id=${event.typeform_id}&function=appbox`}
                         >
                           <p className="hidden">
                             <label id="contact-form-bot-label">
@@ -541,8 +541,8 @@ export default function EventPageTemplate({
                             <div className="col-span-2 xs:col-span-1 lg:col-span-2">
                               <input
                                 type="text"
-                                name="full_name"
-                                id="full_name"
+                                name="fullName"
+                                id="fullName"
                                 className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
                                 placeholder="Full name"
                                 value={fullName}
