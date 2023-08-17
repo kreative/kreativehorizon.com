@@ -13,7 +13,10 @@ const logger = createLogger({
         return `[${timestamp}] ${service} ${level}: ${message}`;
       }),
   ),
-  transports: [new transports.Console(), new LogtailTransport(logtail)],
+  transports: [
+      new transports.Console(),
+      //new LogtailTransport(logtail)
+  ],
   defaultMeta: {
     service: 'KreativeHorizonCom',
   },

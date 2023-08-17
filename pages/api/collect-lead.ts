@@ -86,7 +86,5 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
         logger.error("error retrieving groups from MailerLite", { req, error });
       });
 
-
-
   return res.redirect(302, `/events/${event}?lead_success=true`);
 }
