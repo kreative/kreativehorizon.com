@@ -15,7 +15,7 @@ const logger = createLogger({
   ),
   transports: [
       new transports.Console(),
-      //new LogtailTransport(logtail)
+      new LogtailTransport(logtail)
   ],
   defaultMeta: {
     service: 'KreativeHorizonCom',

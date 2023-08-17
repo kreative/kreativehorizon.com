@@ -6,8 +6,14 @@ const mailerlite = new MailerLite({
   api_key: process.env.MAILERLITE_TOKEN!,
 });
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  logger.info("Lead request initiated", { req });
+interface TypeformWebhook extends NextApiRequest {
+  body: {
+    form_response: any,
+  };
+}
+
+export default function handler(req: TypeformWebhook, res: NextApiResponse) {
+  logger.info("Typeform webhook initiated", { req });
   const event = req.body.form_response.hidden.event;
   const email = req.body.form_response.hidden.email;
 
