@@ -14,8 +14,16 @@ interface TypeformWebhook extends NextApiRequest {
 
 export default function handler(req: TypeformWebhook, res: NextApiResponse) {
   logger.info("Typeform webhook initiated", { req });
-  const event = req.body.form_response.hidden.event;
   const email = req.body.form_response.hidden.email;
+  let event = "";
+
+  switch(req.body.form_response.form_id) {
+    case "cKfz0JGi":
+      event = "hackisu-v2";
+      break;
+  }
+  
+  console.log(email)
 
   mailerlite.groups.get({
     limit: 25,
@@ -27,7 +35,6 @@ export default function handler(req: TypeformWebhook, res: NextApiResponse) {
     sort: "-name",
   })
     .then(response => {
-      console.log(response)
       const groupId = response.data.data[0].id;
       logger.info("retrieved groups from MailerLite", { req, response });
 
@@ -44,14 +51,14 @@ export default function handler(req: TypeformWebhook, res: NextApiResponse) {
         })
         .catch((addError) => {
           // we need to notify the business that the lead was not collected and to fix this
-          console.log(addError)
+          console.log(addError.response.data)
           logger.error("error adding subscriber to MailerLite", { req, addError });
           return res.status(500).send(req);
         });
     })
     .catch(error => {
       // we need to notify the business that the lead was not collected and to fix this
-      console.log(error);
+      //console.log(error);
       logger.error("error retrieving groups from MailerLite", { req, error });
       return res.status(500).send(req);
     });
