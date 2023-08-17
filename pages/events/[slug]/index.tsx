@@ -394,7 +394,6 @@ export default function EventPageTemplate({
                       </p>
                       <div className="mt-6">
                         <form
-                            name={event.netlify_forms_name_leads}
                             method="POST"
                             className="grid grid-cols-1 gap-3"
                             action={`/api/collect-lead?event=${event.slug}`}

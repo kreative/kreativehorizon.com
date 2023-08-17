@@ -88,5 +88,5 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
 
 
 
-  return res.redirect(`/events/${event}?lead_success=true`);
+  return res.redirect(302, `/events/${event}?lead_success=true`);
 }
