@@ -24,6 +24,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       console.log(response)
       const groupId = response.data.data[0].id;
       logger.info("retrieved groups from MailerLite", { req, response });
+
+      // update phone number field if possible
+
       mailerlite.subscribers.createOrUpdate({
         email,
         groups: [groupId.toString()],
@@ -37,13 +40,13 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           // we need to notify the business that the lead was not collected and to fix this
           console.log(addError)
           logger.error("error adding subscriber to MailerLite", { req, addError });
-          return res.redirect(301, `/events/${event}?lead_success=false`);
+          return res.status(500).send({ message: "error", error: addError });
         });
     })
     .catch(error => {
       // we need to notify the business that the lead was not collected and to fix this
       console.log(error);
       logger.error("error retrieving groups from MailerLite", { req, error });
-      return res.redirect(301, `/events/${event}?lead_success=false`);
+      return res.status(500).send({ message: "error", error });
     });
 }
