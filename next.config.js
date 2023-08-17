@@ -41,6 +41,11 @@ const nextConfig = {
         destination: "https://support.kreativeusa.com/horizon",
         permanent: true,
       },
+      {
+        source: "/hackisu",
+        destination: "/events/hackisu-v2",
+        permanent: true,
+      }
     ];
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
