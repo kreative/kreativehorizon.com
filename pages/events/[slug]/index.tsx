@@ -104,8 +104,6 @@ export default function EventPageTemplate({
   const imageRef = useRef<null | HTMLDivElement>(null);
   const appBoxRef = useRef<null | HTMLDivElement>(null);
 
-  console.log(event.netlify_forms_name_leads)
-
   const handleBottomButton = (e: any) => {
     e.preventDefault();
     imageRef.current?.scrollIntoView({ block: "nearest", behavior: "smooth" });
@@ -398,21 +396,14 @@ export default function EventPageTemplate({
                         <form
                             name={event.netlify_forms_name_leads}
                             method="POST"
-                            data-netlify="true"
-                            data-netlify-honeypot="bot-field"
                             className="grid grid-cols-1 gap-3"
-                            action={`/events/${event.slug}?lead_success=true`}
+                            action={`/api/collect-lead?event=${event.slug}`}
                         >
-                          <input
-                              type="hidden"
-                              name="form-name"
-                              value={event.netlify_forms_name_leads}
-                          />
                           <p className="hidden">
                             <label id="contact-form-bot-label">
                               Dont fill this out if youre human:{" "}
                               <input
-                                  name="bot-field"
+                                  name="botField"
                                   aria-labelledby="contact-form-bot-label"
                               />
                             </label>
@@ -421,8 +412,8 @@ export default function EventPageTemplate({
                             <div className="col-span-2 xs:col-span-1 lg:col-span-2">
                               <input
                                   type="text"
-                                  name="full_name"
-                                  id="full_name"
+                                  name="fullName"
+                                  id="fullName"
                                   className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
                                   placeholder="Full name"
                                   value={fullName}
