@@ -79,7 +79,7 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
               logger.info("added subscriber to MailerLite", { req, addResponse });
 
               if (req.query.function === "appbox") {
-                return res.redirect(301, `/events/${event}/complete-app?email=${encodeURIComponent(email)}&form_id=${encodeURIComponent(req.query.form_id)}`);
+                return res.redirect(301, `/events/${event}/complete-app?email=${encodeURIComponent(email)}&form_id=${encodeURIComponent(req.query.form_id!.toString())}`);
               } else {
                 return res.redirect(301, `/events/${event}?lead_success=true`);
               }
