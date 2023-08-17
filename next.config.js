@@ -45,11 +45,11 @@ const nextConfig = {
         source: "/hackisu",
         destination: "/events/hackisu-v2",
         permanent: true,
-      }
+      },
     ];
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   reactStrictMode: true,
 };
 
-module.exports = withMDX(nextConfig)
+module.exports = withMDX(nextConfig);
