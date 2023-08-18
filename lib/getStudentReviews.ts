@@ -14,8 +14,10 @@ const getStudentReviews = async (amount?: number): Promise<StudentReview[]> => {
           _createdAt,
           fullName,
           organization,
+          position,
           rating,
           testimonial,
+          highlight,
         }
         `
       );
@@ -26,10 +28,12 @@ const getStudentReviews = async (amount?: number): Promise<StudentReview[]> => {
         _createdAt,
         fullName,
         organization,
+        position,
         rating,
         "photo": photo.asset->url,
         "avatar": avatar.asset->url,
         testimonial,
+        highlight,
       }
       `
       );
