@@ -9,7 +9,8 @@ const mailerlite = new MailerLite({
 interface LeadRequest extends NextApiRequest {
   body: {
     email?: string;
-    fullName?: string;
+    firstName?: string;
+    lastName?: string;
     botField?: string;
   };
 }
@@ -24,7 +25,7 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
     return res.redirect(301, `/events/${event}?lead_success=false`);
   }
 
-  if (!req.body.email || !req.body.fullName) {
+  if (!req.body.email || !req.body.firstName || !req.body.lastName) {
     logger.warn("Lead request missing email or full name", { req });
     res.status(400).send("Email and Full Name are required");
     return res.redirect(301, `/events/${event}?lead_success=false`);
@@ -43,9 +44,8 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
   }
 
   const email = req.body.email;
-  const fullName = req.body.fullName;
-  let firstName = fullName!.split(" ")[0];
-  let lastName = fullName!.split(" ")[fullName!.split(" ").length - 1];
+  let firstName = req.body.firstName;
+  let lastName = req.body.lastName;
   firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
   lastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
 

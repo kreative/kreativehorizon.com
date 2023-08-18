@@ -101,7 +101,8 @@ export default function EventPageTemplate({
   const router = useRouter();
   const leadSuccess = router.query?.lead_success && router.query.lead_success === "true";
   const leadFailure = router.query?.lead_success && router.query.lead_success === "false";
-  const [fullName, setFullName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const imageRef = useRef<null | HTMLDivElement>(null);
   const appBoxRef = useRef<null | HTMLDivElement>(null);
@@ -164,7 +165,9 @@ export default function EventPageTemplate({
             {leadFailure && (
               <div className={"mt-8"}>
                 <ErrorAlert
-                  message={"Unfortunately our system is down right now, please try again later."}
+                  message={
+                    "Unfortunately our system is down right now, please try again later."
+                  }
                 />
               </div>
             )}
@@ -405,7 +408,7 @@ export default function EventPageTemplate({
                   new Date(event.registration_opens_date).getTime() && (
                   <div
                     id={"lead-box"}
-                    className="p-8 bg-horizon-grey-100 rounded-2xl"
+                    className="px-6 py-8 bg-horizon-grey-100 rounded-2xl"
                   >
                     <h2 className="text-3xl font-chedros text-center mb-3">
                       Registration will be opening on{" "}
@@ -431,21 +434,39 @@ export default function EventPageTemplate({
                           </label>
                         </p>
                         <div className="grid grid-cols-2 gap-2">
-                          <div className="col-span-2 xs:col-span-1 lg:col-span-2">
-                            <input
-                              type="text"
-                              name="fullName"
-                              id="fullName"
-                              className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
-                              placeholder="Full name"
-                              value={fullName}
-                              onChange={(e) => setFullName(e.target.value)}
-                              required
-                              aria-required="true"
-                              onKeyUp={handleKeyPressLeadbox}
-                            />
+                          <div className="col-span-2 sm:col-span-1 lg:col-span-2">
+                            <div className="grid grid-cols-2 gap-2">
+                              <div className="col-span-1">
+                                <input
+                                  type="text"
+                                  name="firstName"
+                                  id="firstName"
+                                  className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
+                                  placeholder="First name"
+                                  value={firstName}
+                                  onChange={(e) => setFirstName(e.target.value)}
+                                  required
+                                  aria-required="true"
+                                  onKeyUp={handleKeyPressLeadbox}
+                                />
+                              </div>
+                              <div className="col-span-1">
+                                <input
+                                  type="text"
+                                  name="lastName"
+                                  id="lastName"
+                                  className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
+                                  placeholder="Last name"
+                                  value={lastName}
+                                  onChange={(e) => setLastName(e.target.value)}
+                                  required
+                                  aria-required="true"
+                                  onKeyUp={handleKeyPressLeadbox}
+                                />
+                              </div>
+                            </div>
                           </div>
-                          <div className="col-span-2 xs:col-span-1 lg:col-span-2">
+                          <div className="col-span-2 sm:col-span-1 lg:col-span-2">
                             <input
                               type="email"
                               name="email"
@@ -513,7 +534,7 @@ export default function EventPageTemplate({
                     new Date(event.registration_closes_date).getTime() && (
                     <div
                       id={"app-box"}
-                      className="p-8 bg-horizon-grey-100 rounded-2xl"
+                      className="px-6 py-8 bg-horizon-grey-100 rounded-2xl"
                     >
                       <h2 className="text-3xl font-chedros text-center mb-3">
                         Apply to participate and secure your spot now
@@ -538,21 +559,43 @@ export default function EventPageTemplate({
                             </label>
                           </p>
                           <div className="grid grid-cols-2 gap-2">
-                            <div className="col-span-2 xs:col-span-1 lg:col-span-2">
-                              <input
-                                type="text"
-                                name="fullName"
-                                id="fullName"
-                                className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
-                                placeholder="Full name"
-                                value={fullName}
-                                onChange={(e) => setFullName(e.target.value)}
-                                required
-                                aria-required="true"
-                                onKeyUp={handleKeyPressAppbox}
-                              />
+                            <div className="col-span-2 sm:col-span-1 lg:col-span-2">
+                              <div className="grid grid-cols-2 gap-2">
+                                <div className="col-span-1">
+                                  <input
+                                    type="text"
+                                    name="firstName"
+                                    id="firstName"
+                                    className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
+                                    placeholder="First name"
+                                    value={firstName}
+                                    onChange={(e) =>
+                                      setFirstName(e.target.value)
+                                    }
+                                    required
+                                    aria-required="true"
+                                    onKeyUp={handleKeyPressLeadbox}
+                                  />
+                                </div>
+                                <div className="col-span-1">
+                                  <input
+                                    type="text"
+                                    name="lastName"
+                                    id="lastName"
+                                    className="block w-full rounded-md border-0 py-2 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
+                                    placeholder="Last name"
+                                    value={lastName}
+                                    onChange={(e) =>
+                                      setLastName(e.target.value)
+                                    }
+                                    required
+                                    aria-required="true"
+                                    onKeyUp={handleKeyPressLeadbox}
+                                  />
+                                </div>
+                              </div>
                             </div>
-                            <div className="col-span-2 xs:col-span-1 lg:col-span-2">
+                            <div className="col-span-2 sm:col-span-1 lg:col-span-2">
                               <input
                                 type="email"
                                 name="email"
