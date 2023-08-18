@@ -1,10 +1,10 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import MailerLite from '@mailerlite/mailerlite-nodejs';
+import MailerLite from "@mailerlite/mailerlite-nodejs";
 import logger from "@/lib/logger";
 
 const mailerlite = new MailerLite({
   api_key: process.env.MAILERLITE_TOKEN!,
-})
+});
 
 interface LeadRequest extends NextApiRequest {
   body: {
@@ -52,20 +52,22 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
   logger.info("getting list of groups from MailerLite", { req });
   console.log("mailerlite functionality started");
 
-  mailerlite.groups.get({
-    limit: 25,
-    page: 1,
-    filter: {
-      // @ts-ignore
-      name: event + "-leads"
-    },
-    sort: "-name",
-  })
-      .then(response => {
-        console.log(response)
-        const groupId = response.data.data[0].id;
-        logger.info("retrieved groups from MailerLite", { req, response });
-        mailerlite.subscribers.createOrUpdate({
+  mailerlite.groups
+    .get({
+      limit: 25,
+      page: 1,
+      filter: {
+        // @ts-ignore
+        name: event + "-leads",
+      },
+      sort: "-name",
+    })
+    .then((response) => {
+      console.log(response);
+      const groupId = response.data.data[0].id;
+      logger.info("retrieved groups from MailerLite", { req, response });
+      mailerlite.subscribers
+        .createOrUpdate({
           email,
           fields: {
             name: firstName,
@@ -74,27 +76,35 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
           groups: [groupId.toString(), "96632678153979799"], // second string is for 'KHZ Newsletter'
           status: "active",
         })
-            .then((addResponse) => {
-              console.log(addResponse);
-              logger.info("added subscriber to MailerLite", { req, addResponse });
+        .then((addResponse) => {
+          console.log(addResponse);
+          logger.info("added subscriber to MailerLite", { req, addResponse });
 
-              if (req.query.function === "appbox") {
-                return res.redirect(301, `/events/${event}/complete-app?email=${encodeURIComponent(email)}&form_id=${encodeURIComponent(req.query.form_id!.toString())}`);
-              } else {
-                return res.redirect(301, `/events/${event}?lead_success=true`);
-              }
-            })
-            .catch((addError) => {
-              // we need to notify the business that the lead was not collected and to fix this
-              console.log(addError)
-              logger.error("error adding subscriber to MailerLite", { req, addError });
-              return res.redirect(301, `/events/${event}?lead_success=false`);
-            });
-      })
-      .catch(error => {
-        // we need to notify the business that the lead was not collected and to fix this
-        console.log(error);
-        logger.error("error retrieving groups from MailerLite", { req, error });
-        return res.redirect(301, `/events/${event}?lead_success=false`);
-      });
+          if (req.query.function === "appbox") {
+            return res.redirect(
+              301,
+              `/events/${event}/complete-app?email=${encodeURIComponent(
+                email,
+              )}&form_id=${encodeURIComponent(req.query.form_id!.toString())}`,
+            );
+          } else {
+            return res.redirect(301, `/events/${event}?lead_success=true`);
+          }
+        })
+        .catch((addError) => {
+          // we need to notify the business that the lead was not collected and to fix this
+          console.log(addError);
+          logger.error("error adding subscriber to MailerLite", {
+            req,
+            addError,
+          });
+          return res.redirect(301, `/events/${event}?lead_success=false`);
+        });
+    })
+    .catch((error) => {
+      // we need to notify the business that the lead was not collected and to fix this
+      console.log(error);
+      logger.error("error retrieving groups from MailerLite", { req, error });
+      return res.redirect(301, `/events/${event}?lead_success=false`);
+    });
 }

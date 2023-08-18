@@ -20,7 +20,7 @@ import { CldImage } from "next-cloudinary";
 import { Calendar, MapPin, Sparkle } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import EventCardType from "@/types/EventCard";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 function ReasonItem({ reason }: { reason: string }) {
   return (
@@ -99,8 +99,10 @@ export default function EventPageTemplate({
   reviews3: StudentReview[];
 }) {
   const router = useRouter();
-  const leadSuccess = router.query?.lead_success && router.query.lead_success === "true";
-  const leadFailure = router.query?.lead_success && router.query.lead_success === "false";
+  const leadSuccess =
+    router.query?.lead_success && router.query.lead_success === "true";
+  const leadFailure =
+    router.query?.lead_success && router.query.lead_success === "false";
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -792,7 +794,14 @@ export default function EventPageTemplate({
 
 export async function getStaticPaths() {
   // Fetch the list of event slugs from your data or database
-  const eventSlugs = ["hackisu-v2", "dataisu-v1", "hackisu-v3", "builddsm-v1", "designjamisu-v1", "pitchames-v1"];
+  const eventSlugs = [
+    "hackisu-v2",
+    "dataisu-v1",
+    "hackisu-v3",
+    "builddsm-v1",
+    "designjamisu-v1",
+    "pitchames-v1",
+  ];
 
   // Generate dynamic paths based on event slugs
   const paths = eventSlugs.map((slug) => ({ params: { slug } }));
@@ -814,11 +823,11 @@ export async function getStaticProps(context: any) {
   const reviews1 = studentReviews.slice(0, Math.floor(totalReviews / 3));
   const reviews2 = studentReviews.slice(
     Math.floor(totalReviews / 3),
-    Math.floor((totalReviews / 3) * 2)
+    Math.floor((totalReviews / 3) * 2),
   );
   const reviews3 = studentReviews.slice(
     Math.floor((totalReviews / 3) * 2),
-    totalReviews
+    totalReviews,
   );
 
   return {
