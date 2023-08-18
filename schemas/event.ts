@@ -228,17 +228,5 @@ export default defineType({
       title: 'Typeform ID',
       type: 'string',
     }),
-    defineField({
-      name: 'netlify_forms_name',
-      title: 'Netlify Forms Name',
-      type: 'string',
-      description: 'THIS CANNOT CHANGE ONCE SET',
-    }),
-    defineField({
-      name: 'netlify_forms_name_leads',
-      title: 'Netlify Forms Name for Lead Box',
-      type: 'string',
-      description: 'THIS CANNOT CHANGE ONCE SET. Will be used to collect leads before people are able to register.',
-    }),
   ],
 })
