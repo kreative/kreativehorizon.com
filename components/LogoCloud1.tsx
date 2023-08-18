@@ -100,6 +100,12 @@ export default function LogoCloud1() {
           w="316"
           h="55"
         />
+        <LogoImage
+          src="kreativehorizon.com/sponsors/maple-studios-horizontal-min_tggyad"
+          alt="Maple Studios Logo in Color"
+          w="2259"
+          h="614"
+        />
       </div>
     </Container>
   );
