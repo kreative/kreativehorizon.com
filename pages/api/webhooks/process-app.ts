@@ -21,6 +21,9 @@ export default function handler(req: TypeformWebhook, res: NextApiResponse) {
     case "cKfz0JGi":
       event = "hackisu-v2";
       break;
+    case "gG4yhMSt":
+      event = "dataisu-v1";
+      break;
   }
   
   console.log(email)
@@ -37,9 +40,6 @@ export default function handler(req: TypeformWebhook, res: NextApiResponse) {
     .then(response => {
       const groupId = response.data.data[0].id;
       logger.info("retrieved groups from MailerLite", { req, response });
-
-      // update phone number field if possible
-
       mailerlite.subscribers.createOrUpdate({
         email,
         groups: [groupId.toString()],
