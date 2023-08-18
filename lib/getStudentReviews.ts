@@ -19,7 +19,7 @@ const getStudentReviews = async (amount?: number): Promise<StudentReview[]> => {
           testimonial,
           highlight,
         }
-        `
+        `,
       );
     } else {
       studentReviews = await sanityClient.fetch(
@@ -35,12 +35,12 @@ const getStudentReviews = async (amount?: number): Promise<StudentReview[]> => {
         testimonial,
         highlight,
       }
-      `
+      `,
       );
     }
     return studentReviews;
   } catch (error) {
-    console.error('Error fetching student reviews:', error);
+    console.error("Error fetching student reviews:", error);
     return [];
   }
 };
