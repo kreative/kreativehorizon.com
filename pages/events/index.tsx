@@ -11,7 +11,11 @@ import { NextSeo } from "next-seo";
 export default function Events({
   events,
 }: {
-  events: { _2023: EventCardType[]; _2024: EventCardType[] };
+  events: {
+    pastEvents: EventCardType[];
+    _2023: EventCardType[];
+    _2024: EventCardType[];
+  };
 }) {
   return (
     <div>
@@ -66,6 +70,20 @@ export default function Events({
             </div>
           </div>
         </Container>
+        <Container>
+          <div className="pb-24">
+            <h2 className="text-5xl text-horizon-grey-600 font-chedros pb-8">
+              Past Events
+            </h2>
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+              {events.pastEvents.map((event: EventCardType) => (
+                <div className="col-span-2 sm:col-span-1" key={event._id}>
+                  <EventCard event={event} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
       </main>
       <Footer />
     </div>
@@ -74,20 +92,26 @@ export default function Events({
 
 export async function getStaticProps() {
   const events: EventCardType[] = await getEvents();
+  const pastEvents: EventCardType[] = [];
   const _2023: EventCardType[] = [];
   const _2024: EventCardType[] = [];
 
   events.forEach((event: EventCardType) => {
-    if (event.year === 2023) {
-      _2023.push(event);
-    } else if (event.year === 2024) {
-      _2024.push(event);
+    if (Date.now() > new Date(event.start_datetime).getTime()) {
+      pastEvents.push(event);
+    } else {
+      if (event.year === 2023) {
+        _2023.push(event);
+      } else if (event.year === 2024) {
+        _2024.push(event);
+      }
     }
   });
 
   return {
     props: {
       events: {
+        pastEvents,
         _2023,
         _2024,
       },

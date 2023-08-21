@@ -665,8 +665,8 @@ export default function EventPageTemplate({
                   >
                     <h2 className="text-3xl font-chedros text-center mb-3">
                       Registration has closed.{" "}
-                      <Link href="/events" className="underline">
-                        Checkout our other events!
+                      <Link href="/events" className="underline text-horizon-purple">
+                        Click here for our other events!
                       </Link>
                     </h2>
                     <p className="text-horizon-grey-700 font-md text-center">
@@ -792,7 +792,7 @@ export default function EventPageTemplate({
 
 export async function getStaticPaths() {
   // Fetch the list of event slugs from your data or database
-  const eventSlugs = ["hackisu-v2", "dataisu-v1", "hackisu-v3", "builddsm-v1", "designjamisu-v1", "pitchames-v1"];
+  const eventSlugs = ["hackisu-v1", "hackisu-v2", "dataisu-v1", "hackisu-v3", "builddsm-v1", "designjamisu-v1", "pitchames-v1"];
 
   // Generate dynamic paths based on event slugs
   const paths = eventSlugs.map((slug) => ({ params: { slug } }));
