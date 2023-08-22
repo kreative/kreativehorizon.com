@@ -82,7 +82,7 @@ export default function NavMenu() {
             </motion.div>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
-        <MenuItem link="/sponsors" name="Sponsor" />
+        <MenuItem link="/sponsors" name="Sponsors" />
         <MenuItem link="/reviews" name="Reviews" negativeSkew />
       </NavigationMenu.List>
     </NavigationMenu.Root>

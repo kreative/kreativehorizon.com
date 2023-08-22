@@ -193,7 +193,7 @@ export default function StudentReviews() {
         <div className="mb-32">
           <Container>
             <h2 className="mb-12 font-chedros text-6xl sm:text-7xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple">
-              UNLOCK YOUR BRAND WITH THE KBL & KREATIVE HORIZON
+              UNLOCK YOUR BRAND WITH KBL & KREATIVE HORIZON
             </h2>
             <h3 className="text-5xl font-chedros mb-4">
               BENEFITS OF PARTNERING WITH THE KBL

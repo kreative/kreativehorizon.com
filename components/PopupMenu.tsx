@@ -48,7 +48,7 @@ export default function PopupMenu() {
                 rel="noopener noreferrer"
               />
               <MenuItem link={"/faqs"} name={"FAQs"} />
-              <MenuItem link={"/sponsors"} name={"Sponsor"} />
+              <MenuItem link={"/sponsors"} name={"Sponsors"} />
               <MenuItem link={"/reviews"} name={"Reviews"} />
             </div>
           </Dialog.Panel>
