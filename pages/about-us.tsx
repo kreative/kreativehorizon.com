@@ -111,7 +111,8 @@ export default function AboutUs() {
             <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-start space-y-3 pr-6">
               <p className="text-2xl font-guthen text-left">In the beginning</p>
               <h2 className="text-5xl font-chedros">
-                Kreative horizon started in 2019 with BUILDCHICAGO...
+                Kreative horizon started in 2019 with{" "}
+                <span className="text-horizon-orange">BuildChicago...</span>
               </h2>
               <p className="text-lg text-horizon-grey-600">
                 Kreative Horizon is an organization that aims provide the tools
@@ -150,7 +151,9 @@ export default function AboutUs() {
                 Following our success
               </p>
               <h2 className="text-5xl font-chedros">
-                We planned to run 4 new events across the country
+                We planned to run{" "}
+                <span className="text-horizon-pink">4 new events</span> across
+                the country
               </h2>
               <p className="text-lg text-horizon-grey-600">
                 Following the success of “BuildChicago,” Kreative Horizon
@@ -172,8 +175,10 @@ export default function AboutUs() {
             <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-start space-y-3 pr-6">
               <p className="text-2xl font-guthen text-left">However...</p>
               <h2 className="text-5xl font-chedros">
-                just two weeks after partnering with Make School, the unexpected
-                happened.
+                just two weeks after partnering with Make School,{" "}
+                <span className="text-horizon-purple">
+                  the unexpected happened.
+                </span>
               </h2>
               <p className="text-lg text-horizon-grey-600">
                 The nation was hit with the COVID-19 pandemic, and everything
@@ -210,8 +215,7 @@ export default function AboutUs() {
                   But now we&apos;re back!
                 </p>
                 <h2 className="text-5xl font-chedros">
-                  We just ran hackiowastate v1, and now we&apos;re bringing six
-                  new events to the state of iowa
+                  We just ran hackiowastate v1, and now we&apos;re bringing <span className="text-horizon-orange">six new events</span> to the state of iowa
                 </h2>
               </div>
               <div className="col-span-2 sm:col-span-1">
