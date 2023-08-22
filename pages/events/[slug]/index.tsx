@@ -234,7 +234,7 @@ export default function EventPageTemplate({
                       whileTap={{ scale: 0.95 }}
                     >
                       <button
-                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white"
+                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white shadow-lg"
                         onClick={handleTopButton}
                       >
                         Apply now 👇
@@ -380,7 +380,7 @@ export default function EventPageTemplate({
                       whileTap={{ scale: 0.95 }}
                     >
                       <button
-                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white"
+                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white shadow-lg"
                         onClick={handleBottomButton}
                       >
                         Apply now ☝️
@@ -792,7 +792,7 @@ export default function EventPageTemplate({
 
 export async function getStaticPaths() {
   // Fetch the list of event slugs from your data or database
-  const eventSlugs = ["hackisu-v1", "hackisu-v2", "dataisu-v1", "hackisu-v3", "builddsm-v1", "designjamisu-v1", "pitchames-v1"];
+  const eventSlugs = ["hackisu-v1", "hackisu-v2", "dataisu-v1", "hackisu-v3", "builddsm-v1", "designjamisu-v1", "pitchames-v1", "buildchicago-2019"];
 
   // Generate dynamic paths based on event slugs
   const paths = eventSlugs.map((slug) => ({ params: { slug } }));
