@@ -60,7 +60,7 @@ export default function StudentReviews() {
         </SplashContainer>
         <div className="bg-horizon-grey-200 pt-24 pb-32">
           <Container>
-            <div className="max-w-5xl mx-auto -mt-44 rotate-1">
+            <div className="max-w-5xl mx-auto -mt-44 rotate-3">
               <SponsorLetter />
             </div>
           </Container>
