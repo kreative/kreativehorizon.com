@@ -40,6 +40,9 @@ export default function PopupMenu() {
             <div className="flex flex-col items-start justify-between space-y-1 p-5">
               <MenuItem link={"/Events"} name={"Events"} />
               <MenuItem link={"/about-us"} name={"About us"} />
+              <MenuItem link={"/faqs"} name={"FAQs"} />
+              <MenuItem link={"/sponsors"} name={"Sponsors"} />
+              <MenuItem link={"/reviews"} name={"Reviews"} />
               <MenuItem link={"/contact-us"} name={"Contact"} />
               <MenuItem
                 link={"/support"}
@@ -47,9 +50,6 @@ export default function PopupMenu() {
                 target="_blank"
                 rel="noopener noreferrer"
               />
-              <MenuItem link={"/faqs"} name={"FAQs"} />
-              <MenuItem link={"/sponsors"} name={"Sponsors"} />
-              <MenuItem link={"/reviews"} name={"Reviews"} />
             </div>
           </Dialog.Panel>
         </div>

@@ -28,7 +28,8 @@ export default function NavMenu() {
       <NavigationMenu.List className="flex justify-center items-center space-x-5">
         <MenuItem link="/events" name="Events" />
         <MenuItem link="/about-us" name="About us" negativeSkew />
-        <MenuItem link="/contact-us" name="Contact" />
+        <MenuItem link="/sponsors" name="Sponsors" />
+        <MenuItem link="/reviews" name="Reviews" negativeSkew />
         <NavigationMenu.Item>
           <NavigationMenu.Trigger
             ref={refs.setReference}
@@ -60,7 +61,7 @@ export default function NavMenu() {
               }}
             >
               <div className="py-2 px-3.5 rounded-lg hover:bg-white hover:bg-opacity-60">
-                <Link href="/support" target="_blank" rel='noopener noreferrer'>
+                <Link href="/support" target="_blank" rel="noopener noreferrer">
                   <p className="text-md">Get support</p>
                 </Link>
               </div>
@@ -82,8 +83,7 @@ export default function NavMenu() {
             </motion.div>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
-        <MenuItem link="/sponsors" name="Sponsors" />
-        <MenuItem link="/reviews" name="Reviews" negativeSkew />
+        <MenuItem link="/contact-us" name="Contact" />
       </NavigationMenu.List>
     </NavigationMenu.Root>
   );
