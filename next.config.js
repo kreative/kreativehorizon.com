@@ -43,14 +43,29 @@ const nextConfig = {
       },
       {
         source: "/hackisu",
-        destination: "/events/hackisu-v2",
+        destination: "/events/hackisu-v1",
+        permanent: true,
+      },
+      {
+        source: "/hackisu/apply",
+        destination: "/events/hackisu-v1",
+        permanent: true,
+      },
+      {
+        source: "/hackisu/press",
+        destination: "/press",
+        permanent: true,
+      },
+      {
+        source: "/hackisu/packages",
+        destination: "/sponsors",
         permanent: true,
       },
       {
         source: "/newsletter",
         destination: "/community",
         permanent: true,
-      }
+      },
     ];
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
