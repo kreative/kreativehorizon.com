@@ -66,6 +66,11 @@ const nextConfig = {
         destination: "/community",
         permanent: true,
       },
+      {
+        source: "/sponsor",
+        destination: "/sponsors",
+        permanent: true,
+      },
     ];
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
