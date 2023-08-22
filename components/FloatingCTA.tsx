@@ -5,7 +5,7 @@ export default function FloatingCTA() {
   return (
     <Container>
       <div className="w-full bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple xl:bg-floating-cta-w-logo xl:bg-cover xl:bg-right rounded-[2rem] grid grid-cols-1 xl:grid-cols-10 gap-4 px-8 lg:pr-12 xl:pr-0 lg:pl-12 pt-12 z-10">
-        <div className="xl:col-span-6 pt-44 xl:pt-36 pb-12 xl:pb-24">
+        <div className="xl:col-span-6 pt-28 md:pt-44 xl:pt-36 pb-12 xl:pb-24">
           <p className="text-2xl font-guthen tracking-wide text-white mb-2">
             Horizon Newsletter
           </p>
