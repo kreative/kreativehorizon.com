@@ -8,6 +8,7 @@ module.exports = {
       "/admin/*",
       "/404",
       "/events/*/complete-app",
+      "/events/*/thank-you",
       "/newsletter/thank-you",
   ],
   changefreq: "weekly",
