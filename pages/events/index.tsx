@@ -13,8 +13,7 @@ export default function Events({
 }: {
   events: {
     pastEvents: EventCardType[];
-    _2023: EventCardType[];
-    _2024: EventCardType[];
+    upcomingEvents: EventCardType[];
   };
 }) {
   return (
@@ -45,24 +44,10 @@ export default function Events({
         <Container>
           <div className="pb-24">
             <h2 className="text-5xl text-horizon-grey-600 font-chedros pb-8">
-              2023 Events
+              Upcoming Events
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-              {events._2023.map((event: EventCardType) => (
-                <div className="col-span-2 sm:col-span-1" key={event._id}>
-                  <EventCard event={event} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </Container>
-        <Container>
-          <div className="pb-24">
-            <h2 className="text-5xl text-horizon-grey-600 font-chedros pb-8">
-              2024 Events
-            </h2>
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-              {events._2024.map((event: EventCardType) => (
+              {events.upcomingEvents.map((event: EventCardType) => (
                 <div className="col-span-2 sm:col-span-1" key={event._id}>
                   <EventCard event={event} />
                 </div>
@@ -93,27 +78,18 @@ export default function Events({
 export async function getStaticProps() {
   const events: EventCardType[] = await getEvents();
   const pastEvents: EventCardType[] = [];
-  const _2023: EventCardType[] = [];
-  const _2024: EventCardType[] = [];
+  const upcomingEvents: EventCardType[] = [];
 
   events.forEach((event: EventCardType) => {
-    if (Date.now() > new Date(event.start_datetime).getTime()) {
-      pastEvents.push(event);
-    } else {
-      if (event.year === 2023) {
-        _2023.push(event);
-      } else if (event.year === 2024) {
-        _2024.push(event);
-      }
-    }
+    if (Date.now() > new Date(event.start_datetime).getTime()) pastEvents.push(event);
+    else upcomingEvents.push(event);
   });
 
   return {
     props: {
       events: {
         pastEvents,
-        _2023,
-        _2024,
+        upcomingEvents,
       },
     },
   };
