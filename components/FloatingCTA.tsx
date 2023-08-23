@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Container from "./Container";
 import { motion } from "framer-motion";
 
 export default function FloatingCTA() {
+  const [showSpinner, setShowSpinner] = useState(false);
+
   return (
     <Container>
       <div className="w-full bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple xl:bg-floating-cta-w-logo xl:bg-cover xl:bg-right rounded-[2rem] grid grid-cols-1 xl:grid-cols-10 gap-4 px-8 lg:pr-12 xl:pr-0 lg:pl-12 pt-12 z-10">
@@ -77,7 +80,6 @@ export default function FloatingCTA() {
               fill="white"
             />
           </svg>
-
           <h2 className="text-5xl text-white font-chedros w-full">
             YOU NEED MORE EMAILS. JOIN THE NEWSLETTER.
           </h2>
@@ -99,8 +101,23 @@ export default function FloatingCTA() {
                 whileHover={{ scale: 0.97, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.9 }}
               >
-                <button className="bg-white py-3 px-6 md:py-1.5 md:px-4 rounded-md text-[#FF2684] w-full xs:w-auto font-bold">
-                  Subscribe
+                <button className="bg-white py-3 px-6 md:py-1.5 md:px-4 rounded-md text-[#FF2684] w-full xs:w-auto font-bold" onClick={(e) => setShowSpinner(true)}>
+                  {showSpinner ? (
+                    <div className="flex justify-center items-center space-x-3">
+                      <motion.span
+                        className="flex items-center w-5 h-5 border-2 border-white border-t-horizon-orange rounded-full"
+                        animate={{ rotate: 360 }}
+                        transition={{
+                          duration: 1,
+                          repeat: Infinity,
+                          ease: "linear",
+                        }}
+                        role="status"
+                      />
+                    </div>
+                  ) : (
+                    "Subscribe "
+                  )}
                 </button>
               </motion.div>
             </div>

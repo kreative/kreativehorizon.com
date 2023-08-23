@@ -39,7 +39,7 @@ export default function PopupMenu() {
           <Dialog.Panel className="mx-auto min-w-full rounded-lg bg-white bg-opacity-[.95] backdrop-blur-sm shadow-lg">
             <div className="flex flex-col items-start justify-between space-y-1 p-5">
               <MenuItem link={"/"} name={"Home"} />
-              <MenuItem link={"/Events"} name={"Events"} />
+              <MenuItem link={"/events"} name={"Events"} />
               <MenuItem link={"/about-us"} name={"About us"} />
               <MenuItem link={"/faqs"} name={"FAQs"} />
               <MenuItem link={"/sponsors"} name={"Sponsors"} />

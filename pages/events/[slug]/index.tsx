@@ -20,7 +20,7 @@ import { CldImage } from "next-cloudinary";
 import { Calendar, MapPin, Sparkle } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import EventCardType from "@/types/EventCard";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 function ReasonItem({ reason }: { reason: string }) {
   return (
@@ -99,11 +99,14 @@ export default function EventPageTemplate({
   reviews3: StudentReview[];
 }) {
   const router = useRouter();
-  const leadSuccess = router.query?.lead_success && router.query.lead_success === "true";
-  const leadFailure = router.query?.lead_success && router.query.lead_success === "false";
+  const leadSuccess =
+    router.query?.lead_success && router.query.lead_success === "true";
+  const leadFailure =
+    router.query?.lead_success && router.query.lead_success === "false";
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [showSpinner, setShowSpinner] = useState(false);
   const imageRef = useRef<null | HTMLDivElement>(null);
   const appBoxRef = useRef<null | HTMLDivElement>(null);
 
@@ -493,8 +496,25 @@ export default function EventPageTemplate({
                               type="submit"
                               id={"reminder-btn"}
                               className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-gradient-to-r from-horizon-orange to-horizon-pink text-white shadow-lg w-full"
+                              onClick={(e) => setShowSpinner(true)}
                             >
-                              Set a reminder
+                              {showSpinner ? (
+                                <div className="flex justify-center items-center space-x-3">
+                                  <motion.span
+                                    className="flex items-center w-5 h-5 border-2 border-white border-t-horizon-orange rounded-full"
+                                    animate={{ rotate: 360 }}
+                                    transition={{
+                                      duration: 1,
+                                      repeat: Infinity,
+                                      ease: "linear",
+                                    }}
+                                    role="status"
+                                  />
+                                  <span>Setting reminder...</span>
+                                </div>
+                              ) : (
+                                "Set a reminder"
+                              )}
                             </button>
                           </motion.div>
                         </div>
@@ -622,14 +642,34 @@ export default function EventPageTemplate({
                                 type="submit"
                                 id={"continue-btn"}
                                 className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-gradient-to-r from-horizon-orange to-horizon-pink text-white shadow-lg w-full"
+                                onClick={(e) => setShowSpinner(true)}
                               >
-                                Continue &rarr;
+                                {showSpinner ? (
+                                  <div className="flex justify-center items-center space-x-3">
+                                    <motion.span
+                                      className="flex items-center w-5 h-5 border-2 border-white border-t-horizon-orange rounded-full"
+                                      animate={{ rotate: 360 }}
+                                      transition={{
+                                        duration: 1,
+                                        repeat: Infinity,
+                                        ease: "linear",
+                                      }}
+                                      role="status"
+                                    />
+                                    <span>Connecting...</span>
+                                  </div>
+                                ) : (
+                                  "Continue  👉"
+                                )}
                               </button>
                             </motion.div>
                           </div>
                         </form>
                       </div>
-                      <div className="flex justify-center items-center">
+                      <div
+                        className="flex justify-center items-center"
+                        ref={appBoxRef}
+                      >
                         <svg
                           className="h-4 w-auto mt-6 fill-horizon-grey-500"
                           viewBox="0 0 856 79"
@@ -720,7 +760,7 @@ export default function EventPageTemplate({
                     </div>
                   ))}
                 </div>
-                <div className="pt-6 lg:p-0 text-center" ref={appBoxRef}>
+                <div className="pt-6 lg:p-0 text-center">
                   <h3 className="text-lg text-horizon-purple">
                     Interested in sponsoring?
                   </h3>
@@ -795,7 +835,16 @@ export default function EventPageTemplate({
 
 export async function getStaticPaths() {
   // Fetch the list of event slugs from your data or database
-  const eventSlugs = ["hackisu-v1", "hackisu-v2", "dataisu-v1", "hackisu-v3", "builddsm-v1", "designjamisu-v1", "pitchames-v1", "buildchicago-2019"];
+  const eventSlugs = [
+    "hackisu-v1",
+    "hackisu-v2",
+    "dataisu-v1",
+    "hackisu-v3",
+    "builddsm-v1",
+    "designjamisu-v1",
+    "pitchames-v1",
+    "buildchicago-2019",
+  ];
 
   // Generate dynamic paths based on event slugs
   const paths = eventSlugs.map((slug) => ({ params: { slug } }));
