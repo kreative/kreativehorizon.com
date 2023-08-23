@@ -81,7 +81,8 @@ export async function getStaticProps() {
   const upcomingEvents: EventCardType[] = [];
 
   events.forEach((event: EventCardType) => {
-    if (Date.now() > new Date(event.start_datetime).getTime()) pastEvents.push(event);
+    if (Date.now() > new Date(event.start_datetime).getTime())
+      pastEvents.push(event);
     else upcomingEvents.push(event);
   });
 

@@ -215,7 +215,9 @@ export default function AboutUs() {
                   But now we&apos;re back!
                 </p>
                 <h2 className="text-5xl font-chedros">
-                  We just ran hackiowastate v1, and now we&apos;re bringing <span className="text-horizon-orange">six new events</span> to the state of iowa
+                  We just ran hackiowastate v1, and now we&apos;re bringing{" "}
+                  <span className="text-horizon-orange">six new events</span> to
+                  the state of iowa
                 </h2>
               </div>
               <div className="col-span-2 sm:col-span-1">
