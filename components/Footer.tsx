@@ -203,95 +203,99 @@ export default function Footer() {
                   horizon@kreativeusa.com
                 </Link>
               </div>
-              <div className="flex sm:hidden lg:flex justify-start items-center space-x-2 mt-8">
-                <motion.div
-                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link href="#">
-                    <InstagramLogo
-                      className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-lg"
-                      size={44}
-                    />
-                  </Link>
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link href="#">
-                    <FacebookLogo
-                      className="text-white hover:text-horizon-pink p-1 bg-horizon-grey-700 rounded-lg"
-                      size={44}
-                    />
-                  </Link>
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link href="#">
-                    <TwitterLogo
-                      className="text-white hover:text-horizon-purple p-1 bg-horizon-grey-700 rounded-lg"
-                      size={44}
-                    />
-                  </Link>
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link href="#">
-                    <GithubLogo
-                      className="text-white p-1 hover:text-horizon-orange bg-horizon-grey-700 rounded-lg"
-                      size={44}
-                    />
-                  </Link>
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link href="#">
-                    <MediumLogo
-                      className="text-white hover:text-horizon-pink p-1 bg-horizon-grey-700 rounded-lg"
-                      size={44}
-                    />
-                  </Link>
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link href="#">
-                    <LinkedinLogo
-                      className="text-white hover:text-horizon-purple p-1 bg-horizon-grey-700 rounded-lg"
-                      size={44}
-                    />
-                  </Link>
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link href="#">
-                    <DribbbleLogo
-                      className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-lg"
-                      size={44}
-                    />
-                  </Link>
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link href="#">
-                    <DiscordLogo
-                      className="text-white p-1 hover:text-horizon-pink bg-horizon-grey-700 rounded-lg"
-                      size={44}
-                    />
-                  </Link>
-                </motion.div>
+              <div className="grid grid-cols-2 sm:hidden lg:flex mt-8 gap-2">
+                <div className="col-span-2 flex justify-start items-center space-x-2">
+                  <motion.div
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="#">
+                      <InstagramLogo
+                        className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-lg"
+                        size={44}
+                      />
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="#">
+                      <FacebookLogo
+                        className="text-white hover:text-horizon-pink p-1 bg-horizon-grey-700 rounded-lg"
+                        size={44}
+                      />
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="#">
+                      <TwitterLogo
+                        className="text-white hover:text-horizon-purple p-1 bg-horizon-grey-700 rounded-lg"
+                        size={44}
+                      />
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="#">
+                      <GithubLogo
+                        className="text-white p-1 hover:text-horizon-orange bg-horizon-grey-700 rounded-lg"
+                        size={44}
+                      />
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="#">
+                      <MediumLogo
+                        className="text-white hover:text-horizon-pink p-1 bg-horizon-grey-700 rounded-lg"
+                        size={44}
+                      />
+                    </Link>
+                  </motion.div>
+                </div>
+                <div className="col-span-2 flex justify-start items-center space-x-2">
+                  <motion.div
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="#">
+                      <LinkedinLogo
+                        className="text-white hover:text-horizon-purple p-1 bg-horizon-grey-700 rounded-lg"
+                        size={44}
+                      />
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="#">
+                      <DribbbleLogo
+                        className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-lg"
+                        size={44}
+                      />
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="#">
+                      <DiscordLogo
+                        className="text-white p-1 hover:text-horizon-pink bg-horizon-grey-700 rounded-lg"
+                        size={44}
+                      />
+                    </Link>
+                  </motion.div>
+                </div>
               </div>
               <div className="hidden sm:flex justify-start items-center space-x-2 mt-8 lg:hidden">
                 <motion.div
