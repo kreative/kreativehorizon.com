@@ -234,7 +234,7 @@ export default function EventPageTemplate({
                       whileTap={{ scale: 0.95 }}
                     >
                       <button
-                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white shadow-lg"
+                        className="rounded-md py-3.5 px-7 md:py-3 md:px-5 font-bold bg-horizon-grey-800 text-white shadow-lg"
                         onClick={handleTopButton}
                       >
                         Apply now 👇
@@ -248,7 +248,7 @@ export default function EventPageTemplate({
                       whileTap={{ scale: 0.95 }}
                     >
                       <Link
-                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
+                        className="hidden xs:flex rounded-md py-3 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
                         href="/contact-us"
                       >
                         Contact us 📬
@@ -380,7 +380,7 @@ export default function EventPageTemplate({
                       whileTap={{ scale: 0.95 }}
                     >
                       <button
-                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white shadow-lg"
+                        className="rounded-md py-3.5 px-7 md:py-3 md:px-5 font-bold bg-horizon-grey-800 text-white shadow-lg"
                         onClick={handleBottomButton}
                       >
                         Apply now ☝️
@@ -394,7 +394,7 @@ export default function EventPageTemplate({
                       whileTap={{ scale: 0.95 }}
                     >
                       <Link
-                        className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
+                        className="flex rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-grey-800 border border-horizon-grey-800"
                         href="/contact-us"
                       >
                         Contact us 📬
@@ -665,7 +665,10 @@ export default function EventPageTemplate({
                   >
                     <h2 className="text-3xl font-chedros text-center mb-3">
                       Registration has closed.{" "}
-                      <Link href="/events" className="underline text-horizon-purple">
+                      <Link
+                        href="/events"
+                        className="underline text-horizon-purple"
+                      >
                         Click here for our other events!
                       </Link>
                     </h2>
