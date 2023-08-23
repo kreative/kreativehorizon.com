@@ -26,6 +26,7 @@ export default function NavMenu() {
   return (
     <NavigationMenu.Root orientation="vertical">
       <NavigationMenu.List className="flex justify-center items-center space-x-5">
+        <MenuItem link="/" name="Home" />
         <MenuItem link="/events" name="Events" />
         <MenuItem link="/about-us" name="About us" negativeSkew />
         <MenuItem link="/sponsors" name="Sponsors" />
