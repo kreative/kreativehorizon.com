@@ -24,18 +24,18 @@ export default function Home({ events }: { events: EventCardType[] }) {
       <Navbar />
       <main>
         <SplashContainer>
-          <div className="py-6 relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+          <div className="py-6 relative flex items-center justify-center h-[85vh] md:h-[75vh] mb-12 overflow-hidden">
             <div className="z-30">
               <Container>
-                <div className="flex flex-col space-y-4 items-center justify-center">
+                <div className="flex flex-col space-y-4 items-center justify-center pt-20 pb-12 md:pt-8">
                   <p className="font-guthen tracking-wide text-2xl text-white">
                     Welcome Dreamer
                   </p>
-                  <h1 className="font-chedros text-6xl md:text-7xl font-bold text-white text-center">
+                  <h1 className="font-chedros text-5xl sm:text-6xl md:text-7xl font-bold text-white text-center">
                     Hackathons, workshops, and more, so you can go beyond the
                     horizon.
                   </h1>
-                  <div className="flex flex-col xs:flex-row items-center ustify-center space-y-8 xs:space-y-0 xs:space-x-3 pt-3 sm:p-0">
+                  <div className="flex flex-row items-center justify-center space-x-3 pt-6 sm:p-0">
                     <motion.div
                       whileHover={{
                         scale: 1.05,
@@ -82,7 +82,7 @@ export default function Home({ events }: { events: EventCardType[] }) {
             </video>
           </div>
         </SplashContainer>
-        <div className="py-12 lg:py-20">
+        <div className="py-3 md:py-6 lg:py-8">
           <LogoCloud1 />
         </div>
         <Container>
