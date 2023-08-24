@@ -218,6 +218,9 @@ export default function EventPageTemplate({
                   </div>
                 </div>
                 <div className="mt-12">
+                  <p className="font-guthen text-horizon-pink mb-1 text-xl tracking-wider">
+                    Join us for...
+                  </p>
                   <h2 className="text-4xl font-chedros mb-3">
                     {event.subheadline}
                   </h2>
@@ -260,8 +263,11 @@ export default function EventPageTemplate({
                   </div>
                 </div>
                 <div className="mt-12">
+                  <p className="font-guthen text-horizon-pink mb-1 text-xl tracking-wider">
+                    FAQs
+                  </p>
                   <h2 className="text-4xl font-chedros mb-9">
-                    If you&apos;re wondering...
+                    You have questions, we have answers.
                   </h2>
                   <Accordian faqs={faqs} />
                   <div className="mt-12 grid grid-cols-5 p-6 bg-horizon-orange-100 rounded-xl">
@@ -292,6 +298,9 @@ export default function EventPageTemplate({
                   </div>
                 </div>
                 <div className="mt-12">
+                  <p className="font-guthen text-horizon-pink mb-1 text-xl tracking-wider">
+                    Need more reasons?
+                  </p>
                   <h2 className="text-4xl font-chedros mb-6">
                     Why you should attend {event.title}
                   </h2>
@@ -325,8 +334,11 @@ export default function EventPageTemplate({
                   />
                 </div>
                 <div className="mt-12">
+                  <p className="font-guthen text-horizon-pink mb-1 text-xl tracking-wider">
+                    Schedule
+                  </p>
                   <h2 className="text-4xl font-chedros mb-6">
-                    Schedule for the Event
+                    {event.schedule_headline}
                   </h2>
                   <div className="grid grid-cols-2 gap-4">
                     <div
@@ -364,6 +376,30 @@ export default function EventPageTemplate({
                   </div>
                 </div>
                 <div className="mt-12 pb-6">
+                  <p className="font-guthen text-horizon-pink mb-1 text-xl tracking-wider">
+                    Judges
+                  </p>
+                  <h2 className="text-4xl font-chedros mb-3">
+                    {event.judges_headline}
+                  </h2>
+                  {event.judges ? (
+                    <div className="grid grid-cols-3 gap-3">
+                      {event.judges.map((judge: any) => (
+                        <div key={judge._id} className="col-span-1"></div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="">
+                      <p className="text-xl text-horizon-grey-600">
+                        Judges will be announced soon! 👀
+                      </p>
+                    </div>
+                  )}
+                </div>
+                <div className="mt-12 pb-6">
+                  <p className="font-guthen text-horizon-pink mb-1 text-xl tracking-wider">
+                    Apply now!
+                  </p>
                   <h2 className="text-4xl font-chedros mb-3">
                     {event.conclusion_headline}
                   </h2>
