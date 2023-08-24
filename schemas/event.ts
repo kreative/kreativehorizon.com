@@ -149,6 +149,11 @@ export default defineType({
       to: [{ type: 'testimonial' }],
     }),
     defineField({
+      name: 'schedule_headline',
+      title: 'Schedule Headline',
+      type: 'string',
+    }),
+    defineField({
       name: 'schedule_days_num',
       title: 'Number of Days in Schedule',
       type: 'number',
@@ -172,6 +177,17 @@ export default defineType({
       name: 'day_two_items',
       title: 'Day Two Items',
       type: 'text',
+    }),
+    defineField({
+      name: 'judges_headline',
+      title: 'Judges Section Headline',
+      type: 'string',
+    }),
+    defineField({
+      name: 'judges',
+      title: 'Judges',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'judge' }] }],
     }),
     defineField({
       name: 'conclusion_headline',
