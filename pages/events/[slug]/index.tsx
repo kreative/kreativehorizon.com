@@ -375,7 +375,7 @@ export default function EventPageTemplate({
                     )}
                   </div>
                 </div>
-                <div className="mt-12 pb-6">
+                <div className="mt-12 pb-2">
                   <p className="font-guthen text-horizon-pink mb-1 text-xl tracking-wider">
                     Judges
                   </p>
@@ -383,9 +383,23 @@ export default function EventPageTemplate({
                     {event.judges_headline}
                   </h2>
                   {event.judges ? (
-                    <div className="grid grid-cols-3 gap-3">
+                    <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-4">
                       {event.judges.map((judge: any) => (
-                        <div key={judge._id} className="col-span-1"></div>
+                        <div key={judge._id} className="col-span-1 pr-4 mb-4">
+                          <CldImage
+                            src={`kreativehorizon.com/judges/${judge.headshot_cld_id}`}
+                            alt={`${judge.name} - ${judge.position} at ${judge.organization} Judge Headshot for ${event.title}`}
+                            className="w-24 h-24 rounded-full mb-2"
+                            width={500}
+                            height={500}
+                          />
+                          <p className="text-md md:text-lg font-bold text-horizon-orange">
+                            {judge.name}
+                          </p>
+                          <p className="text-md text-horizon-grey-600">
+                            {judge.position} at {judge.organization}
+                          </p>
+                        </div>
                       ))}
                     </div>
                   ) : (
