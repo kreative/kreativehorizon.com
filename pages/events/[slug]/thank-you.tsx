@@ -26,7 +26,7 @@ export default function CompleteApp({ relatedEvents }: { relatedEvents: EventCar
             {/*    height="350"*/}
             {/*    className="h-[30vh] w-auto rounded-full mb-3"*/}
             {/*/>*/}
-            <p className="text-2xl font-guthen tracking-wider">
+            <p className="text-2xl font-guthen tracking-wider text-horizon-pink">
               Thank you for applying!
             </p>
             <h1 className="text-5xl md:text-6xl font-chedros text-center">
