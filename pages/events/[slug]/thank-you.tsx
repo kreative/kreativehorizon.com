@@ -9,7 +9,11 @@ import LogoCloud6 from "@/components/LogoCloud6";
 import EventCardType from "@/types/EventCard";
 import getLatestEvents from "@/lib/getLatestEvents";
 
-export default function CompleteApp({ relatedEvents }: { relatedEvents: EventCardType[] }) {
+export default function CompleteApp({
+  relatedEvents,
+}: {
+  relatedEvents: EventCardType[];
+}) {
   return (
     <div>
       <NextSeo title="Thank You For Applying Up!" />
