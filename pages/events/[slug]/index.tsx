@@ -142,7 +142,7 @@ export default function EventPageTemplate({
   return (
     <div>
       <NextSeo
-        title={`${event.seo_title} | Kreative Horizon`}
+        title={`${event.seo_title} | Events`}
         description={`${event.seo_description}`}
       />
       <Navbar />
