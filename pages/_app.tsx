@@ -176,8 +176,10 @@ export default function App({ Component, pageProps }: AppProps) {
           gtag('config', 'G-8D33N2GVHQ');
         `}
       </Script>
-      <Script id="trust-pulse">
-        {`
+      <body>
+        <Component {...pageProps} />
+        <Script id="trust-pulse">
+          {`
           !function(w,d,s,n,r,a)
           ((w._tpq = w._tpq || []).push(["init", n]),
           ((r = d.createElement(s)).type = "text/javascript"),
@@ -186,8 +188,8 @@ export default function App({ Component, pageProps }: AppProps) {
           (a = d.getElementsByTagName(s)[0]).parentNode.insertBefore(r, a))
           (window,document,'script',10418);
         `}
-      </Script>
-      <Component {...pageProps} />
+        </Script>
+      </body>
     </div>
   );
 }
