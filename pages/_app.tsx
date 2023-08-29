@@ -176,20 +176,12 @@ export default function App({ Component, pageProps }: AppProps) {
           gtag('config', 'G-8D33N2GVHQ');
         `}
       </Script>
-      <body>
-        <Component {...pageProps} />
-        <Script id="trust-pulse">
-          {`
-          !function(w,d,s,n,r,a)
-          ((w._tpq = w._tpq || []).push(["init", n]),
-          ((r = d.createElement(s)).type = "text/javascript"),
-          (r.src = "https://a.trstplse.com/app/js/api.min.js"),
-          (r.async = !0),
-          (a = d.getElementsByTagName(s)[0]).parentNode.insertBefore(r, a))
-          (window,document,'script',10418);
-        `}
-        </Script>
-      </body>
+      <Component {...pageProps} />
+      <Script id="trust-pulse">
+        {`
+          !function(w,d,s,n,r,a){(w._tpq=w._tpq||[]).push(['init',n]),(r=d.createElement(s)).type='text/javascript',r.src='https://a.trstplse.com/app/js/api.min.js',r.async=!0,(a=d.getElementsByTagName(s)[0]).parentNode.insertBefore(r,a)}(window,document,'script',10418);
+          `}
+      </Script>
     </div>
   );
 }
