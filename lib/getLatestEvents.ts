@@ -38,7 +38,7 @@ const getLatestEvents = async (excludeSlug?: string): Promise<EventCardType[]> =
         start_datetime,
         end_datetime,
         date_label,
-        location,
+        location_nickname,
         slug,
         cld_id,
         alt,
