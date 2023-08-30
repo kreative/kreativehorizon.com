@@ -459,14 +459,25 @@ export default function EventPageTemplate({
               <div className="col-span-12 lg:col-span-4">
                 {Date.now() <
                   new Date(event.registration_opens_date).getTime() && (
-                  <div
+                        <div className="bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple p-[4px] rounded-[20px] shadow-xl">
+                          <div
                     id={"lead-box"}
                     className="px-6 py-8 bg-horizon-grey-100 rounded-2xl"
                   >
+                            <motion.div
+                                initial={{ scale: 1 }}
+                                animate={{ scale: [1, 1.06, 1] }} // Define scale keyframes
+                                transition={{
+                                  repeat: Infinity, // Infinite repeat
+                                  duration: 1, // Total duration for one bounce cycle
+                                  ease: "easeInOut", // Easing function for smoother animation
+                                }}
+                            >
                     <h2 className="text-3xl font-chedros text-center mb-3">
                       Registration will be opening on{" "}
                       {event.registration_opens_date_label}
                     </h2>
+                            </motion.div>
                     <p className="text-horizon-grey-700 font-md text-center">
                       We&apos;ll let you know when registration opens so you
                       don&apos;t miss your spot.
@@ -597,18 +608,30 @@ export default function EventPageTemplate({
                       </svg>
                     </div>
                   </div>
+                        </div>
                 )}
                 {Date.now() >=
                   new Date(event.registration_opens_date).getTime() &&
                   Date.now() <=
                     new Date(event.registration_closes_date).getTime() && (
+                        <div className="bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple p-[4px] rounded-[20px] shadow-xl">
                     <div
                       id={"app-box"}
                       className="px-6 py-8 bg-horizon-grey-100 rounded-2xl"
                     >
-                      <h2 className="text-3xl font-chedros text-center mb-3">
-                        Apply to participate and secure your spot now
-                      </h2>
+                      <motion.div
+                          initial={{ scale: 1 }}
+                          animate={{ scale: [1, 1.06, 1] }} // Define scale keyframes
+                          transition={{
+                            repeat: Infinity, // Infinite repeat
+                            duration: 1, // Total duration for one bounce cycle
+                            ease: "easeInOut", // Easing function for smoother animation
+                          }}
+                      >
+                        <h2 className="text-3xl font-chedros text-center mb-3">
+                          Apply to participate and secure your spot now
+                        </h2>
+                      </motion.div>
                       <p className="text-horizon-grey-700 font-md text-center">
                         We use your application to ensure that only committed
                         students are coming and to get to know you better!
@@ -746,6 +769,7 @@ export default function EventPageTemplate({
                         </svg>
                       </div>
                     </div>
+                        </div>
                   )}
                 {Date.now() >=
                   new Date(event.registration_closes_date).getTime() && (
