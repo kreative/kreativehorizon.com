@@ -43,31 +43,61 @@ export default function GetInvolved() {
             <div className="col-span-3">
               <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
-                  <CldImage
-                    width="674"
-                    height="154"
-                    src="kreativehorizon.com/about-us/hackisu_v2_2x_tyt9l0"
-                    alt="HackISU v2 Sticker Logo"
-                    className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                  />
+                  <motion.div
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="/events/hackisu-v2">
+                      <CldImage
+                        width="674"
+                        height="154"
+                        src="kreativehorizon.com/about-us/hackisu_v2_2x_tyt9l0"
+                        alt="HackISU v2 Sticker Logo"
+                        className="w-[60%] xs:w-full sm:w-[85%] h-auto"
+                      />
+                  </Link>
+                  </motion.div>
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
-                  <CldImage
-                    width="489"
-                    height="165"
-                    src="kreativehorizon.com/about-us/dataisu_v1_2x_itgjv8"
-                    alt="DataISU v1 Sticker Logo"
-                    className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                  />
+                  <motion.div
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="/events/dataisu-v1">
+                      <CldImage
+                        width="489"
+                        height="165"
+                        src="kreativehorizon.com/about-us/dataisu_v1_2x_itgjv8"
+                        alt="DataISU v1 Sticker Logo"
+                        className="w-[60%] xs:w-full sm:w-[85%] h-auto"
+                      />
+                    </Link>
+                  </motion.div>
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
-                  <CldImage
-                    width="642"
-                    height="170"
-                    src="kreativehorizon.com/about-us/designjamisu_v1_2x_xj1zx6"
-                    alt="DesignJamISU v1 Sticker Logo"
-                    className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                  />
+                  <motion.div
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="/events/designjamisu-v1">
+                      <CldImage
+                        width="642"
+                        height="170"
+                        src="kreativehorizon.com/about-us/designjamisu_v1_2x_xj1zx6"
+                        alt="DesignJamISU v1 Sticker Logo"
+                        className="w-[60%] xs:w-full sm:w-[85%] h-auto"
+                      />
+                    </Link>
+                  </motion.div>
                 </div>
               </div>
             </div>
@@ -119,31 +149,61 @@ export default function GetInvolved() {
             <div className="col-span-3">
               <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
-                  <CldImage
-                    width="661"
-                    height="203"
-                    src="kreativehorizon.com/about-us/pitchames_v1_2x_vxg6un"
-                    alt="PitchAmes v1 Sticker Logo"
-                    className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                  />
+                  <motion.div
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="/events/pitchames-v1">
+                      <CldImage
+                        width="661"
+                        height="203"
+                        src="kreativehorizon.com/about-us/pitchames_v1_2x_vxg6un"
+                        alt="PitchAmes v1 Sticker Logo"
+                        className="w-[60%] xs:w-full sm:w-[85%] h-auto"
+                      />
+                    </Link>
+                  </motion.div>
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
-                  <CldImage
-                    width="688"
-                    height="173"
-                    src="kreativehorizon.com/about-us/hackisu_v3_2x_pehptp"
-                    alt="HackISU v3 Sticker Logo"
-                    className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                  />
+                  <motion.div
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="/events/hackisu-v3">
+                      <CldImage
+                        width="688"
+                        height="173"
+                        src="kreativehorizon.com/about-us/hackisu_v3_2x_pehptp"
+                        alt="HackISU v3 Sticker Logo"
+                        className="w-[60%] xs:w-full sm:w-[85%] h-auto"
+                      />
+                    </Link>
+                  </motion.div>
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
-                  <CldImage
-                    width="566"
-                    height="185"
-                    src="kreativehorizon.com/about-us/builddsm_v1_2x_go6cxt"
-                    alt="BuildDSM v1 Sticker Logo"
-                    className="w-[60%] xs:w-full sm:w-[85%] h-auto"
-                  />
+                  <motion.div
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href="/events/builddsm-v1">
+                      <CldImage
+                        width="566"
+                        height="185"
+                        src="kreativehorizon.com/about-us/builddsm_v1_2x_go6cxt"
+                        alt="BuildDSM v1 Sticker Logo"
+                        className="w-[60%] xs:w-full sm:w-[85%] h-auto"
+                      />
+                    </Link>
+                  </motion.div>
                 </div>
               </div>
             </div>
