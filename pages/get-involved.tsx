@@ -44,11 +44,11 @@ export default function GetInvolved() {
               <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                   <motion.div
-                      whileHover={{
-                        scale: 1.05,
-                        transition: { duration: 0.2 },
-                      }}
-                      whileTap={{ scale: 0.95 }}
+                    whileHover={{
+                      scale: 1.05,
+                      transition: { duration: 0.2 },
+                    }}
+                    whileTap={{ scale: 0.95 }}
                   >
                     <Link href="/events/hackisu-v2">
                       <CldImage
@@ -58,16 +58,16 @@ export default function GetInvolved() {
                         alt="HackISU v2 Sticker Logo"
                         className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                       />
-                  </Link>
+                    </Link>
                   </motion.div>
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                   <motion.div
-                      whileHover={{
-                        scale: 1.05,
-                        transition: { duration: 0.2 },
-                      }}
-                      whileTap={{ scale: 0.95 }}
+                    whileHover={{
+                      scale: 1.05,
+                      transition: { duration: 0.2 },
+                    }}
+                    whileTap={{ scale: 0.95 }}
                   >
                     <Link href="/events/dataisu-v1">
                       <CldImage
@@ -82,11 +82,11 @@ export default function GetInvolved() {
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                   <motion.div
-                      whileHover={{
-                        scale: 1.05,
-                        transition: { duration: 0.2 },
-                      }}
-                      whileTap={{ scale: 0.95 }}
+                    whileHover={{
+                      scale: 1.05,
+                      transition: { duration: 0.2 },
+                    }}
+                    whileTap={{ scale: 0.95 }}
                   >
                     <Link href="/events/designjamisu-v1">
                       <CldImage
@@ -150,11 +150,11 @@ export default function GetInvolved() {
               <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                   <motion.div
-                      whileHover={{
-                        scale: 1.05,
-                        transition: { duration: 0.2 },
-                      }}
-                      whileTap={{ scale: 0.95 }}
+                    whileHover={{
+                      scale: 1.05,
+                      transition: { duration: 0.2 },
+                    }}
+                    whileTap={{ scale: 0.95 }}
                   >
                     <Link href="/events/pitchames-v1">
                       <CldImage
@@ -169,11 +169,11 @@ export default function GetInvolved() {
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                   <motion.div
-                      whileHover={{
-                        scale: 1.05,
-                        transition: { duration: 0.2 },
-                      }}
-                      whileTap={{ scale: 0.95 }}
+                    whileHover={{
+                      scale: 1.05,
+                      transition: { duration: 0.2 },
+                    }}
+                    whileTap={{ scale: 0.95 }}
                   >
                     <Link href="/events/hackisu-v3">
                       <CldImage
@@ -188,11 +188,11 @@ export default function GetInvolved() {
                 </div>
                 <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                   <motion.div
-                      whileHover={{
-                        scale: 1.05,
-                        transition: { duration: 0.2 },
-                      }}
-                      whileTap={{ scale: 0.95 }}
+                    whileHover={{
+                      scale: 1.05,
+                      transition: { duration: 0.2 },
+                    }}
+                    whileTap={{ scale: 0.95 }}
                   >
                     <Link href="/events/builddsm-v1">
                       <CldImage

@@ -215,7 +215,9 @@ export default function AboutUs() {
                   But now we&apos;re back!
                 </p>
                 <h2 className="text-5xl font-chedros">
-                  We just ran hackiowastate v1, and now we&apos;re bringing <span className="text-horizon-orange">six new events</span> to the state of iowa
+                  We just ran hackiowastate v1, and now we&apos;re bringing{" "}
+                  <span className="text-horizon-orange">six new events</span> to
+                  the state of iowa
                 </h2>
               </div>
               <div className="col-span-2 sm:col-span-1">
@@ -261,11 +263,11 @@ export default function AboutUs() {
                 <div className="grid grid-cols-3 gap-4">
                   <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                     <motion.div
-                        whileHover={{
-                          scale: 1.05,
-                          transition: { duration: 0.2 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/hackisu-v2">
                         <CldImage
@@ -280,11 +282,11 @@ export default function AboutUs() {
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                     <motion.div
-                        whileHover={{
-                          scale: 1.05,
-                          transition: { duration: 0.2 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/dataisu-v1">
                         <CldImage
@@ -299,11 +301,11 @@ export default function AboutUs() {
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                     <motion.div
-                        whileHover={{
-                          scale: 1.05,
-                          transition: { duration: 0.2 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/designjamisu-v1">
                         <CldImage
@@ -367,11 +369,11 @@ export default function AboutUs() {
                 <div className="grid grid-cols-3 gap-4">
                   <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                     <motion.div
-                        whileHover={{
-                          scale: 1.05,
-                          transition: { duration: 0.2 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/pitchames-v1">
                         <CldImage
@@ -386,11 +388,11 @@ export default function AboutUs() {
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                     <motion.div
-                        whileHover={{
-                          scale: 1.05,
-                          transition: { duration: 0.2 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/hackisu-v3">
                         <CldImage
