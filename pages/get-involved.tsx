@@ -27,7 +27,7 @@ export default function GetInvolved() {
                 </p>
                 <h1 className="text-6xl md:text-7xl font-chedros text-white text-center">
                   whether you&apos;re a Student or an organization, there is a
-                  home for you with horizon.
+                  home for you with Kreative.
                 </h1>
               </div>
             </Container>
