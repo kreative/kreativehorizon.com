@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 export default function FloatingCTA3() {
   return (
-    <div className="grid grid-cols-6 gap-4 p-6 rounded-2xl bg-white bg-opacity-30">
-      <div className="col-span-6 md:col-span-4 flex justify-start items-center space-x-6">
+    <div className="grid grid-cols-6 gap-4 pt-6 pl-6 pr-12 pb-12 sm:p-6 rounded-2xl bg-white bg-opacity-30">
+      <div className="col-span-6 md:col-span-4 flex flex-col sm:flex-row justify-start items-start sm:items-center space-x-6">
         <div>
           <svg
-            className="w-24 h-auto"
+            className="mb-8 sm:m-0 w-24 h-auto"
             viewBox="0 0 84 83"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
