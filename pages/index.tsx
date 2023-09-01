@@ -126,25 +126,19 @@ export default function Home({ events }: { events: EventCardType[] }) {
               </p>
               <div className="flex justify-center items-end space-x-10 max-w-[100%] sm:max-w-[75%] mt-8">
                 <div className="">
-                  <p className="text-7xl lg:text-8xl font-chedros">
-                    154
-                  </p>
+                  <p className="text-7xl lg:text-8xl font-chedros">154</p>
                   <p className="text-2xl font-guthen text-horizon-grey-600">
                     Students empowered
                   </p>
                 </div>
                 <div className="">
-                  <p className="text-7xl lg:text-8xl font-chedros">
-                    14
-                  </p>
+                  <p className="text-7xl lg:text-8xl font-chedros">14</p>
                   <p className="text-2xl font-guthen text-horizon-grey-600">
                     Sponsors served
                   </p>
                 </div>
                 <div className="">
-                  <p className="text-7xl lg:text-8xl font-chedros">
-                    24
-                  </p>
+                  <p className="text-7xl lg:text-8xl font-chedros">24</p>
                   <p className="text-2xl font-guthen text-horizon-grey-600">
                     Projects submitted
                   </p>
