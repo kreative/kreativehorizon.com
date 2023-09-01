@@ -40,7 +40,7 @@ function FooterLink({
     >
       <Link
         href={href}
-        className="text-2xl lg:text-lg text-white"
+        className="text-2xl lg:text-xl text-white"
         target={target}
         rel="noopener noreferrer"
       >
@@ -138,7 +138,7 @@ export default function Footer() {
               <h2 className="text-5xl font-chedros text-white text-center">
                 OUR MOVEMENT IS ONLY GROWING, WE WANT YOU TO BE A PART OF IT.
               </h2>
-              <p className="text-center text-white text-base pb-2">
+              <p className="text-center text-white text-xl pb-4">
                 We&apos;re starting in Iowa with our sights set on the nation.
                 Every student deserves the opportunity to see the future for
                 what it could be - and then build it.
@@ -181,7 +181,7 @@ export default function Footer() {
               <h3 className="text-6xl lg:text-4xl text-white font-chedros">
                 JOIN THE JOURNEY
               </h3>
-              <p className="text-horizon-grey-300 text-2xl lg:text-base mb-4">
+              <p className="text-horizon-grey-300 text-2xl lg:text-xl mb-4">
                 Providing students the tools and resources to build the future
                 of tomorrow, today so we can see the world for what it could be.
               </p>
@@ -189,7 +189,7 @@ export default function Footer() {
                 <Phone className="text-white" size={32} />
                 <Link
                   href="tel:+15152126468"
-                  className="text-white text-2xl lg:text-base hover:underline transition duration-300 ease-in-out"
+                  className="text-white text-2xl lg:text-xl hover:underline transition duration-300 ease-in-out"
                 >
                   +1 (515) 212-6468
                 </Link>
@@ -198,7 +198,7 @@ export default function Footer() {
                 <Envelope className="text-white" size={32} />
                 <Link
                   href="mailto:horizon@kreativeusa.com"
-                  className="text-white text-2xl lg:text-base hover:underline transition duration-300 ease-in-out"
+                  className="text-white text-2xl lg:text-xl hover:underline transition duration-300 ease-in-out"
                 >
                   horizon@kreativeusa.com
                 </Link>
@@ -586,12 +586,12 @@ export default function Footer() {
             <hr className="line text-horizon-grey-400" />
             <div className="grid grid-cols-2 gap-4 md:gap-0 mt-6 md:mt-4 mb-1">
               <div className="col-span-2 md:col-span-1 flex justify-center md:justify-start items-center space-x-3">
-                <p className="text-horizon-grey-400 text-sm">
+                <p className="text-horizon-grey-400 text-md">
                   © 2023 Kreative, LLC. All rights reserved.
                 </p>
                 <Link
                   href="/sitemap"
-                  className="text-horizon-grey-400 text-sm underline"
+                  className="text-horizon-grey-400 text-md underline"
                 >
                   Sitemap
                 </Link>
@@ -599,7 +599,7 @@ export default function Footer() {
               <div className="col-span-2 md:col-span-1 flex justify-center md:justify-end items-center">
                 <a
                   href="https://kreativedreamflow.com"
-                  className="text-horizon-grey-400 hover:text-horizon-purple hover:underline text-sm"
+                  className="text-horizon-grey-400 hover:text-horizon-purple hover:underline text-md"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

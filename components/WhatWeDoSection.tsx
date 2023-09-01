@@ -66,7 +66,7 @@ export default function WhatWeDoSection() {
                 <h3 className="text-4xl sm:text-2xl md:text-3xl font-chedros text-horizon-grey-700 text-center">
                   Builder Events
                 </h3>
-                <p className="text-lg text-horizon-grey-600 text-center">
+                <p className="text-xl sm:text-lg text-horizon-grey-600 text-center">
                   Designed to bring students together to solve tomorrow&apos;s
                   problems, today.
                 </p>
@@ -92,7 +92,7 @@ export default function WhatWeDoSection() {
                 <h3 className="text-4xl sm:text-2xl md:text-3xl font-chedros text-horizon-grey-700 text-center">
                   Sponsorships
                 </h3>
-                <p className="text-lg text-horizon-grey-600 text-center">
+                <p className="text-xl sm:text-lg text-horizon-grey-600 text-center">
                   The fastest way to get in front of the most motivated students
                   on campus.
                 </p>
@@ -118,7 +118,7 @@ export default function WhatWeDoSection() {
                 <h3 className="text-4xl sm:text-2xl md:text-3xl font-chedros text-horizon-grey-700 text-center">
                   Horizon clubs
                 </h3>
-                <p className="text-lg text-horizon-grey-600 text-center">
+                <p className="text-xl sm:text-lg text-horizon-grey-600 text-center">
                   We&apos;re building a network of student organizations to help
                   students grow.
                 </p>

@@ -83,7 +83,7 @@ export default function FloatingCTA() {
           <h2 className="text-5xl text-white font-chedros w-full">
             YOU NEED MORE EMAILS. JOIN THE NEWSLETTER.
           </h2>
-          <p className="text-base text-white w-full lg:w-[70%] xl:w-[85%] mb-4">
+          <p className="text-xl text-white w-full lg:w-[70%] xl:w-[85%] mb-4">
             Your inbox could use a few more things to read. Get new events,
             programs, discounts, and giveaways straight to your phone. We
             promise it&apos;ll be worth it :)

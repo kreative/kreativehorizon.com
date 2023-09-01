@@ -124,28 +124,28 @@ export default function Home({ events }: { events: EventCardType[] }) {
                 students on their campus or area, make new friends, connect with
                 sponsors (that are looking to hire 👀), and have a great time.
               </p>
-              <div className="flex justify-center items-end space-x-10 max-w-[75%] mt-8">
+              <div className="flex justify-center items-end space-x-10 max-w-[100%] sm:max-w-[75%] mt-8">
                 <div className="">
-                  <p className="text-6xl sm:text-7xl lg:text-8xl font-chedros">
+                  <p className="text-7xl lg:text-8xl font-chedros">
                     154
                   </p>
-                  <p className="text-xl font-guthen text-horizon-grey-600">
+                  <p className="text-2xl font-guthen text-horizon-grey-600">
                     Students empowered
                   </p>
                 </div>
                 <div className="">
-                  <p className="text-6xl sm:text-7xl lg:text-8xl font-chedros">
+                  <p className="text-7xl lg:text-8xl font-chedros">
                     14
                   </p>
-                  <p className="text-xl font-guthen text-horizon-grey-600">
+                  <p className="text-2xl font-guthen text-horizon-grey-600">
                     Sponsors served
                   </p>
                 </div>
                 <div className="">
-                  <p className="text-6xl sm:text-7xl lg:text-8xl font-chedros">
+                  <p className="text-7xl lg:text-8xl font-chedros">
                     24
                   </p>
-                  <p className="text-xl font-guthen text-horizon-grey-600">
+                  <p className="text-2xl font-guthen text-horizon-grey-600">
                     Projects submitted
                   </p>
                 </div>
@@ -165,11 +165,11 @@ export default function Home({ events }: { events: EventCardType[] }) {
         <WhatWeDoSection />
         <Container>
           <div className="py-32">
-            <div className="max-w-4xl mx-auto flex flex-col items-center justify-center space-y-4">
-              <p className="text-2xl tracking-wide font-guthen text-center">
+            <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center justify-center space-y-4">
+              <p className="text-2xl tracking-wide font-guthen text-left sm:text-center">
                 Season One Events
               </p>
-              <h2 className="text-5xl font-chedros text-center">
+              <h2 className="text-5xl font-chedros text-left sm:text-center">
                 We&apos;ve got a full slate of events between engineering,
                 business, and design.{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple">
@@ -210,16 +210,16 @@ export default function Home({ events }: { events: EventCardType[] }) {
                 <p className="font-guthen tracking-wide text-2xl">
                   Why we started
                 </p>
-                <h2 className="text-3xl md:text-5xl font-chedros">
+                <h2 className="text-4xl md:text-5xl font-chedros">
                   “We started Kreative Horizon to give students the sort of
                   tools they can&apos;t get in the classroom. Events like
                   hackathons and pitch competitions{" "}
-                  <span className="text-4xl md:text-6xl underline">
+                  <span className="text-5xl md:text-6xl underline">
                     give students the chance to build something real and have
                     fun doing it.”
                   </span>
                 </h2>
-                <p className="text-xl">Armaan Gupta, Founder</p>
+                <p className="text-2xl">Armaan Gupta, Founder</p>
                 <Link
                   href="/about-us"
                   className="text-xl hover:underline pt-12 font-bold"
