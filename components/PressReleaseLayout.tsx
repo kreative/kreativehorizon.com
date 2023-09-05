@@ -67,7 +67,7 @@ export function PressReleaseLayout({
                   <Link href="/press" className="text-horizon-purple underline">
                     Press page
                   </Link>{" "}
-                  contact information and resources.
+                  for contact information and resources!
                 </p>
               </div>
             </div>
