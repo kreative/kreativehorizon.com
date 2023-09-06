@@ -32,6 +32,15 @@ export function PressReleaseLayout({
           <div className="my-16 md:my-24">
             <div className="mx-auto max-w-2xl">
               <article>
+                <div className={"mb-4"}>
+                  <span
+                    className={
+                      "py-1 px-2 rounded-md bg-horizon-pink text-white"
+                    }
+                  >
+                    FOR IMMEDIATE RELEASE
+                  </span>
+                </div>
                 <header className="flex flex-col">
                   <h1 className="mt-6 text-4xl text-horizon-grey-800 dark:text-zinc-100 sm:text-6xl font-chedros">
                     {meta.title}
@@ -67,7 +76,7 @@ export function PressReleaseLayout({
                   <Link href="/press" className="text-horizon-purple underline">
                     Press page
                   </Link>{" "}
-                  contact information and resources.
+                  for contact information and resources!
                 </p>
               </div>
             </div>
