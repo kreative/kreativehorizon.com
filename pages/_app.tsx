@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import Script from "next/script";
+import { useRouter } from "next/router";
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
 import { DefaultSeo } from "next-seo";
@@ -84,6 +84,9 @@ const chedros = localFont({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const canonicalUrl = (`https://kreativehorizon.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+
   return (
     <div
       className={`${craftworkSans.variable} ${guthenBloots.variable} ${chedros.variable}`}
@@ -93,7 +96,7 @@ export default function App({ Component, pageProps }: AppProps) {
         titleTemplate="%s | Kreative Horizon"
         defaultTitle="Kreative Horizon"
         description="We're on a mission of providing students the tools and resources to build the future of tomorrow, today so we can see the world for what it could be. Hackathons, workshops, and more."
-        canonical="https://kreativehorizon.com/"
+        canonical={canonicalUrl}
         additionalLinkTags={[
           {
             rel: "icon",
