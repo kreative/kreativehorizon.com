@@ -238,7 +238,7 @@ export default function GetInvolved() {
                     className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 text-white border border-horizon-grey-800"
                     href="/sponsors/interest-form"
                   >
-                    Sponsor now
+                    Want to learn more?
                   </Link>
                 </motion.div>
                 <motion.div
