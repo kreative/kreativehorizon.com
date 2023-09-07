@@ -101,7 +101,7 @@ export default function FloatingCTA() {
                 whileHover={{ scale: 0.97, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.9 }}
               >
-                <button className="bg-white py-3 px-6 md:py-1.5 md:px-4 rounded-md text-horizon-pink w-full xs:w-auto font-bold" onClick={(e) => setShowSpinner(true)}>
+                <button className="bg-white py-3 px-6 md:py-1.5 md:px-4 rounded-md text-horizon-purple-darker w-full xs:w-auto font-bold" onClick={(e) => setShowSpinner(true)}>
                   {showSpinner ? (
                     <div className="flex justify-center items-center space-x-3">
                       <motion.span

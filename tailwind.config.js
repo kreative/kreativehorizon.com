@@ -47,6 +47,7 @@ module.exports = {
         "horizon-purple": "#950EFF",
         "horizon-purple-50": "#F9F1FF",
         "horizon-purple-300": "C479FF",
+        "horizon-purple-darker": "#5F00AD",
         "horizon-grey-100": "#FAFAFA",
         "horizon-grey-200": "#F6F6F4",
         "horizon-grey-300": "#E3E3E3",
