@@ -83,7 +83,7 @@ export default function StudentReviews() {
                     className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-black text-white"
                     href="/sponsors/interest-form"
                   >
-                    Sponsor now
+                    Interested in sponsoring?
                   </Link>
                 </motion.div>
               </div>
@@ -412,7 +412,7 @@ export default function StudentReviews() {
                   className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-bold bg-horizon-grey-800 border border-horizon-grey-800 text-white"
                   href="/sponsors/interest-form"
                 >
-                  Sponsor now
+                  Interested in sponsoring?
                 </Link>
               </motion.div>
               <motion.div

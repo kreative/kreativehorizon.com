@@ -41,7 +41,7 @@ export default function WhatWeDoSection() {
                 className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-transparent text-horizon-grey-800 border border-horizon-grey-800"
                 href="/sponsors"
               >
-                Sponsor now
+                Become a sponsor
               </Link>
             </motion.div>
           </div>

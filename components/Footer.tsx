@@ -171,7 +171,7 @@ export default function Footer() {
                     className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-white border border-white"
                     href="/sponsor"
                   >
-                    Sponsor now
+                    Become a sponsor
                   </Link>
                 </motion.div>
               </div>
