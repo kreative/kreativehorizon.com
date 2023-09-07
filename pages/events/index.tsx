@@ -27,7 +27,7 @@ export default function Events({
         <SplashContainer>
           <div className="bg-horizon-orange-100">
             <Container>
-              <div className="pt-64 pb-16">
+              <div className="pt-32 sm:pt-64 pb-16">
                 <p className="font-guthen tracking-wide text-2xl mb-4 text-center">
                   Season One Events
                 </p>

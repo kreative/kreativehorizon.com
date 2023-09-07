@@ -22,7 +22,7 @@ export default function StudentReviews() {
         <SplashContainer>
           <div className="bg-sponsor-image-gallery bg-cover bg-top">
             <Container>
-              <div className="flex flex-col justify-center items-start pt-64 pb-64">
+              <div className="flex flex-col justify-center items-start py-44 sm:py-64">
                 <p className="text-2xl font-guthen tracking-wide pb-2 text-white">
                   Sponsor Guide
                 </p>
@@ -60,7 +60,7 @@ export default function StudentReviews() {
         </SplashContainer>
         <div className="bg-horizon-grey-200 pt-24 pb-32">
           <Container>
-            <div className="max-w-5xl mx-auto -mt-44 rotate-3">
+            <div className="max-w-5xl mx-auto -mt-44 rotate-0 md:rotate-3">
               <SponsorLetter />
             </div>
           </Container>

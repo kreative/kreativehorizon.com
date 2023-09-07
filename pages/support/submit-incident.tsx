@@ -23,7 +23,7 @@ export default function SubmitIncident() {
       <Navbar />
       <main>
         <SplashContainer>
-          <div className="bg-gradient-to-b from-horizon-orange to-transparent pt-44 pb-32">
+          <div className="bg-gradient-to-b from-horizon-orange to-transparent pt-32 sm:pt-44 pb-32">
             <Container>
               <div className="max-w-2xl flex flex-col space-y-4 justify-end items-center mx-auto">
                 <svg

@@ -17,7 +17,7 @@ export default function TermsOfService() {
         <SplashContainer>
           <div className="bg-gradient-to-b from-horizon-tan to-transparent">
             <Container>
-              <div className="pt-32 md:py-16 min-h-[25rem] lg:min-h-[30rem] flex flex-col justify-end items-center space-y-4">
+              <div className="pt-12 md:py-16 min-h-[16rem] md:min-h-[25rem] lg:min-h-[30rem] flex flex-col justify-end items-center space-y-4">
                 <h2 className="text-2xl tracking-wide font-guthen">
                   Our Policies
                 </h2>
