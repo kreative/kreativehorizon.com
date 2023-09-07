@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import SplashContainer from "@/components/SplashContainer";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
@@ -51,10 +52,10 @@ export default function GetInvolved() {
                         whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/hackisu-v2">
-                        <CldImage
+                        <Image
                             width="674"
                             height="154"
-                            src="kreativehorizon.com/about-us/hackisu_v2_2x_tyt9l0"
+                            src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1690591105/kreativehorizon.com/about-us/hackisu_v2_2x_tyt9l0.png"}
                             alt="HackISU v2 Sticker Logo"
                             className="w-[80%] xs:w-full sm:w-[85%] h-auto"
                         />
@@ -70,10 +71,10 @@ export default function GetInvolved() {
                         whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/dataisu-v1">
-                        <CldImage
+                        <Image
                             width="489"
                             height="165"
-                            src="kreativehorizon.com/about-us/dataisu_v1_2x_itgjv8"
+                            src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1690590402/kreativehorizon.com/about-us/dataisu_v1_2x_itgjv8.png"}
                             alt="DataISU v1 Sticker Logo"
                             className="w-[100%] xs:w-full sm:w-[85%] h-auto"
                         />
@@ -89,10 +90,10 @@ export default function GetInvolved() {
                         whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/designjamisu-v1">
-                        <CldImage
+                        <Image
                             width="642"
                             height="170"
-                            src="kreativehorizon.com/about-us/designjamisu_v1_2x_xj1zx6"
+                            src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689575076/kreativehorizon.com/about-us/designjamisu-sticker_fhjnmv.webp"}
                             alt="DesignJamISU v1 Sticker Logo"
                             className="w-[80%] xs:w-full sm:w-[85%] h-auto"
                         />
@@ -157,10 +158,10 @@ export default function GetInvolved() {
                         whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/pitchames-v1">
-                        <CldImage
+                        <Image
                             width="661"
                             height="203"
-                            src="kreativehorizon.com/about-us/pitchames_v1_2x_vxg6un"
+                            src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689575076/kreativehorizon.com/about-us/pitchames-sticker_qjxm7u.webp"}
                             alt="PitchAmes v1 Sticker Logo"
                             className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                         />
@@ -176,10 +177,10 @@ export default function GetInvolved() {
                         whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/hackisu-v3">
-                        <CldImage
+                        <Image
                             width="688"
                             height="173"
-                            src="kreativehorizon.com/about-us/hackisu_v3_2x_pehptp"
+                            src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689575076/kreativehorizon.com/about-us/hackisu-v3-sticker_o9hr8n.webp"}
                             alt="HackISU v3 Sticker Logo"
                             className="w-[100%] xs:w-full sm:w-[85%] h-auto"
                         />
@@ -195,10 +196,10 @@ export default function GetInvolved() {
                         whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/builddsm-v1">
-                        <CldImage
+                        <Image
                             width="566"
                             height="185"
-                            src="kreativehorizon.com/about-us/builddsm_v1_2x_go6cxt"
+                            src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689574875/kreativehorizon.com/about-us/builddsm-sticker_it79ii.webp"}
                             alt="BuildDSM v1 Sticker Logo"
                             className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                         />

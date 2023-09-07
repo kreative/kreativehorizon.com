@@ -1,4 +1,4 @@
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import Container from "./Container";
 
 export default function LogoCloud6() {
@@ -11,29 +11,29 @@ export default function LogoCloud6() {
           </p>
         </div>
         <div className="col-span-12 xl:col-span-8 flex flex-wrap sm:space-x-6 space-y-3 sm:space-y-0 justify-center xl:justify-end items-baseline sm:items-center">
-          <CldImage
-            src="kreativehorizon.com/universities/uillinois_j5lxm9"
+          <Image
+            src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689576784/kreativehorizon.com/universities/uillinois_j5lxm9.webp"}
             alt="University of Illinois Logo in Color"
             width="800"
             height="209"
             className="mr-4 sm:mr-0 w-[40%] sm:w-1/5 h-auto"
           />
-          <CldImage
-            src="kreativehorizon.com/universities/uic_whymrx"
+          <Image
+            src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689576784/kreativehorizon.com/universities/uic_whymrx.webp"}
             alt="University of Illinois at Chicago Logo in Color"
             width="865"
             height="169"
             className="mr-4 sm:mr-0 w-[40%] sm:w-1/5 h-auto"
           />
-          <CldImage
-            src="kreativehorizon.com/universities/iowastate_ansvbr"
+          <Image
+            src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689576784/kreativehorizon.com/universities/iowastate_ansvbr.webp"}
             alt="Iowa State University Logo in Color"
             width="3840"
             height="1239"
             className="mr-4 sm:mr-0 w-[40%] sm:w-1/5 h-auto"
           />
-          <CldImage
-            src="kreativehorizon.com/universities/northwestern_g5769c"
+          <Image
+            src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689576784/kreativehorizon.com/universities/northwestern_g5769c.webp"}
             alt="Northwestern University Logo in Color"
             width="820"
             height="200"
