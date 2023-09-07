@@ -85,7 +85,9 @@ const chedros = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  const canonicalUrl = (`https://kreativehorizon.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const canonicalUrl = (
+    `https://kreativehorizon.com` + (router.asPath === "/" ? "" : router.asPath)
+  ).split("?")[0];
 
   return (
     <div

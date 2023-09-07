@@ -216,7 +216,9 @@ export default function AboutUs() {
                   But now we&apos;re back!
                 </p>
                 <h2 className="text-5xl font-chedros">
-                  We just ran hackiowastate v1, and now we&apos;re bringing <span className="text-horizon-orange">six new events</span> to the state of iowa
+                  We just ran hackiowastate v1, and now we&apos;re bringing{" "}
+                  <span className="text-horizon-orange">six new events</span> to
+                  the state of iowa
                 </h2>
               </div>
               <div className="col-span-2 sm:col-span-1">
@@ -262,17 +264,19 @@ export default function AboutUs() {
                 <div className="grid grid-cols-3 gap-4">
                   <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                     <motion.div
-                        whileHover={{
-                          scale: 1.05,
-                          transition: { duration: 0.2 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/hackisu-v2">
                         <Image
                           width="674"
                           height="154"
-                          src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1690591105/kreativehorizon.com/about-us/hackisu_v2_2x_tyt9l0.png"}
+                          src={
+                            "https://res.cloudinary.com/dlazo25rt/image/upload/v1690591105/kreativehorizon.com/about-us/hackisu_v2_2x_tyt9l0.png"
+                          }
                           alt="HackISU v2 Sticker Logo"
                           className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                         />
@@ -281,17 +285,19 @@ export default function AboutUs() {
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                     <motion.div
-                        whileHover={{
-                          scale: 1.05,
-                          transition: { duration: 0.2 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/dataisu-v1">
                         <Image
                           width="489"
                           height="165"
-                          src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1690590402/kreativehorizon.com/about-us/dataisu_v1_2x_itgjv8.png"}
+                          src={
+                            "https://res.cloudinary.com/dlazo25rt/image/upload/v1690590402/kreativehorizon.com/about-us/dataisu_v1_2x_itgjv8.png"
+                          }
                           alt="DataISU v1 Sticker Logo"
                           className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                         />
@@ -300,17 +306,19 @@ export default function AboutUs() {
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                     <motion.div
-                        whileHover={{
-                          scale: 1.05,
-                          transition: { duration: 0.2 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/designjamisu-v1">
                         <Image
                           width="642"
                           height="170"
-                          src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689575076/kreativehorizon.com/about-us/designjamisu-sticker_fhjnmv.webp"}
+                          src={
+                            "https://res.cloudinary.com/dlazo25rt/image/upload/v1689575076/kreativehorizon.com/about-us/designjamisu-sticker_fhjnmv.webp"
+                          }
                           alt="DesignJamISU v1 Sticker Logo"
                           className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                         />
@@ -368,17 +376,19 @@ export default function AboutUs() {
                 <div className="grid grid-cols-3 gap-4">
                   <div className="col-span-3 xs:col-span-1 flex justify-end xs:justify-center items-center">
                     <motion.div
-                        whileHover={{
-                          scale: 1.05,
-                          transition: { duration: 0.2 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/pitchames-v1">
                         <Image
                           width="661"
                           height="203"
-                          src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689575076/kreativehorizon.com/about-us/pitchames-sticker_qjxm7u.webp"}
+                          src={
+                            "https://res.cloudinary.com/dlazo25rt/image/upload/v1689575076/kreativehorizon.com/about-us/pitchames-sticker_qjxm7u.webp"
+                          }
                           alt="PitchAmes v1 Sticker Logo"
                           className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                         />
@@ -387,17 +397,19 @@ export default function AboutUs() {
                   </div>
                   <div className="col-span-3 xs:col-span-1 flex justify-start xs:justify-center items-center">
                     <motion.div
-                        whileHover={{
-                          scale: 1.05,
-                          transition: { duration: 0.2 },
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { duration: 0.2 },
+                      }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Link href="/events/hackisu-v3">
                         <Image
                           width="688"
                           height="173"
-                          src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689575076/kreativehorizon.com/about-us/hackisu-v3-sticker_o9hr8n.webp"}
+                          src={
+                            "https://res.cloudinary.com/dlazo25rt/image/upload/v1689575076/kreativehorizon.com/about-us/hackisu-v3-sticker_o9hr8n.webp"
+                          }
                           alt="HackISU v3 Sticker Logo"
                           className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                         />
@@ -416,7 +428,9 @@ export default function AboutUs() {
                         <Image
                           width="566"
                           height="185"
-                          src={"https://res.cloudinary.com/dlazo25rt/image/upload/v1689574875/kreativehorizon.com/about-us/builddsm-sticker_it79ii.webp"}
+                          src={
+                            "https://res.cloudinary.com/dlazo25rt/image/upload/v1689574875/kreativehorizon.com/about-us/builddsm-sticker_it79ii.webp"
+                          }
                           alt="BuildDSM v1 Sticker Logo"
                           className="w-[60%] xs:w-full sm:w-[85%] h-auto"
                         />
