@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Container from "./Container";
 import FloatingCTA from "./FloatingCTA";
 import { motion } from "framer-motion";
@@ -128,9 +129,16 @@ export default function Footer() {
         </p>
         <HorizonSphere />
       </Marquee>
-      <div id="top_cta" className="pt-32 pb-72 bg-clouds-horizon bg-cover">
+      <div id="top_cta" className="relative pt-32 pb-72 z-0">
+        <div className="absolute inset-0">
+          <Image
+            src="https://res.cloudinary.com/dlazo25rt/image/upload/v1689571484/kreativehorizon.com/clouds-horizon_e3xdx9.webp"
+            alt="Floating CTA Footer background image"
+            layout="fill"
+          />
+        </div>
         <Container>
-          <div className="flex justify-center">
+          <div className="relative flex justify-center">
             <div className="flex flex-col items-center max-w-[34rem] space-y-3">
               <h3 className="text-2xl font-guthen text-white tracking-wider">
                 <span className="mr-1.5">Get</span> Involved
@@ -143,7 +151,7 @@ export default function Footer() {
                 Every student deserves the opportunity to see the future for
                 what it could be - and then build it.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center space-y-12 sm:space-y-0 sm:space-x-3 pt-3 md:p-0">
+              <div className="flex flex-col sm:flex-row items-center justify-center space-y-10 sm:space-y-0 sm:space-x-3 pt-3 md:p-0">
                 <motion.div
                   whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
@@ -171,7 +179,7 @@ export default function Footer() {
           </div>
         </Container>
       </div>
-      <div className="bg-horizon-grey-800 pt-72 pb-6">
+      <div className="relative bg-horizon-grey-800 pt-72 pb-6 z-10">
         <div className="-mt-[30rem] mb-24">
           <FloatingCTA />
         </div>
