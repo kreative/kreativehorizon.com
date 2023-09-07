@@ -1,5 +1,5 @@
-import Script from 'next/script'
-import { Html, Head, Main, NextScript } from 'next/document'
+import Script from "next/script";
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -19,11 +19,11 @@ export default function Document() {
         <Main />
         <NextScript />
         <noscript
-            dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LZKZVDL" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-            }}
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LZKZVDL" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          }}
         />
       </body>
     </Html>
-  )
+  );
 }
