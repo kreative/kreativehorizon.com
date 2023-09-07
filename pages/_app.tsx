@@ -170,15 +170,6 @@ export default function App({ Component, pageProps }: AppProps) {
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-8D33N2GVHQ"
       />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-8D33N2GVHQ');
-        `}
-      </Script>
       <Component {...pageProps} />
       <Script id="trust-pulse">
         {`
