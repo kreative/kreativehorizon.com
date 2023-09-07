@@ -198,6 +198,7 @@ export default function Footer() {
                 <Link
                   href="tel:+15152126468"
                   className="text-white text-2xl lg:text-xl hover:underline transition duration-300 ease-in-out"
+                  aria-label={"Call us"}
                 >
                   +1 (515) 212-6468
                 </Link>
@@ -207,6 +208,7 @@ export default function Footer() {
                 <Link
                   href="mailto:horizon@kreativeusa.com"
                   className="text-white text-2xl lg:text-xl hover:underline transition duration-300 ease-in-out"
+                  aria-label={"Email us"}
                 >
                   horizon@kreativeusa.com
                 </Link>
@@ -217,7 +219,7 @@ export default function Footer() {
                     whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Link href="https://instagram.com/kreativehorizon">
+                    <Link href="https://instagram.com/kreativehorizon" aria-label={"Follow us on Instagram"}>
                       <InstagramLogo
                         className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-lg"
                         size={44}
@@ -228,7 +230,7 @@ export default function Footer() {
                     whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Link href="https://www.facebook.com/profile.php?id=100093986655412&sk=about">
+                    <Link href="https://www.facebook.com/kreativehorizon" aria-label={"Follow us on Facebook"}>
                       <FacebookLogo
                         className="text-white hover:text-horizon-pink p-1 bg-horizon-grey-700 rounded-lg"
                         size={44}
@@ -239,7 +241,7 @@ export default function Footer() {
                     whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Link href="https://twitter.com/kreativehorizon">
+                    <Link href="https://twitter.com/kreativehorizon" aria-label={"Follow us on Twitter"}>
                       <TwitterLogo
                         className="text-white hover:text-horizon-purple p-1 bg-horizon-grey-700 rounded-lg"
                         size={44}
@@ -250,7 +252,7 @@ export default function Footer() {
                     whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Link href="https://github.com/kreative">
+                    <Link href="https://github.com/kreative" aria-label={"Discover our GitHub"}>
                       <GithubLogo
                         className="text-white p-1 hover:text-horizon-orange bg-horizon-grey-700 rounded-lg"
                         size={44}
@@ -261,7 +263,7 @@ export default function Footer() {
                     whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Link href="https://medium.com/kreativehorzion">
+                    <Link href="https://medium.com/kreativehorzion" aria-label={"Follow our Medium publication"}>
                       <MediumLogo
                         className="text-white hover:text-horizon-pink p-1 bg-horizon-grey-700 rounded-lg"
                         size={44}
@@ -274,7 +276,7 @@ export default function Footer() {
                     whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Link href="https://www.linkedin.com/showcase/kreativehorizon/">
+                    <Link href="https://www.linkedin.com/showcase/kreativehorizon/" aria-label={"Follow our LinkedIn page"}>
                       <LinkedinLogo
                         className="text-white hover:text-horizon-purple p-1 bg-horizon-grey-700 rounded-lg"
                         size={44}
@@ -285,7 +287,7 @@ export default function Footer() {
                     whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Link href="https://dribbble.com/bykreative">
+                    <Link href="https://dribbble.com/bykreative" aria-label={"Follow our Dribbble page"}>
                       <DribbbleLogo
                         className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-lg"
                         size={44}
@@ -296,7 +298,7 @@ export default function Footer() {
                     whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Link href="https://discord.gg/2Ge6EQkTRV">
+                    <Link href="https://kre.sh/discord" aria-label={"Join our Discord server"}>
                       <DiscordLogo
                         className="text-white p-1 hover:text-horizon-pink bg-horizon-grey-700 rounded-lg"
                         size={44}
@@ -310,7 +312,7 @@ export default function Footer() {
                   whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="https://instagram.com/kreativehorizon">
+                  <Link href="https://instagram.com/kreativehorizon" aria-label={"Follow us on Instgram"}>
                     <InstagramLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
                       size={64}
@@ -321,7 +323,7 @@ export default function Footer() {
                   whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="https://www.facebook.com/profile.php?id=100093986655412&sk=about">
+                  <Link href="https://www.facebook.com/kreativehorizon" aria-label={"Follow us on Facebook"}>
                     <FacebookLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
                       size={64}
@@ -332,7 +334,7 @@ export default function Footer() {
                   whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="https://twitter.com/kreativehorizon">
+                  <Link href="https://twitter.com/kreativehorizon" aria-label={"Follow us on Twitter"}>
                     <TwitterLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
                       size={64}
@@ -343,7 +345,7 @@ export default function Footer() {
                   whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="https://github.com/kreative">
+                  <Link href="https://github.com/kreative" aria-label={"Discover our GitHub page"}>
                     <GithubLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
                       size={64}
@@ -354,7 +356,7 @@ export default function Footer() {
                   whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="https://medium.com/kreativehorzion">
+                  <Link href="https://medium.com/kreativehorzion" aria-labe={"Follow our Medium publication"}>
                     <MediumLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
                       size={64}
@@ -365,7 +367,7 @@ export default function Footer() {
                   whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="https://medium.com/kreativehorzion">
+                  <Link href="https://www.linkedin.com/showcase/kreativehorizon/" aria-label={"Follow our LinkedIn page"}>
                     <LinkedinLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
                       size={64}
@@ -376,7 +378,7 @@ export default function Footer() {
                   whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="https://dribbble.com/bykreative">
+                  <Link href="https://dribbble.com/bykreative" aria-label={"Follow our Dribbble page"}>
                     <DribbbleLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
                       size={64}
@@ -387,7 +389,7 @@ export default function Footer() {
                   whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="https://discord.gg/2Ge6EQkTRV">
+                  <Link href="https://kre.sh/discord" aria-label={"Join our Discord server"}>
                     <DiscordLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
                       size={64}
