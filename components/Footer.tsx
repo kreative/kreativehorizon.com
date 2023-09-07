@@ -169,7 +169,7 @@ export default function Footer() {
                 >
                   <Link
                     className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-white border border-white"
-                    href="/sponsor"
+                    href="/sponsors"
                   >
                     Become a sponsor
                   </Link>
@@ -409,7 +409,7 @@ export default function Footer() {
                 <FooterLink href="/travel-grants" title="Travel grants" />
                 <FooterLink href="/community" title="Community" />
                 <FooterLink href="/press" title="Press" />
-                <FooterLink href="/sponsor" title="Sponsor us" />
+                <FooterLink href="/sponsors" title="Sponsor us" />
                 <FooterLink href="/get-involved" title="Get involved" />
               </div>
               <div className="block xs:hidden mt-6 xs:mt-0">
