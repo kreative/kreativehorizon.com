@@ -143,7 +143,7 @@ export default function Footer() {
                 Every student deserves the opportunity to see the future for
                 what it could be - and then build it.
               </p>
-              <div className="flex items-center justify-center space-x-3 pt-3 md:p-0">
+              <div className="flex flex-col sm:flex-row items-center justify-center space-y-12 sm:space-y-0 sm:space-x-3 pt-3 md:p-0">
                 <motion.div
                   whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
