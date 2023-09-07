@@ -96,6 +96,18 @@ export default function Press({ articles }: { articles: any[] }) {
                   </p>
                   <div className="flex flex-col space-y-1 justify-start items-start">
                     <a
+                        href="https://drive.google.com/drive/folders/1YZ4teExd6cT_3xqm898Dtpji2b8U6gSE?usp=sharing"
+                        className="underline text-lg transform transition duration-300 ease-in-out hover:skew-y-2 hover:text-horizon-orange"
+                    >
+                      1st (ever) Horizon Builders Club meeting
+                    </a>
+                    <a
+                        href="https://drive.google.com/drive/folders/1PNxVGk4wZFHnS20ZQJwQssWYpOKQTzhf?usp=sharing"
+                        className="underline text-lg transform transition duration-300 ease-in-out hover:skew-y-2 hover:text-horizon-orange"
+                    >
+                      Fall 2023 Iowa State Clubfest
+                    </a>
+                    <a
                       href="https://www.icloud.com/sharedalbum/#B0U5oqs3qRrfaI0"
                       className="underline text-lg transform transition duration-300 ease-in-out hover:skew-y-2 hover:text-horizon-orange"
                     >
