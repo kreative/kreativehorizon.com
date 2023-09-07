@@ -19,12 +19,14 @@ export default function PopupMenu() {
         <button
           className={`pr-1 pl-1 py-1 ${isOpen ? "hidden" : "block"}`}
           onClick={() => setIsOpen(true)} // skipcq: JS-0417
+          aria-label="Open navigation menu"
         >
           <List size={24} />
         </button>
         <button
           className={`pr-1 pl-1 py-1 ${isOpen ? "block" : "hidden"}`}
           onClick={() => setIsOpen(false)} // skipcq: JS-0417
+          aria-label="Close navigation menu"
         >
           <X size={24} />
         </button>
