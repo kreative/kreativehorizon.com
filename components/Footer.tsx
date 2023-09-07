@@ -198,7 +198,7 @@ export default function Footer() {
                 <Link
                   href="tel:+15152126468"
                   className="text-white text-2xl lg:text-xl hover:underline transition duration-300 ease-in-out"
-                  aria-label={"Call us"}
+                  aria-label={"Call us at +1 (515) 212-6468"}
                 >
                   +1 (515) 212-6468
                 </Link>
@@ -208,7 +208,7 @@ export default function Footer() {
                 <Link
                   href="mailto:horizon@kreativeusa.com"
                   className="text-white text-2xl lg:text-xl hover:underline transition duration-300 ease-in-out"
-                  aria-label={"Email us"}
+                  aria-label={"Email us at horizon@kreativeusa.com"}
                 >
                   horizon@kreativeusa.com
                 </Link>
