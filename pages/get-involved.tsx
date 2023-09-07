@@ -21,11 +21,11 @@ export default function GetInvolved() {
         <SplashContainer>
           <div className="bg-gradient-to-b from-horizon-orange via-horizon-pink to-horizon-purple">
             <Container>
-              <div className="pt-44 md:pt-64 pb-16">
+              <div className="pt-36 md:pt-64 pb-16">
                 <p className="tracking-wide font-guthen text-white text-2xl text-center mb-4">
                   Get involved
                 </p>
-                <h1 className="text-6xl md:text-7xl font-chedros text-white text-center">
+                <h1 className="text-5xl md:text-7xl font-chedros text-white text-center">
                   whether you&apos;re a Student or an organization, there is a
                   home for you with Kreative.
                 </h1>
@@ -56,7 +56,7 @@ export default function GetInvolved() {
                         height="154"
                         src="kreativehorizon.com/about-us/hackisu_v2_2x_tyt9l0"
                         alt="HackISU v2 Sticker Logo"
-                        className="w-[60%] xs:w-full sm:w-[85%] h-auto"
+                        className="w-[80%] xs:w-full sm:w-[85%] h-auto"
                       />
                   </Link>
                   </motion.div>
@@ -75,7 +75,7 @@ export default function GetInvolved() {
                         height="165"
                         src="kreativehorizon.com/about-us/dataisu_v1_2x_itgjv8"
                         alt="DataISU v1 Sticker Logo"
-                        className="w-[60%] xs:w-full sm:w-[85%] h-auto"
+                        className="w-[100%] xs:w-full sm:w-[85%] h-auto"
                       />
                     </Link>
                   </motion.div>
@@ -94,7 +94,7 @@ export default function GetInvolved() {
                         height="170"
                         src="kreativehorizon.com/about-us/designjamisu_v1_2x_xj1zx6"
                         alt="DesignJamISU v1 Sticker Logo"
-                        className="w-[60%] xs:w-full sm:w-[85%] h-auto"
+                        className="w-[80%] xs:w-full sm:w-[85%] h-auto"
                       />
                     </Link>
                   </motion.div>
@@ -181,7 +181,7 @@ export default function GetInvolved() {
                         height="173"
                         src="kreativehorizon.com/about-us/hackisu_v3_2x_pehptp"
                         alt="HackISU v3 Sticker Logo"
-                        className="w-[60%] xs:w-full sm:w-[85%] h-auto"
+                        className="w-[100%] xs:w-full sm:w-[85%] h-auto"
                       />
                     </Link>
                   </motion.div>
