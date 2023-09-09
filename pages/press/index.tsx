@@ -8,7 +8,12 @@ import { formatDate } from "@/lib/formatDate";
 import { getAllPressReleases } from "@/lib/getAllPressReleases";
 import PressReleaseMeta from "@/types/PressReleaseMeta";
 import { motion } from "framer-motion";
-import { Camera, BookOpen, CaretRight, Eyedropper } from "@phosphor-icons/react";
+import {
+  Camera,
+  BookOpen,
+  CaretRight,
+  Eyedropper,
+} from "@phosphor-icons/react";
 
 function PressReleaseCard({ article }: { article: any }) {
   // skipcq: JS-0323

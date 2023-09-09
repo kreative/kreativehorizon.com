@@ -248,7 +248,8 @@ export default function BrandGuidelines() {
                     </h2>
                   </div>
                   <p className="text-md md:text-lg text-horizon-grey-600 mb-4">
-                    Besides whites and greys, our brand palette is built off of our special pick of orange, pink, and purple.
+                    Besides whites and greys, our brand palette is built off of
+                    our special pick of orange, pink, and purple.
                   </p>
                   <div className="flex justify-center items-center p-4 bg-horizon-orange rounded-lg mb-2">
                     <div className="text-center">
@@ -285,7 +286,8 @@ export default function BrandGuidelines() {
                     </h2>
                   </div>
                   <p className="text-md md:text-lg text-horizon-grey-600 mb-4">
-                    Can be for backgrounds or text. We always go from the left or bottom starting with orange and ending with purple.
+                    Can be for backgrounds or text. We always go from the left
+                    or bottom starting with orange and ending with purple.
                   </p>
                   <div className="py-[3.75rem] bg-gradient-to-b from-horizon-orange via-horizon-pink to-horizon-purple rounded-lg mb-2" />
                   <div className="py-[3.75rem] bg-gradient-to-r from-horizon-orange via-horizon-pink to-horizon-purple rounded-lg" />
