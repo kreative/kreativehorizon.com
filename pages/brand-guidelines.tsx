@@ -21,7 +21,7 @@ export default function BrandGuidelines() {
   return (
     <div>
       <NextSeo
-        title="Brand Guidelines"
+        title="Brand Guidelines and Brand Kit"
         description="Resources about the Kreative Horizon brand and strategy to stay consistent over time as we grow."
       />
       <Navbar />
