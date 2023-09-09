@@ -29,6 +29,7 @@ jobs:
             ${{ steps.netlify.outputs.url }}/travel-grants
             ${{ steps.netlify.outputs.url }}/press
             ${{ steps.netlify.outputs.url }}/press/press-releases/new-hackathon-at-iowa-state
+            ${{ steps.netlify.outputs.url }}/branding-guidelines
             ${{ steps.netlify.outputs.url }}/community
             ${{ steps.netlify.outputs.url }}/support/submit-incident
             ${{ steps.netlify.outputs.url }}/reviews
