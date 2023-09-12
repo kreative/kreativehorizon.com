@@ -2,6 +2,7 @@ import Script from "next/script";
 import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LeagueBadge from "@/components/LeagueBadge";
 import { NextSeo } from "next-seo";
 
 export default function RSVPHackISUv2() {
@@ -25,6 +26,7 @@ export default function RSVPHackISUv2() {
           </Container>
         </main>
         <Footer />
+        <LeagueBadge />
       </div>
   );
 }

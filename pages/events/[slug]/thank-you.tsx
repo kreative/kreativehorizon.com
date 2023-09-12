@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import EventCard from "@/components/EventCard";
 import LogoCloud6 from "@/components/LogoCloud6";
+import LeagueBadge from "@/components/LeagueBadge";
 import EventCardType from "@/types/EventCard";
 import getLatestEvents from "@/lib/getLatestEvents";
 
@@ -80,6 +81,7 @@ export default function CompleteApp({
         </div>
       </main>
       <Footer />
+      <LeagueBadge />
     </div>
   );
 }

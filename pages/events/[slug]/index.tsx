@@ -10,6 +10,7 @@ import EventCard from "@/components/EventCard";
 import LogoCloud6 from "@/components/LogoCloud6";
 import SuccessAlert from "@/components/SuccessAlert";
 import ErrorAlert from "@/components/ErrorAlert";
+import LeagueBadge from "@/components/LeagueBadge";
 import getEventDetails from "@/lib/getEventDetails";
 import getStudentReviews from "@/lib/getStudentReviews";
 import getLatestEvents from "@/lib/getLatestEvents";
@@ -1219,6 +1220,7 @@ export default function EventPageTemplate({
         </div>
       </main>
       <Footer />
+      <LeagueBadge />
     </div>
   );
 }

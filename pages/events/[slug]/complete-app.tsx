@@ -3,6 +3,7 @@ import { Widget } from "@typeform/embed-react";
 import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LeagueBadge from "@/components/LeagueBadge";
 import { NextSeo } from "next-seo";
 
 export default function CompleteApp() {
@@ -39,6 +40,7 @@ export default function CompleteApp() {
             </Container>
           </main>
           <Footer />
+          <LeagueBadge />
         </div>
       )}
     </div>
