@@ -15,10 +15,32 @@
   text-decoration: none;
 }
 
+
+.kbl-badge-link-bg {
+  background: linear-gradient(0.25turn, #ff900e, #ff0e9f, #950eff);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.kbl-badge-link {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 .dflow-logo {
   width: 21px;
   height: 21px;
   margin-right: 6px;
+}
+
+.kbl-logo {
+  width: 21px;
+  height: 21px;
+  margin-right: 4px;
 }
 
 .dflow-text {
