@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import "@/styles/dflow-badge.css";
 import { useRouter } from "next/router";
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
