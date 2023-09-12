@@ -8,6 +8,7 @@ import SplashContainer from "@/components/SplashContainer";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import EventCard from "@/components/EventCard";
 import FloatingCTA3 from "@/components/FloatingCTA3";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import EventCardType from "@/types/EventCard";
 import getLatestEvents from "@/lib/getLatestEvents";
 import { NextSeo } from "next-seo";
@@ -244,6 +245,7 @@ export default function Home({ events }: { events: EventCardType[] }) {
         </div>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

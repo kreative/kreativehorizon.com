@@ -3,6 +3,7 @@ import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LogoCloud5 from "../../components/LogoCloud5";
+import DreamflowBadge from "../../components/DreamflowBadge"
 import { NextSeo } from "next-seo";
 import { formatDate } from "@/lib/formatDate";
 import { getAllPressReleases } from "@/lib/getAllPressReleases";
@@ -168,6 +169,7 @@ export default function Press({ articles }: { articles: any[] }) {
         </div>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

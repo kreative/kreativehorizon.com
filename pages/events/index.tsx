@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LogoCloud6 from "@/components/LogoCloud6";
 import EventCard from "@/components/EventCard";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import EventCardType from "@/types/EventCard";
 import getEvents from "@/lib/getEvents";
 import { NextSeo } from "next-seo";
@@ -71,6 +72,7 @@ export default function Events({
         </Container>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

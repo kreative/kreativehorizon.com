@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import LogoCloud1 from "../components/LogoCloud1";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { CldImage } from "next-cloudinary";
@@ -430,6 +431,7 @@ export default function AboutUs() {
         </div>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { NextSeo } from "next-seo";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import DreamflowBadge from "./DreamflowBadge";
 import LogoCloud1 from "./LogoCloud1";
 import Container from "./Container";
 import { formatDate } from "@/lib/formatDate";
@@ -87,6 +88,7 @@ export function PressReleaseLayout({
         </div>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

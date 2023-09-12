@@ -6,6 +6,7 @@ import LogoCloud5 from "@/components/LogoCloud5";
 import FloatingCTA2 from "@/components/FloatingCTA2";
 import ContactForm from "@/components/forms/ContactForm";
 import SuccessAlert from "@/components/SuccessAlert";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import { NextSeo } from "next-seo";
 import { Envelope, Phone } from "@phosphor-icons/react";
 
@@ -95,6 +96,7 @@ export default function ContactUs() {
         </div>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

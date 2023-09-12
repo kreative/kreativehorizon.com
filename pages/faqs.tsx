@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Accordian from "@/components/Accordian";
 import NeedHelpCTA from "@/components/NeedHelpCTA";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 
@@ -386,6 +387,7 @@ export default function Faqs() {
         <NeedHelpCTA />
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

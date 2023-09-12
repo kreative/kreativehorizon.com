@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import SponsorLetter from "@/components/SponsorLetter";
 import EventCardSimple from "@/components/EventCardSimple";
 import LogoCloud1 from "@/components/LogoCloud1";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import { CldImage } from "next-cloudinary";
@@ -481,6 +482,7 @@ export default function StudentReviews() {
         </div>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CommunityForm from "@/components/forms/CommunityForm";
 import LogoCloud6 from "@/components/LogoCloud6";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import { DiscordLogo } from "@phosphor-icons/react";
 import { NextSeo } from "next-seo";
 
@@ -128,6 +129,7 @@ export default function Community() {
         </div>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

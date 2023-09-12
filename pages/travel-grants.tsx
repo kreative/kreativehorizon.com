@@ -4,6 +4,7 @@ import SplashContainer from "../components/SplashContainer";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TravelGrantRequestForm from "@/components/forms/TravelGrantRequestForm";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import { NextSeo } from "next-seo";
 
 export default function TravelGrants() {
@@ -65,6 +66,7 @@ export default function TravelGrants() {
         </Container>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

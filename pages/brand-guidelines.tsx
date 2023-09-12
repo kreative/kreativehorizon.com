@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import {
@@ -297,6 +298,7 @@ export default function BrandGuidelines() {
         </Container>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

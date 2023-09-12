@@ -2,6 +2,7 @@ import Link from "next/link";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import { CldImage } from "next-cloudinary";
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
@@ -57,6 +58,7 @@ export default function Custom404() {
         </Container>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

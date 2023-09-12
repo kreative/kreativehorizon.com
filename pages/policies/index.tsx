@@ -3,6 +3,7 @@ import Container from "../../components/Container";
 import SplashContainer from "@/components/SplashContainer";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
 import {
@@ -87,6 +88,7 @@ export default function Policies() {
         </Container>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

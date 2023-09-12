@@ -2,6 +2,7 @@ import Container from "../../components/Container";
 import SplashContainer from "@/components/SplashContainer";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import NeedHelpCTA from "@/components/NeedHelpCTA";
 import { NextSeo } from "next-seo";
 
@@ -676,6 +677,7 @@ export default function PrivacyPolicy() {
         <NeedHelpCTA />
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

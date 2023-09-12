@@ -1,9 +1,8 @@
 import Container from '@/components/Container';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { useRouter } from 'next/router';
+import DreamflowBadge from '@/components/DreamflowBadge';
 import { NextSeo } from 'next-seo';
-import {CldImage} from "next-cloudinary";
 import {motion} from "framer-motion";
 import Link from "next/link";
 
@@ -204,6 +203,7 @@ export default function CompleteApp() {
         </Container>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

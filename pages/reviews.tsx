@@ -5,6 +5,7 @@ import getStudentReviews from "@/lib/getStudentReviews";
 import StudentReview from "@/types/StudentReview";
 import TestimonialCard from "@/components/testimonials/TestimonialCard";
 import LogoCloud6 from "../components/LogoCloud6";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import { NextSeo } from "next-seo";
 import { CldImage } from "next-cloudinary";
 
@@ -81,6 +82,7 @@ export default function StudentReviews({
         </div>
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }

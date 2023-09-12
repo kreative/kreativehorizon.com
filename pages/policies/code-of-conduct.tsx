@@ -3,6 +3,7 @@ import Container from "../../components/Container";
 import SplashContainer from "@/components/SplashContainer";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import DreamflowBadge from "@/components/DreamflowBadge";
 import NeedHelpCTA from "@/components/NeedHelpCTA";
 import { NextSeo } from "next-seo";
 
@@ -176,13 +177,20 @@ export default function CodeOfConduct() {
               Kreative reserves the right to revise, make exceptions to, or
               otherwise amend these policies in whole or in part. If you have
               any questions regarding these policies, please contact Kreative by
-              email at <a href="mailto:hello@kreativeusa.com" className="underline text-horizon-purpl">hello@kreativeusa.com.</a>
+              email at{" "}
+              <a
+                href="mailto:hello@kreativeusa.com"
+                className="underline text-horizon-purpl"
+              >
+                hello@kreativeusa.com.
+              </a>
             </p>
           </div>
         </Container>
         <NeedHelpCTA />
       </main>
       <Footer />
+      <DreamflowBadge />
     </div>
   );
 }
