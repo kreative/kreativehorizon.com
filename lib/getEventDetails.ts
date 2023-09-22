@@ -53,6 +53,7 @@ const getEventDetails = async (slug: string): Promise<any[]> => {
         page_alt,
         cld_id,
         alt,
+        event_sponsors[]->,
         typeform_id,
       }`
     );
