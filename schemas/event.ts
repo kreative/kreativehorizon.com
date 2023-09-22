@@ -240,6 +240,12 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'event_sponsors',
+      title: 'Event Specific Sponsors',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'sponsor' }] }],
+    }),
+    defineField({
       name: 'typeform_id',
       title: 'Typeform ID',
       type: 'string',

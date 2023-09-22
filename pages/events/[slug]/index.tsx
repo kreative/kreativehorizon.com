@@ -1150,6 +1150,17 @@ export default function EventPageTemplate({
                       />
                     </div>
                   ))}
+                  {event.event_sponsors && event.event_sponsors.map((sponsor: any) => (
+                      <div key={sponsor._id} className="w-[35%] lg:w-[60%]">
+                        <CldImage
+                            src={`kreativehorizon.com/sponsors/${sponsor.logo_cld_id}`}
+                            alt={sponsor.logo_alt}
+                            className="w-full h-auto mb-8"
+                            width={sponsor.logo_width}
+                            height={sponsor.logo_height}
+                        />
+                      </div>
+                  ))}
                 </div>
                 <div className="pt-6 lg:p-0 text-center">
                   <h3 className="text-lg text-horizon-purple">
