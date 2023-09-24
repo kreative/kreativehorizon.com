@@ -46,6 +46,8 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
   const email = req.body.email;
   let firstName = req.body.firstName;
   let lastName = req.body.lastName;
+  firstName.toLowerCase();
+  lastName.toLowerCase();
   firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
   lastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
 
