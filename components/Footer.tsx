@@ -394,7 +394,7 @@ export default function Footer() {
                 >
                   <Link
                     href="https://medium.com/kreativehorzion"
-                    aria-labe={"Follow our Medium publication"}
+                    aria-label={"Follow our Medium publication"}
                   >
                     <MediumLogo
                       className="text-white hover:text-horizon-orange p-1 bg-horizon-grey-700 rounded-2xl"
