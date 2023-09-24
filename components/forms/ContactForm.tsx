@@ -6,21 +6,12 @@ export default function ContactForm() {
       <form
         name="contact-form"
         method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
         className="grid grid-cols-1 gap-6"
-        action="/contact-us?form_completed=true"
+        action={`/api/collect-contact-form`}
       >
-        <input type="hidden" name="form-name" value="contact-form" />
-        <p className="hidden">
-          <label id="contact-form-bot-label">
-            Dont fill this out if youre human:{" "}
-            <input name="bot-field" aria-labelledby="contact-form-bot-label" />
-          </label>
-        </p>
         <div>
           <label
-            htmlFor="name"
+            htmlFor="fullName"
             className="block text-base font-medium leading-6 text-horizon-grey-800"
           >
             Full name<span className="text-horizon-pink"> *</span>
@@ -28,8 +19,8 @@ export default function ContactForm() {
           <div className="mt-2">
             <input
               type="text"
-              name="name"
-              id="name"
+              name="fullName"
+              id="fullName"
               className="block w-full rounded-md border-0 py-1.5 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
               placeholder="Richard Branson"
               required
@@ -58,35 +49,18 @@ export default function ContactForm() {
             </div>
           </div>
           <div className="col-span-1">
-            <div className="flex justify-between">
-              <label
-                htmlFor="phone"
-                className="block text-base font-medium leading-6 text-horizon-grey-800"
-              >
-                Phone number
-              </label>
-            </div>
-            <div className="relative mt-2 rounded-md shadow-sm">
-              <div className="absolute inset-y-0 left-0 flex items-center">
-                <label htmlFor="country" className="sr-only">
-                  Country
-                </label>
-                <select
-                  id="country"
-                  name="country"
-                  autoComplete="country"
-                  className="h-full rounded-md border-0 bg-transparent py-0 pl-3 pr-7 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm"
-                >
-                  <option>US</option>
-                  <option>CA</option>
-                  <option>EU</option>
-                </select>
-              </div>
+            <label
+              htmlFor="phone"
+              className="block text-base font-medium leading-6 text-horizon-grey-800"
+            >
+              Phone number
+            </label>
+            <div className="mt-2">
               <input
-                type="text"
-                name="phone-number"
-                id="phone-number"
-                className="block w-full rounded-md border-0 py-1.5 pl-16 text-horizon-grey-800 ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
+                type="tel"
+                name="phone"
+                id="phone"
+                className="block w-full rounded-md border-0 py-1.5 text-horizon-grey-800 shadow-sm ring-1 ring-inset ring-horizon-grey-300 placeholder:text-horizon-grey-600 focus:ring-2 focus:ring-inset focus:ring-horizon-purple sm:text-sm sm:leading-6"
                 placeholder="+1 (555) 987-6543"
               />
             </div>
