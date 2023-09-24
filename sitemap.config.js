@@ -10,6 +10,7 @@ module.exports = {
       "/events/*/complete-app",
       "/events/*/thank-you",
       "/newsletter/thank-you",
+      "/events/rsvp/*",
   ],
   changefreq: "weekly",
   robotsTxtOptions: {
