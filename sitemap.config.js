@@ -11,6 +11,7 @@ module.exports = {
       "/events/*/thank-you",
       "/newsletter/thank-you",
       "/events/rsvp/*",
+      "/events/feedback/*",
   ],
   changefreq: "weekly",
   robotsTxtOptions: {
