@@ -10,7 +10,7 @@ export default function Navbar() {
       <Container>
         <div className="flex justify-center items-center">
           <div className="bg-white bg-opacity-90 backdrop-blur-sm border border-horizon-grey-200 drop-shadow-md py-1.5 px-2 my-3 rounded-[10px] flex items-center justify-between min-[870px]:justify-center space-x-6 w-full min-[870px]:w-auto">
-            <Link href="/home" aria-label={"Home page"}>
+            <Link href="/" aria-label={"Home page"}>
               <svg
                 className="h-10 w-auto drop-shadow-md"
                 viewBox="0 0 72 72"
