@@ -38,8 +38,6 @@ export default function ReportViolationForm() {
               <option>DataISU v1</option>
               <option>HackIowaState v3</option>
               <option>BuildDSM v1</option>
-              <option>DesignJamISU v1</option>
-              <option>PitchAmes v1</option>
               <option>Horizon Builders Club</option>
               <option>Horizon Labs</option>
             </select>

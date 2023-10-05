@@ -1244,8 +1244,6 @@ export async function getStaticPaths() {
     "dataisu-v1",
     "hackisu-v3",
     "builddsm-v1",
-    "designjamisu-v1",
-    "pitchames-v1",
     "buildchicago-2019",
   ];
 

@@ -484,11 +484,6 @@ export default function Footer() {
               <div className="flex flex-col items-start space-y-4 lg:space-y-2">
                 <FooterLink href="/events/hackisu-v3" title="HackISU v3" />
                 <FooterLink href="/events/builddsm-v1" title="BuildDSM v1" />
-                <FooterLink
-                  href="/events/designjamisu-v1"
-                  title="DesignJamISU v1"
-                />
-                <FooterLink href="/events/pitchames-v1" title="PitchAmes v1" />
               </div>
               <div className="block xs:hidden mt-6 xs:mt-0">
                 <FooterLinkGroupLabel title="Policies" />

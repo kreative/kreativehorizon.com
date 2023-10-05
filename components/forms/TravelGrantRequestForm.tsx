@@ -184,10 +184,8 @@ export default function TravelGrantRequestForm() {
             >
               <option>HackIowaState v2</option>
               <option>DataISU v1</option>
-              <option>HackIowaState v3</option>
               <option>BuildDSM v1</option>
-              <option>DesignJamISU v1</option>
-              <option>PitchAmes v1</option>
+              <option>HackIowaState v3</option>
             </select>
           </div>
         </div>
