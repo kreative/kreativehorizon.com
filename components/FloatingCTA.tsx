@@ -7,7 +7,6 @@ export default function FloatingCTA() {
   const [showSpinner, setShowSpinner] = useState(false);
   const [email, setEmail] = useState("");
 
-  // create a function to validate an email with a regular expression and return true if the email is valid
   const validateEmail = (email: string) => {
     const re = /\S+@\S+\.\S+/;
     return re.test(email);
