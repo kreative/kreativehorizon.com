@@ -17,12 +17,19 @@ const getEvents = async (): Promise<EventCardType[]> => {
         end_datetime,
         date_label,
         location_nickname,
+        city,
+        state,
         slug,
         cld_id,
         alt,
+        organizer->{
+          name,
+          logo
+        },
       }
       `
     );
+    console.log(events)
     return events;
   } catch (error) {
     console.error('Error fetching events:', error);

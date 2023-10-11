@@ -9,7 +9,13 @@ export default interface EventCardType {
   end_datetime: string;
   date_label: string;
   location_nickname: string;
+  city: string;
+  state: string;
   slug: string;
   cld_id: string;
   alt: string;
+  organizer: {
+    name: string;
+    logo: string;
+  }
 }
