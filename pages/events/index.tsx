@@ -26,13 +26,13 @@ export default function Events({
       <Navbar />
       <main>
         <SplashContainer>
-          <div className="bg-horizon-orange-100">
+          <div className="bg-horizon-grey-200">
             <Container>
-              <div className="pt-32 sm:pt-64 pb-16">
-                <p className="font-guthen tracking-wide text-2xl mb-4 text-center">
-                  Season One Events
+              <div className="pt-32 sm:pt-44 pb-16">
+                <p className="font-guthen tracking-wide text-2xl mb-4 text-left">
+                  Kreative Horizon Events
                 </p>
-                <h1 className="font-chedros text-6xl md:text-7xl text-center">
+                <h1 className="font-chedros text-6xl md:text-7xl text-left">
                   Come build the future of tomorrow, today
                 </h1>
               </div>
@@ -44,7 +44,7 @@ export default function Events({
         </div>
         <Container>
           <div className="pb-24">
-            <h2 className="text-5xl text-horizon-grey-600 font-chedros pb-8">
+            <h2 className="text-5xl text-horizon-grey-700 font-chedros pb-8">
               Upcoming Events
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
