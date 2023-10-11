@@ -10,5 +10,6 @@ import scheduleItem from './scheduleItem';
 import reasonToAttend from './reasonToAttend';
 import sponsor from './sponsor';
 import judge from './judge';
+import organizer from './organizer';
 
-export const schemaTypes = [post, author, category, blockContent, event, testimonial, faq, season, scheduleItem, reasonToAttend, sponsor, judge];
+export const schemaTypes = [post, author, category, blockContent, event, testimonial, faq, season, scheduleItem, reasonToAttend, sponsor, judge, organizer];

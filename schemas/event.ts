@@ -1,4 +1,3 @@
-import { m } from 'framer-motion'
 import { defineField, defineType } from 'sanity'
 
 export default defineType({
@@ -15,6 +14,12 @@ export default defineType({
       name: 'tagline',
       title: 'Event Tagline',
       type: 'string',
+    }),
+    defineField({
+      name: 'organizer',
+      title: 'Organizer',
+      type: 'reference',
+      to: [{ type: 'organizer' }],
     }),
     defineField({
       name: 'season',
