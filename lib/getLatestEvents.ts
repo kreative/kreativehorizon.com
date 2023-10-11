@@ -19,9 +19,15 @@ const getLatestEvents = async (excludeSlug?: string): Promise<EventCardType[]> =
         end_datetime,
         date_label,
         location_nickname,
+        city,
+        state,
         slug,
         cld_id,
         alt,
+        organizer->{
+          name,
+          logo,
+        }
       }
       `
       );
@@ -39,9 +45,15 @@ const getLatestEvents = async (excludeSlug?: string): Promise<EventCardType[]> =
         end_datetime,
         date_label,
         location_nickname,
+        city,
+        state,
         slug,
         cld_id,
         alt,
+        organizer->{
+          name,
+          logo,
+        }
       }
       `
       );
