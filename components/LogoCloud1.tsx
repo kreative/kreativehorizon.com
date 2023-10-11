@@ -128,11 +128,11 @@ export default function LogoCloud1() {
         />
         <LogoImage
           src={
-            "https://res.cloudinary.com/dlazo25rt/image/upload/v1692329529/kreativehorizon.com/sponsors/maple-studios-horizontal-min_tggyad.webp"
+            "https://res.cloudinary.com/dlazo25rt/image/upload/v1692329529/kreativehorizon.com/sponsors/Zirous_Logo_1_._jaucdm.webp"
           }
           alt="Maple Studios Logo in Color"
-          w="2259"
-          h="614"
+          w="555"
+          h="148"
         />
         <LogoImage
           src={

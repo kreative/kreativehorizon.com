@@ -117,7 +117,7 @@ export default function FloatingCTA3() {
             Have a question or need some help?
           </p>
           <p className="text-xl text-horizon-grey-700">
-            Our team is here for you. Drop us a line and we&apos;ll be in touch
+            Drop us a line and our team will be in touch
             to help you soon!{" "}<span className="inline-block md:hidden underline underline-offset-2"><Link href="/contact-us">You can reach our team here</Link></span>
           </p>
         </div>
