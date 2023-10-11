@@ -161,7 +161,13 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
       />
       <Component {...pageProps} />
-      <ToastContainer transition={Slide} position="bottom-left" autoClose={5000} closeOnClick theme="colored"/>
+      <ToastContainer
+        transition={Slide} 
+        position="bottom-left" 
+        autoClose={5000} 
+        closeOnClick 
+        theme="colored"
+      />
     </div>
   );
 }
