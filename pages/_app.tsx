@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
 import { DefaultSeo } from "next-seo";
+import { ToastContainer, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // custom craftwork sans font loading locally
 const craftworkSans = localFont({
@@ -159,6 +161,7 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
       />
       <Component {...pageProps} />
+      <ToastContainer transition={Slide} position="bottom-left" autoClose={5000} closeOnClick theme="colored"/>
     </div>
   );
 }
