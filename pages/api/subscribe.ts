@@ -27,17 +27,19 @@ export default function handler(req: LeadRequest, res: NextApiResponse) {
 
   mailerlite.subscribers.createOrUpdate({
     email,
-    groups: ["96632678153979799"], // second string is for 'KHZ Newsletter'
+    groups: ["96632678153979799"],
     status: "active",
   })
       .then((addResponse) => {
         console.log(addResponse);
         logger.info("added subscriber to MailerLite", { req, addResponse });
-        return res.redirect(302, `/newsletter/thank-you`);
+        // send a success back
+        return res.status(200).json({ success: true });
       })
       .catch((addError) => {
         // we need to notify the business that the lead was not collected and to fix this
         logger.error("error adding subscriber to MailerLite", { req, addError });
-        return res.redirect(302, `/newsletter/thank-you`);
+        // send an error back
+        return res.status(500).json({ error: addError });
       });
 }

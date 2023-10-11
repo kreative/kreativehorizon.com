@@ -1,9 +1,55 @@
 import { useState } from "react";
 import Container from "./Container";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
 
 export default function FloatingCTA() {
   const [showSpinner, setShowSpinner] = useState(false);
+  const [email, setEmail] = useState("");
+
+  // create a function to validate an email with a regular expression and return true if the email is valid
+  const validateEmail = (email: string) => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
+
+  const handleSubscription = async (e: any) => {
+    e.preventDefault();
+
+    if (
+      email === "" ||
+      email === undefined ||
+      email === null ||
+      !validateEmail(email)
+    ) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
+    setShowSpinner(true);
+
+    const res = await fetch("/api/subscribe", {
+      body: JSON.stringify({ email }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const { error } = await res.json();
+
+    if (error) {
+      console.log(error);
+      toast.error(
+        "There was an error subscribing to the newsletter. Please try again later :("
+      );
+      setShowSpinner(false);
+      return;
+    }
+
+    console.log("Success! You have been subscribed.");
+    window.location.href = "/newsletter/thank-you";
+  };
 
   return (
     <Container>
@@ -88,40 +134,43 @@ export default function FloatingCTA() {
             programs, discounts, and giveaways straight to your phone. We
             promise it&apos;ll be worth it :)
           </p>
-          <form method="POST" action={`/api/subscribe`}>
-            <div className="bg-white bg-opacity-[.85] rounded-lg px-2 xs:pl-4 xs:pr-1 pt-1 pb-2 xs:pb-1 block xs:flex justify-between items-center w-full md:w-[75%] lg:w-[60%] xs:space-x-1">
-              <input
-                type="email"
-                placeholder="Email Address"
-                name={"email"}
-                required
-                className="bg-transparent px-2 xs:px-0 xs:mr-2 py-2 placeholder-[#E33232] placeholder-opacity-75 text-[#E33232] text-opacity-85 w-full border-transparent focus:border-transparent focus:ring-0"
-              />
-              <motion.div
-                whileHover={{ scale: 0.97, transition: { duration: 0.2 } }}
-                whileTap={{ scale: 0.9 }}
+          <div className="bg-white bg-opacity-[.85] rounded-lg px-2 xs:pl-4 xs:pr-1 pt-1 pb-2 xs:pb-1 block xs:flex justify-between items-center w-full md:w-[75%] lg:w-[60%] xs:space-x-1">
+            <input
+              type="email"
+              placeholder="Email Address"
+              name={"email"}
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="bg-transparent px-2 xs:px-0 xs:mr-2 py-2 placeholder-[#E33232] placeholder-opacity-75 text-[#E33232] text-opacity-85 w-full border-transparent focus:border-transparent focus:ring-0"
+            />
+            <motion.div
+              whileHover={{ scale: 0.97, transition: { duration: 0.2 } }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <button
+                className="bg-white py-3 px-6 md:py-1.5 md:px-4 rounded-md text-horizon-purple-darker w-full xs:w-auto font-bold"
+                onClick={handleSubscription}
               >
-                <button className="bg-white py-3 px-6 md:py-1.5 md:px-4 rounded-md text-horizon-purple-darker w-full xs:w-auto font-bold" onClick={(e) => setShowSpinner(true)}>
-                  {showSpinner ? (
-                    <div className="flex justify-center items-center space-x-3">
-                      <motion.span
-                        className="flex items-center w-5 h-5 border-2 border-white border-t-horizon-orange rounded-full"
-                        animate={{ rotate: 360 }}
-                        transition={{
-                          duration: 1,
-                          repeat: Infinity,
-                          ease: "linear",
-                        }}
-                        role="status"
-                      />
-                    </div>
-                  ) : (
-                    "Subscribe "
-                  )}
-                </button>
-              </motion.div>
-            </div>
-          </form>
+                {showSpinner ? (
+                  <div className="flex justify-center items-center space-x-3">
+                    <motion.span
+                      className="flex items-center w-5 h-5 border-2 border-white border-t-horizon-orange rounded-full"
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 1,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      role="status"
+                    />
+                  </div>
+                ) : (
+                  "Subscribe"
+                )}
+              </button>
+            </motion.div>
+          </div>
         </div>
         <div className="xl:col-span-4" />
       </div>
