@@ -43,11 +43,11 @@ export default function handler(req: ContactRequest, res: NextApiResponse) {
   }, { typecast: true }, function (err, record) {
     if (err) {
       sendSMSNotification(`KHZ Contact Request from ${fullName}: ${message} (${email}, ${phone}) - ERROR: ${err.message}`);
-      return res.redirect(301, `/contact-us?form_completed=false`);
+      return res.status(500).json({ error: err });
     }
     else {
       sendSMSNotification(`KHZ Contact Request from ${fullName}: ${message} (${email}, ${phone}) - SUCCESS (record id: ${record!.getId()}))`);
-      return res.redirect(301, `/contact-us?form_completed=true`);
+      return res.status(200).json({ success: true });
     }
   });
 }
