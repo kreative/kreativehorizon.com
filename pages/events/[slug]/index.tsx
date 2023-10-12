@@ -1205,7 +1205,7 @@ export default function EventPageTemplate({
               Student <span className="ml-2">Testimonials</span>
             </p>
             <h1 className="text-center sm:text-left pb-8 text-5xl sm:text-6xl font-chedros">
-              OUR STUDENT AND BUILDERS LOVE HORIZON EVENTS
+              OUR STUDENTS AND BUILDERS LOVE HORIZON EVENTS
             </h1>
             <div className="py-4 grid grid-cols-2 md:grid-cols-3 gap-4">
               <div className="col-span-2 sm:col-span-1 flex flex-col justify-start items-start space-y-4">
