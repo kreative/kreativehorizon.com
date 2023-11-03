@@ -955,7 +955,7 @@ export default function EventPageTemplate({
                         id={"app-box"}
                         className="px-6 py-8 bg-horizon-grey-100 rounded-2xl"
                       >
-                        <motion.div
+                        {/* <motion.div
                           initial={{ scale: 1 }}
                           animate={{ scale: [1, 1.06, 1] }} // Define scale keyframes
                           transition={{
@@ -967,11 +967,14 @@ export default function EventPageTemplate({
                           <h2 className="text-3xl font-chedros text-center mb-3">
                             Apply to participate and secure your spot now
                           </h2>
-                        </motion.div>
-                        <p className="text-horizon-grey-700 font-md text-center">
+                        </motion.div> */}
+                        <h2 className="text-3xl font-chedros text-center mb-3">
+                          Apply to participate and secure your spot now!
+                        </h2>
+                        {/* <p className="text-horizon-grey-700 font-md text-center">
                           We use your application to ensure that only committed
                           students are coming and to get to know you better!
-                        </p>
+                        </p> */}
                         <div className="mt-6">
                           <form
                             method="POST"

@@ -22,13 +22,6 @@ export default function CompleteApp({
       <main>
         <Container>
           <div className="flex flex-col items-center justify-center space-y-4 min-h-[50vh] py-24">
-            {/*<CldImage*/}
-            {/*    src="kreativehorizon.com/404-cat_e6qp0c"*/}
-            {/*    alt="404 Cat GIF"*/}
-            {/*    width="300"*/}
-            {/*    height="350"*/}
-            {/*    className="h-[30vh] w-auto rounded-full mb-3"*/}
-            {/*/>*/}
             <p className="text-2xl font-guthen tracking-wider text-horizon-pink">
               Thank you for applying!
             </p>
