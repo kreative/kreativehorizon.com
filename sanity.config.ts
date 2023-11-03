@@ -16,7 +16,7 @@ export default defineConfig({
   basePath: "/admin",
   apiVersion: '2021-03-25',
   projectId: 'laarr84g',
-  dataset: 'production',
+  dataset: 'production', // process.env.ENV === 'development' ? 'development' : 'production',
   useCdn: true,
   schema: {
     types: schemaTypes,
