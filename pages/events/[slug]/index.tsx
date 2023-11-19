@@ -184,7 +184,7 @@ export default function EventPageTemplate({
                   <CldImage
                     src={`kreativehorizon.com/organizers/${event.organizer.logo}`}
                     alt={`${event.organizer.name} logo for the organizer of ${event.title} event`}
-                    className="w-7 h-auto rounded-md border border-horizon-grey-400"
+                    className="w-7 h-auto rounded-full border border-horizon-grey-400"
                     width="222"
                     height="222"
                   />
