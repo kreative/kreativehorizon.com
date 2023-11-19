@@ -454,7 +454,7 @@ export default function Footer() {
                 <FooterLink href="/contact-us" title="Contact us" />
                 <FooterLink href="/reviews" title="Student reviews" />
                 <FooterLink href="/faqs" title="FAQs" />
-                <FooterLink href="/travel-grants" title="Travel grants" />
+                <FooterLink href="/forms/travel-grants" title="Travel grants" />
                 <FooterLink href="/community" title="Community" />
                 <FooterLink href="/press" title="Press" />
                 <FooterLink href="/brand-guidelines" title="Brand guidelines" />

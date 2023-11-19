@@ -94,6 +94,11 @@ const nextConfig = {
         destination: "/sponsors",
         permanent: true,
       },
+      {
+        source: "/forms",
+        destination: "/",
+        permanent: true,
+      }
     ];
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],

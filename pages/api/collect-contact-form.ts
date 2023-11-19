@@ -34,7 +34,7 @@ export default function handler(req: ContactRequest, res: NextApiResponse) {
   const message = req.body.message;
   const phone = req.body.phone || "";
 
-  base('Entries').create({
+  base('Contact Us Form').create({
     "Email": email,
     "Name": fullName,
     "Message": message,

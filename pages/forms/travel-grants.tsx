@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Container from "../components/Container";
-import SplashContainer from "../components/SplashContainer";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Container from "../../components/Container";
+import SplashContainer from "../../components/SplashContainer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import TravelGrantRequestForm from "@/components/forms/TravelGrantRequestForm";
 import DreamflowBadge from "@/components/DreamflowBadge";
 import { NextSeo } from "next-seo";

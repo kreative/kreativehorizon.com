@@ -346,7 +346,7 @@ export default function Faqs() {
               >
                 <Link
                   className="rounded-md py-3.5 px-7 md:py-2.5 md:px-5 bg-opacity-0 bg-white text-horizon-purple border border-horizon-purple"
-                  href="/travel-grants"
+                  href="/forms/travel-grants"
                 >
                   Submit a request
                 </Link>
