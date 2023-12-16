@@ -27,6 +27,9 @@ export default function handler(req: TypeformWebhook, res: NextApiResponse) {
     case "Q6r7cgv4":
       event = "builddsm-v1";
       break;
+    case "fut0nLMw":
+      event = "hackisu-v3";
+      break;
   }
   
   console.log(email)
