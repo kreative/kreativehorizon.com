@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import "@/styles/badges.css";
+import Script from "next/script";
 import { useRouter } from "next/router";
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
@@ -88,7 +89,9 @@ const chedros = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  const canonicalUrl = (`https://kreativehorizon.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const canonicalUrl = (
+    `https://kreativehorizon.com` + (router.asPath === "/" ? "" : router.asPath)
+  ).split("?")[0];
 
   return (
     <div
@@ -160,12 +163,26 @@ export default function App({ Component, pageProps }: AppProps) {
           cardType: "summary_large_image",
         }}
       />
+
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+      <Script id="ga4" strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+        `}
+      </Script>
+
       <Component {...pageProps} />
       <ToastContainer
-        transition={Slide} 
-        position="bottom-left" 
-        autoClose={5000} 
-        closeOnClick 
+        transition={Slide}
+        position="bottom-left"
+        autoClose={5000}
+        closeOnClick
         theme="colored"
       />
     </div>
