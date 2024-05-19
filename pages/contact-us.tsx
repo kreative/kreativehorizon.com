@@ -66,7 +66,7 @@ export default function ContactUs() {
                     href="mailto:horizon@kreativeusa.com"
                     className="underline text-lg transform transition duration-300 ease-in-out hover:skew-y-2 hover:text-horizon-orange"
                   >
-                    horizon@keativeusa.com
+                    horizon@kreativeusa.com
                   </a>
                 </div>
                 <div className="bg-horizon-grey-100 rounded-2xl p-10 flex flex-col space-y-6 col-span-2 sm:col-span-1">
