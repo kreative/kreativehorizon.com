@@ -22,9 +22,6 @@ export default function SponsorLetter() {
         <p>
           <a href="mailto:horizon@kreativeusa.com">horizon@kreativeusa.com</a>
         </p>
-        <p>
-          <a href="tel:+15152126468">+1 (515) 212-6468</a>
-        </p>
         <p>@kreativehorizon</p>
       </div>
       <p className="text-xl mt-20">

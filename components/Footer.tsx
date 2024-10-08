@@ -193,16 +193,6 @@ export default function Footer() {
                 Providing students the tools and resources to build the future
                 of tomorrow, today so we can see the world for what it could be.
               </p>
-              <div className="flex justify-start space-x-2 items-center mb-3 md:mb-1">
-                <Phone className="text-white" size={32} />
-                <Link
-                  href="tel:+15152126468"
-                  className="text-white text-2xl lg:text-xl hover:underline transition duration-300 ease-in-out"
-                  aria-label={"Call us at +1 (515) 212-6468"}
-                >
-                  +1 (515) 212-6468
-                </Link>
-              </div>
               <div className="flex justify-start space-x-2 items-center">
                 <Envelope className="text-white" size={32} />
                 <Link

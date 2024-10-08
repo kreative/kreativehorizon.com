@@ -69,22 +69,6 @@ export default function ContactUs() {
                     horizon@kreativeusa.com
                   </a>
                 </div>
-                <div className="bg-horizon-grey-100 rounded-2xl p-10 flex flex-col space-y-6 col-span-2 sm:col-span-1">
-                  <Phone size={50} className="text-horizon-purple" />
-                  <h2 className="text-4xl font-chedros text-horizon-grey-700">
-                    PHONE
-                  </h2>
-                  <p className="text-horizon-grey-600">
-                    Our folks are always ready to help you with any questions or
-                    concerns you may have during business hours.
-                  </p>
-                  <a
-                    href="tel:+15152126468"
-                    className="underline text-lg transform transition duration-300 ease-in-out hover:-skew-y-2 hover:text-horizon-orange"
-                  >
-                    +1 (515) 212-6468
-                  </a>
-                </div>
               </div>
             </div>
           </div>
